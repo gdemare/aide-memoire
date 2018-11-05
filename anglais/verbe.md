@@ -4,62 +4,59 @@
 
 ### Passé et présent
 
-Prétérite verbe + ed
-Participe passé verbe + ed
+Prétérite `verbe + ed`
+Participe passé `verbe + ed`
 
 | Temps | Emploi | Construction |
 |---|---|---|
-| Simple | Vérité permanente, habitude | verbe (prétérite) |
-| Progressif | Action qui se déroule en ce moment | be + ing |
-| Perfect | action passée qui a une influence sur le moment | to have + participe passé (gotta) |
+| Simple | Vérité permanente, habitude | `verbe` (prétérite) |
+| Progressif | Action qui se déroule en ce moment | `be + ing` |
+| Perfect | action passée qui a une influence sur le moment | to have + participe passé (ou `gotta` au présent) |
 
 Perfect on est capable de rajouter for (depuis).
 
 ### Futur
 
-will/shall + verbe
+`will/shall + verbe`
 
 #### Futur proche 
 
-be + going + infinitif intention ou futur proche (gonna).
-be + ing action projet qui va se produire.
+* `be + going + infinitif` intention ou futur proche (`gonna`).
+* `be + ing` action projet qui va se produire.
 
 ## Passif
 
-to be + participe passé
+`to be + participe passé`
 
 ## Impératif 
 
-Infinitif
+`Infinitif`
 
 ## Autre
 
 ### Donner un conseil
 
-should/ought + verbe 
+`should/ought + verbe` 
 
 ### Préférer 
 
-Would rather/had rather + infinitif
+`Would rather/had rather + infinitif`
 
 ### Le conditionnel (Si)
 
-If....(then) ... would (ou should à la 1ère personne du singulier/pluriel) + verbe.
+`If....(then) ... would + verbe`  (ou `should` à la 1ère personne du singulier/pluriel)
 
 ### Vouloir
 
-want + infinitif (wanna)
-would + infinitif formule de politesse
-
-Would/Should like + verbe
+`want + infinitif` (`wanna`)
+`ould/should like + verbe` formule de politesse
 
 ### Pouvoir
 
 | passé | présent/futur |
 |---|---|
-| could | to can |
+| `could` | `to can` |
 
 # Gérondif
 
-Forme du verbe utilisée pour  décrire certaine circonstance.
-verbe + ing
+`verbe + ing` Forme du verbe utilisée pour  décrire certaine circonstance.
