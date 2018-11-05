@@ -48,8 +48,8 @@ Perfect on est capable de rajouter for (depuis).
 
 ### Vouloir
 
-`want + infinitif` (`wanna`)
-`ould/should like + verbe` formule de politesse
+* `want + infinitif` (au présent `wanna`)
+* `would/should like + verbe` formule de politesse
 
 ### Pouvoir
 
