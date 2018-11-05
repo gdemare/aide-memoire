@@ -10,7 +10,7 @@ Participe passé verbe + ed
 | Temps | Emploi | Construction |
 |---|---|---|
 | Simple | Vérité permanente, habitude | verbe (prétérite) |
-| Progressif | Action qui se déroule en ce moment | to be + ing |
+| Progressif | Action qui se déroule en ce moment | be + ing |
 | Perfect | action passée qui a une influence sur le moment | to have + participe passé (gotta) |
 
 Perfect on est capable de rajouter for (depuis).
@@ -21,8 +21,8 @@ will/shall + verbe
 
 #### Futur proche 
 
-to be going to + verbe intention ou futur proche (gonna).
-to be + ing action projet qui va se produire.
+be + going + infinitif intention ou futur proche (gonna).
+be + ing action projet qui va se produire.
 
 ## Passif
 
