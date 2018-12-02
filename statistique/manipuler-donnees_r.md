@@ -9,6 +9,7 @@
 
 * `substr(text,debut, fin)` extraire une chaine charactère.
 * `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
+* `str_count(text, motif)` compter le nombre d'occurence. (stringr)
 
 ## Manipuler les dates
 
