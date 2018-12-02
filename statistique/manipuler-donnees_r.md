@@ -10,6 +10,7 @@
 * `substr(text,debut, fin)` extraire une chaine charactère.
 * `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
 * `str_count(text, motif)` compter le nombre d'occurence. (stringr)
+* `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
 
 ## Manipuler les dates
 
@@ -156,9 +157,4 @@ Option : by = c("col1"="col2"): préciser la jointure.
 * `na.exclude( data )` supprimer les lignes avec au mois une valeur manquante.
 * `case_when(condition1 ~ val1, condition2 ~ val2,...)` fonction équivalente au CASE WHEN en sql.
 * `scale(fromage,center=T,scale=T)` centrer et réduire les données.
-
-# Manipuler du texte
-
-* `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
-
 * `Sys.sleep(seconde)` attendre un nombre de seconde avant la suite de l'exécution.
