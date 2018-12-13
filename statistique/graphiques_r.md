@@ -29,10 +29,10 @@ Type de graphique :
 * `aes(size = var)` dimensionner les points en fonction de var.
 
 Libellés :
-`geom_text repel( aes(x,y), label = var )` ajouter des étiquettes de données.
-`geom_line(<option>)`
-  `aes(group = var)` une courbe pour chaque modalité de var.
-  `geom_col()` diagramme en barre avec la valeur des y. Pour classer les labels, il faut `reorder(label, valeur)` dans le `aes()`.
+* `geom_text repel( aes(x,y), label = var )` ajouter des étiquettes de données.
+* `geom_line(<option>)`
+  * `aes(group = var)` une courbe pour chaque modalité de var.
+  * `geom_col()` diagramme en barre avec la valeur des y. Pour classer les labels, il faut `reorder(label, valeur)` dans le `aes()`.
 
 ## Présentation
 
