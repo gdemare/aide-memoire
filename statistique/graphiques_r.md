@@ -4,14 +4,15 @@
 g = ggplot() + theme_minimal() + aes(x)
 ```
 
-### Variable continue
 * `geom_histogram(<option>, binwidth = 5)` histogramme.
 Option :
-  * `aes(fill = var), position = "stack"` empiler les éléments.
+  * `aes(fill = var)` ajouter une variable.
+  * `position = "fill"` empiler les éléments avec une hauteur normalisée.
+  
 * `geom_bar(<option>)` diagramme en barre.
 Option :
   * `position = "dodge"` positionner les éléments les uns à coté des autres `aes(...,fill = var)`.
-  * `aes(var), position = "fill"` empiler les éléments avec une hauteur normalitée.
+  * `aes(var), position = "fill"` empiler les éléments avec une hauteur normalisée.
   * `aes(var), position = "stack"` empiler les éléments.
 Présentation :
 * `coord_flip()` transformer en diagramme en barre horizontal.
