@@ -8,7 +8,7 @@ Pour afficher un \"
 include("«page»") :inclure une page.
 
 
-Les Variables
+### Les Variables
 
 $«nom» : déclarer une varaible.
 concater 2 solutions:
@@ -16,10 +16,11 @@ echo "«text1» $«var» «text2»";
 echo '«text1»'.$«var».'«text2»'
 Opération de base : +,-,*,/,%
 
-Les Conditions
+### Les Conditions
 
 1/ Les symboles compartif :
 ==, <, >, <=, >=, !=
+
 if («condition»)
 {«instruction»}
 elseif(«condition»)
