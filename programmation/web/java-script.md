@@ -69,3 +69,10 @@ if (conditon) {
 * `confirm('message')` boite d'interaction ave cl'utilisateur OK et annuler.
 
 * `number++;` incrémenter.
+
+### Boucle
+
+```
+ for (i = 0; condition; i++) {
+ }
+```
