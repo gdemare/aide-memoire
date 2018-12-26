@@ -25,11 +25,11 @@ isoler le code jS pour éviter d'être interpréter en html.
 
 ## Les variables
 
-`var myVariable <, myVaraible2>;` déclarer une variable.
-`myVariable = valeur;` attribuer une valeur à la variable.
-`var myVariable = valeur;` déclarer et attribuer une valeur à une variale.
-`typeof myVariable;` tester l'existence d'une variable
-\' caractère d'échappement pour les apportphe.s
+* `var myVariable <, myVaraible2>;` déclarer une variable.
+* `myVariable = valeur;` attribuer une valeur à la variable.
+* `var myVariable = valeur;` déclarer et attribuer une valeur à une variale.
+* `typeof myVariable;` tester l'existence d'une variable
+* `\'` caractère d'échappement pour les apportphe.s
 
 Boléen true/false;
 
@@ -41,9 +41,9 @@ Boléen true/false;
 | division | / |
 | modulo | % |
 
-`'chaine1' + 'chaine2'` concaténer des chaine de caractère.
+* `'chaine1' + 'chaine2'` concaténer des chaine de caractère.
 
-`prompt('messsage')` boite d'interaction avec l'utilisateur. la réponse se stocke dna sune variable qu'il faut déclarer.
+* `prompt('messsage')` boite d'interaction avec l'utilisateur. la réponse se stocke dna sune variable qu'il faut déclarer.
 
 
 | Opérateur | Signification |
@@ -67,6 +67,6 @@ if (conditon) {
 }
 ```
 
-`confirm('message')` boite d'interaction ave cl'utilisateur OK et annuler.
+* `confirm('message')` boite d'interaction ave cl'utilisateur OK et annuler.
 
-`number++;` incrémenter.
+* `number++;` incrémenter.
