@@ -76,3 +76,11 @@ if (conditon) {
  for (i = 0; condition; i++) {
  }
 ```
+
+### Fonction
+
+```
+function fonction(parametre1, parametre2){
+  instruction
+}
+```
