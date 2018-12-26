@@ -15,8 +15,7 @@ conseil appeler le script à la avant la fermetur de body.
  type= préciser le langage pour html<5
  
 * `alert('message')` afficher une boîte de dialogue contenant un message. 
-* `// commentaire`
-`/ *commentraire  */`
+* `// commentaire` et `/ *commentraire  */` commenter le code.
 
 <!--
 instruction 
