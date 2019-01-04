@@ -14,11 +14,11 @@
 
 ### Les Variables
 
-`$«nom»` déclarer une varaible.
-concater 2 solutions:
-`echo "«text1» $«var» «text2»";`
-`echo '«text1»'.$«var».'«text2»`
-Opération de base : +,-,*,/,%
+* `$«nom»` déclarer une varaible.
+* Concater 2 solutions:
+ * `echo "«text1» $«var» «text2»";`
+ *`echo '«text1»'.$«var».'«text2»`
+* Opération de base : +,-,*,/,%
 
 ### Les Conditions
 
@@ -43,8 +43,8 @@ conditon SI
 Condtion multiple:
 | | | 
 |---|---|
-| `AND` `&&` | | 
-| `OR` `||` | |
+| `AND` `&&` | et | 
+| `OR` `||` | ou |
 
 ```
 switch («variable»)
@@ -87,16 +87,19 @@ Récupérer la date :
 
 date( PARA )
 Paramètres :
-H > heure
-i > Minute
-d > jour
-m > mois
-Y > année
-3/ Création d'un fonction
+* H > heure
+* i > Minute
+* d > jour
+* m > mois
+* Y > année
+
+### Création d'un fonction
+```
 function NOM( PARAMETRE )
 {
 	INSTRUCTION
 }
+```
 
 ### Les Tableaux
 
@@ -123,21 +126,35 @@ EXEMPLE:
 </form>
 ```
 * `<texarea name="NOM" rows="NBRELIG" cols="NBRECOL" ></textarea>` créer une grande zone de texte.
+```
 <select name="">
 	<option value="choix1">choix1</option>
-</select> : créer une liste déroulante (selected="DEFAUT" pour donner une valeur par défaut.
+</select>
+```
+créer une liste déroulante (selected="DEFAUT" pour donner une valeur par défaut.
+
+```
 <input type="checkbox" name="NOM" id="case" />
-<label for="case">case1</label>
-</input> : créer une liste a cocher ( PS: pour qu'une case soit cohé par défaut : checked="checked")
+	<label for="case">case1</label>
+</input>
+
+```
+créer une liste a cocher ( PS: pour qu'une case soit cohé par défaut : checked="checked")
+
+```
 <input type="radio" name="NOM" value="VAL1" id="VAL1" />
 	<label for="VAL1">VAL1</label>
 	<input type="radio" name="NOM" value="VAL1" id="VAL2" />
 	<label for="VAL2">VAL2</label>  : bouton d'option.
-type="hidden" : créer un champ caché.
+type="hidden"
+```
+créer un champ caché.
+
 Envoyer des fichiers grâce au formulaire
-(1) enctype="multipart/form-data" : rajouter dans la balise form
-(2) type="file" : le type du submit
-(3)information sur le fichier envoyer a CIBLE
+ * `enctype="multipart/form-data"` rajouter dans la balise form
+ * `type="file"` le type du submit
+ * information sur le fichier envoyer a CIBLE
+
 * `$_FILES['FICHIER']['name']` contient le nom du fichier.
 * `$_FILES['FICHIER']['type']` le type EX : gif => image/gif
 * `$_FILES['FICHIER']['size']` la taille tu fichier limiter à 8Mo.
@@ -150,27 +167,26 @@ Envoyer des fichiers grâce au formulaire
 
 Variables superglobalees, sessions et cookies
 
-1/print_r(VARGLOB) : ficher ce que contient une variables superglobale.
-2/Liste des différentes vairables globales:
-`$_SERVER` EX : $_SERVER['REMOTE_ADDR'] = l'adresse IP du client.
-`$_ENV`
-`$_SESSION` variables qui restent stockées le temps de la visite.
-`$_COOOKIE` contient les valeurs des cookies enregistrés sur l'ordinateur (stocker plusieurs mois).
-`$_GET` paramétre données a l'url.
-`$_POST` variables contenues dans un formulaire.
-`$_FILES` liste des fichiers envoyé via un formulaire.
-3/Les Sessions :
-(1) session_start(): démarre le système de sessions.
-(2) session_destroy() : ferme la session du visiteur (time out).
-!Attention: session_start() doit etre déclarer avant  <!DOCTYPE> et sur chaque page.
-(3) $_SESSION['NOM'] : la variable est une array.
-4/Les cookies
-(1) setcookie('NOM','VAL',TEMPS) :créer un cookie TEMPS est en seconde. Exemple IMPORTANT : setcookie('pseudo', 'Mateo21', time() + 365*24*3600).
+* `print_r(VARGLOB)` ficher ce que contient une variables superglobale.
+* Liste des différentes vairables globales:
+ * `$_SERVER` EX : $_SERVER['REMOTE_ADDR'] = l'adresse IP du client.
+ * `$_ENV`
+ * `$_SESSION` variables qui restent stockées le temps de la visite.
+ * `$_COOOKIE` contient les valeurs des cookies enregistrés sur l'ordinateur (stocker plusieurs mois).
+ * `$_GET` paramétre données a l'url.
+ * `$_POST` variables contenues dans un formulaire.
+ * `$_FILES` liste des fichiers envoyé via un formulaire.
+* Les Sessions :
+* `session_start()` démarre le système de sessions.
+* `session_destroy()` ferme la session du visiteur (time out).
+Attention: session_start() doit etre déclarer avant  <!DOCTYPE> et sur chaque page.
+* `$_SESSION['NOM']` la variable est une array.
+* Les cookies
+* `setcookie('NOM','VAL',TEMPS)` créer un cookie TEMPS est en seconde. Exemple IMPORTANT : `setcookie('pseudo', 'Mateo21', time() + 365*24*3600)`.
 !Attention un cookie est toujours déclarer avant <!DOCTYPE>
 Pour sécrusier un cookie : setcookie('pseudo', 'Mateo21', time() + 365*24*3600, null, false, true )
-$_COOKIE['NOM'] : appeler un cokkie.
+* `$_COOKIE['NOM']` appeler un cokkie.
 (3) Modifier le cookie, faire appel a set.
 
-Lire et écrire un fichier
+### Lire et écrire un fichier
 
-1/
