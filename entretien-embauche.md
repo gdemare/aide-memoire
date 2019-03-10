@@ -28,7 +28,7 @@
 
 ## Les informations sur l'entreprise
 
-* l'activité de l'entreprise : 
+* l'activité de l'entreprise : intérimaire (remplacement et suppléant) d'ingénieur, développer, analysste.
 * les valeurs portées par l'entreprise : intégrité, ambitieux,
 * la dimension de l'entreprise : France, Suisse, Suède.
 
@@ -40,5 +40,5 @@
 | solidaire (se consacrer à l'autre) | entêté (exprimer mon idée avec celle de l'autre) |
 | curieux (rechercher de la connaissance) | perfectionniste (attacher de l'importance à des détails) |
 | flexible | pessimiste (juger contatement et mélioratifement) |
-|  | multitâche (faire plusieurs choses en même temps) |
-| | passif |
+| ambitieux | multitâche (faire plusieurs choses en même temps) |
+| mobile | passif |
