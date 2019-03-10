@@ -23,3 +23,9 @@ Questions dynamiques => émotifs, imagination :
 * situation stressante
 * apprentissage accélérée
 * capacité d'argumentation
+
+## Les informations sur l'entreprise
+
+* l'activité de l'entreprise.
+* les valeurs portées par l'entreprise.
+* la dimension de l'entreprise.
