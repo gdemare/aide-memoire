@@ -10,11 +10,27 @@
 * Objectif (Projet professionel personnel) : idem.
 * Plan d'action : quels éléments peut-on apportés à l'entreprise ?
 
-| Statistique & le data mining | Informatique décisionnelle & Base de données |
-|---|---|
-| DUT STID | DUT STID |
-| LP Data mining | |
-| Boursorama | Pro BTP |
+Statistiques 
+* Sous-domaines
+  * data mining apprentissage supervisé et non supervisé
+  * les études statistiques
+  * la data visualisation
+* Formation
+  * DUT STID (2017)
+  * LP data mining
+ * Expérience
+  *  Boursorama
+  
+Informatique décisionnelle & base de données
+* Sous-domaines 
+  * créer des rapports d'activité automatisés (reporting)
+  * récupérer et alimenter les bases de données (ETL)
+* Formation
+  * DUT STID
+
+Gestion de projet
+* identifier et comprendre les besoins
+* choisir les outils en fonction des contraintes
 
 ## Exemples de situtations à préparer
 
