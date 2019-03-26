@@ -4,8 +4,8 @@
 
 ### Passé et présent
 
-Prétérite `verbe + ed`
-Participe passé `verbe + ed`
+* Prétérite `verbe + ed`
+* Participe passé `verbe + ed`
 
 | Temps | Emploi | Construction |
 |---|---|---|
