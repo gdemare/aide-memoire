@@ -60,3 +60,18 @@ Perfect on est capable de rajouter for (depuis).
 # Gérondif
 
 `verbe + ing` Forme du verbe utilisée pour  décrire certaine circonstance.
+
+## adverbe
+
+verbe + ly
+
+## adjectif en nom
+
+adjectif + ness ou + less
+Exemple : great+ness (grandeur)
+
+## nom en adjectif
+
+Nom + full
+
+
