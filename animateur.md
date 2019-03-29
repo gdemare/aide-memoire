@@ -30,7 +30,31 @@ Interdiction de donner des médicaments
 
 ## Jeux simples et faciles
 
-* Mime
-*
-*
+* mime
+* trousseau de clés : récupérer les clés sans être entendu.
+* changement discret : deviner le changement vestimentaire.
+* le facteur
+* un, deux trois soleil
+* jacque adi, a dit 
+* dessine moi une lune
+* devinez un animal avec des questions oui/non
+
+## Moyen jeu
+
+* tomate
+* ballon prisonier
+* esperviet
+* gamelle
+* cache cache
+* chaise musicale
+* cola maya
+
+## Grands jeux
+
+* bataille navale
+* poue - renard - vipère
+* policier voleur
+* chasse aux trésors
+* koh-lanta (parcours, 
+* question pour un champion (devinette, reconnaitre une musique/son, une image)
 *
