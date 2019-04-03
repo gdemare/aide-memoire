@@ -62,7 +62,7 @@ Perfect on est capable de rajouter for (depuis).
 `verbe + ing` Forme du verbe utilisée pour  décrire certaine circonstance.
 
 ## adverbe
-
+adjectif + ly
 verbe + ly
 
 ## adjectif en nom
