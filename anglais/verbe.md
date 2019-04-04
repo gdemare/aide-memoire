@@ -110,3 +110,7 @@ be allowed to capacité
 uniquement permission: 
 présent : may  
 passé : might (tu pourrais y aller si tu le voulais vraiment)
+
+### donner un conseil
+
+should (tu devrais)
