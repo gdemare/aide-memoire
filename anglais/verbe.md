@@ -1,11 +1,7 @@
-# Conjuguaison
+## Les temps passé, présent, futur
 
-## Les temps
-
-### Passé et présent
-
-* Prétérite `verbe + ed`
-* Participe passé `verbe + ed`
+* Prétérite : `verbe + ed`
+* Participe : passé `verbe + ed`
 
 | Temps | Emploi | Construction |
 |---|---|---|
@@ -15,22 +11,24 @@
 
 Perfect on est capable de rajouter for (depuis).
 
-### Futur
+## Le Futur
 
 `will/shall + verbe`
 
-#### Futur proche 
+### Futur proche 
 
 * `be + going + infinitif` intention ou futur proche (`gonna`).
 * `be + ing` action projet qui va se produire.
 
-#### Would ( prétérit de will)
+## Le conditionnel : would
 
-1 conditionnels
-2 habitude passée
-3 volonté
+Prétérit de Will
 
-If .... would + progressif
+* conditionnels
+* habitude passée
+* volonté
+
+Expression usuelle : `If .... would + progressif`
 
 ## Passif
 
@@ -43,74 +41,73 @@ If .... would + progressif
 Adverbe (Always/never) + verbe
 `Let us + infinitif` (1ère personne)
 
-
-## Autre
-
-### Donner un conseil
+## Donner un conseil
 
 `should/ought + verbe` 
 
-### Préférer 
+## Préférer
 
+Prefer 
 `Would rather/had rather + infinitif`
 
-### Le conditionnel (Si)
+Exemple d'utilsiation : 
+
+## Le conditionnel (Si)
 
 `If....(then) ... would + verbe`  (ou `should` à la 1ère personne du singulier/pluriel)
 
-### Vouloir
+## Vouloir
 
 * `want + infinitif` (au présent `wanna`)
 * `would/should like + verbe` formule de politesse
 
-### Pouvoir
-
-| passé | présent/futur |
-|---|---|
-| `could` | `to can` |
-
-# Gérondif
+## Gérondif (exemple ; `en marchant`)
 
 `verbe + ing` Forme du verbe utilisée pour  décrire certaine circonstance.
 
-## adverbe
+## Transformer en adverbes
+
 adjectif + ly
 verbe + ly
 
-## adjectif en nom
+## Transformer en nom
 
 adjectif + ness ou + less
+
 Exemple : great+ness (grandeur)
 
-## nom en adjectif
+## Transformer en adjectif
 
 Nom + full 
 
-### Les modaux
+## La certitude
 
 Par degrés de certitude
-must doit
-may be sans doute
-can/might peut être
-can't impossible
 
-présent modau + infinitif
-passé modaux + progessif
+| Modaux | définition |
+| must | devoir | 
+| may be | sans doute | 
+| can/might |  peut être | 
+| can't | impossible |
+
+| Temps | formule |
+|---|---|
+| présent | modaux + infinitif | 
+| passé | modaux + progessif | 
 
 sinon on peut utilisé des adverbes 'probably, certainly, perhaps
 ou des expressions be certain, be likely, be unlikely, be improbale.
 
-##  permission et possibilité
+## Donner un conseil (tu devrais)
 
-présent can prétérit could
-futur :
-be able to possiblité 
-be allowed to capacité
+`should`
 
-uniquement permission: 
-présent : may  
-passé : might (tu pourrais y aller si tu le voulais vraiment)
+## Le verbe Pourvoir (la permission et le possibilité)
 
-### donner un conseil
+| | Passé | Présent | Futur | 
+|---|---|---|---|
+| Permission | might | may | be allowed to |
+| Possibilité | | | be able to |
+| Permission/possibilité | could | can | |
 
-should (tu devrais)
+`Could` pour les questions `Pourriez-vous`.
