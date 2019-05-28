@@ -24,13 +24,13 @@ g = ggplot() + theme_minimal() + aes(x,y)
 ```
 
 Type de graphique :
-* `geom boxplot()` boxplots.
-* `geom point(<option>)` nuage de points. Option :
+* `geom_boxplot()` boxplots.
+* `geom_point(<option>)` nuage de points. Option :
 * `aes(colour = var)` colorier les points en fonction de var.
 * `aes(size = var)` dimensionner les points en fonction de var.
 
 Libellés :
-* `geom_text repel( aes(x,y), label = var )` ajouter des étiquettes de données (library ggrepel).
+* `geom_text_repel( aes(x,y), label = var )` ajouter des étiquettes de données (library ggrepel).
 * `geom_line(<option>)`
   * `aes(group = var)` une courbe pour chaque modalité de var.
   * `geom_col()` diagramme en barre avec la valeur des y. Pour classer les labels, il faut `reorder(label, valeur)` dans le `aes()`.
