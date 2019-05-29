@@ -63,4 +63,5 @@ Libellés :
 fonc = function(x){test(x)/x}
 p <- ggplot(data = data.frame(x = 0), mapping = aes(x = x))
 p + stat_function(fun = fonc) + xlim(-5,5)
-```  
+```
+
