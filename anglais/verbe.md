@@ -87,6 +87,7 @@ Nom + full
 Par degrés de certitude
 
 | Modaux | définition |
+|---|---|
 | must | devoir | 
 | may be | sans doute | 
 | can/might |  peut être | 
