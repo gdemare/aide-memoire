@@ -20,7 +20,9 @@ Perfect on est capable de rajouter for (depuis).
 * `be + going + infinitif` intention ou futur proche (`gonna`).
 * `be + ing` action projet qui va se produire.
 
-## Le conditionnel : would
+## Le conditionnel
+
+`Would + infinitif`
 
 Prétérit de Will
 
