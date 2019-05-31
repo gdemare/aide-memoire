@@ -57,7 +57,7 @@ créer un onglet.
 ```
 tabBox(
   title = titre,
-  tableOutput("nomTable")
+  tabPanel(title = "titre", tableOutput("nomTable"))
 ) 
 ``` 
 boite avec un tableau.
