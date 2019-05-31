@@ -36,7 +36,7 @@ sidebarMenu(
 
 `tabItems(contenu)` page
 
-````
+```
 tabItems(
   tabItem(tabName = onglet, contenuOnglet)
 )
@@ -59,7 +59,8 @@ tabBox(
   title = titre,
   tableOutput("nomTable")
 ) 
-``` boite avec un tableau.
+``` 
+boite avec un tableau.
  
 ## Server
 
