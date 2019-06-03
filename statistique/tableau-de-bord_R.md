@@ -47,15 +47,14 @@ créer un onglet.
 
 #### Contenu des onglets
 
-* `title = titre`
-* `footer = pied de la page`
-* `width = largeur`
-* `color = couleur`
 
+| Code | Type |
+|---|---|
+|`box()` | classique |
+|`infoBox()` | texte |
+|`tabBox()`| valeur |
+|`valueBox()`| valeur |
 
-`box()` boite classique.
-`infoBox()` boite avec du texte.
-`valueBox()` boite avec une valeur.
 ```
 tabBox(
   title = titre,
@@ -63,6 +62,12 @@ tabBox(
 ) 
 ``` 
 boite avec un tableau.
+
+Arguments :
+* `title = titre`
+* `footer = pied de la page`
+* `width = largeur`
+* `color = couleur`
  
 ## Server
 
