@@ -9,12 +9,16 @@ shinyApp(
   }
 )
 
+shinyApp(ui = ui, server = server) #executer l'application
+```
+
+## Interface utilisateur
+
+```
 dashboardPage(
   contenu
 )
 ```
-
-## Interface utilisateur
 
 ### Entête
 
