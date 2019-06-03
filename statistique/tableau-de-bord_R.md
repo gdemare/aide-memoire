@@ -79,11 +79,12 @@ server = function(input, output) {
 
 Les sorties doivent être stockées dans la variable
 
-| code | rendu |
-|---|---|
-|`renderText({texte})`| texte |
-| `renderPlot({graphique})`| graphique |
-| `renderTable({tableau})`| tableau |
+| code server | rendu | code ui |
+|---|---|---|
+|`renderText({texte})`| texte | `textOutput('variable')` |
+| `renderPlot({graphique})`| graphique | |
+| `renderTable({tableau})`| tableau | |
+| `renderDataTable` | donnees | |
 
 ### variable réactive
 
