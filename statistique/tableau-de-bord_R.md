@@ -85,6 +85,7 @@ Les sorties doivent être stockées dans la variable
 | `renderPlot({graphique})`| graphique | `plotOutput('variable')` |
 | `renderTable({tableau})`| tableau | `tableOutput('variable')` |
 | `renderDataTable` | donnees | `dataTableOutput('variable')` |
+| `renderPlotly` | donnees | `plotlyOutput('variable')` |
 
 ### variable réactive
 
