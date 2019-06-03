@@ -28,7 +28,7 @@ dashboardPage(
 Ajouter un onglet : 
 ```
 sidebarMenu(
-        menuItem("onglet", tabName = "onglet")
+        menuItem(text = "onglet", tabName = "onglet")
       )
 ```
 
