@@ -82,9 +82,9 @@ Les sorties doivent être stockées dans la variable
 | code server | rendu | code ui |
 |---|---|---|
 |`renderText({texte})`| texte | `textOutput('variable')` |
-| `renderPlot({graphique})`| graphique | |
-| `renderTable({tableau})`| tableau | |
-| `renderDataTable` | donnees | |
+| `renderPlot({graphique})`| graphique | `plotOutput('variable')` |
+| `renderTable({tableau})`| tableau | `tableOutput('variable')` |
+| `renderDataTable` | donnees | `dataTableOutput('variable')` |
 
 ### variable réactive
 
