@@ -2,13 +2,11 @@
 library(shiny)
 library(shinydashboard)
 
-shinyApp(
-  ui = dashboardPage(affichage),
-  server = function(input, output) {
+ui = dashboardPage(...)
+
+server = function(input, output) {
     contenu
   }
-)
-
 shinyApp(ui = ui, server = server) #executer l'application
 ```
 
