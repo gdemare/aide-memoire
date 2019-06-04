@@ -44,6 +44,9 @@ tabItems(
 )
 ```
 créer un onglet.
+Parametres :
+* `badgeLabel = nom, badgeColor = couleur` Ajouter un badge
+* `disable = TRUE` desactiver la barre.
 
 #### Contenu des onglets
 
@@ -86,6 +89,7 @@ Les sorties doivent être stockées dans la variable
 | `renderTable({tableau})`| tableau | `tableOutput('variable')` |
 | `renderDataTable` | donnees | `dataTableOutput('variable')` |
 | `renderPlotly` | donnees | `plotlyOutput('variable')` |
+| `menu
 
 ### variable réactive
 
