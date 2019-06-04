@@ -14,6 +14,7 @@ Option :
   * `position = "dodge"` positionner les éléments les uns à coté des autres `aes(...,fill = var)`.
   * `aes(var), position = "fill"` empiler les éléments avec une hauteur normalisée.
   * `aes(var), position = "stack"` empiler les éléments.
+  * `stat = 'identity'` pour afficher deux varibles.
 Présentation :
 * `coord_flip()` transformer en diagramme en barre horizontal.
 
@@ -48,6 +49,10 @@ Libellés :
 * `facet_grid(.~variable)` sur une ligne.
 * `facet_grid(variable~.)` sur une colonne
 * `facet_wrap( ~variable)` en ligne et en colonne.
+
+## ordonner la variable a afficher
+
+reorder(variable, )
 
 ## Exporter le graphique
 
