@@ -1,6 +1,8 @@
 ## Importer les données
 
 * `read_sas(fichier)` lire des tables SAS (package : haven).
+* `read.csv()` lire une table CSV.
+* `write.csv()` .
 
 ## Exporter un data
  
