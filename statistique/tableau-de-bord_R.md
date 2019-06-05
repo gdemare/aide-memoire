@@ -89,8 +89,30 @@ Les sorties doivent être stockées dans la variable
 | `renderTable({tableau})`| tableau | `tableOutput('variable')` |
 | `renderDataTable` | donnees | `dataTableOutput('variable')` |
 | `renderPlotly` | donnees | `plotlyOutput('variable')` |
-| `menu
+| `menu`
 
 ### variable réactive
 
 `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
+
+### Methode de saisie 
+
+* `label = 'titre'` texte a afficher.
+
+
+| | |
+|---|---|
+| actionButton() | | 
+| checknocInput() | |
+| checkboxGoupInput() | |
+| dateInput() | |
+| dateRangeInput() | |
+| fileInput() | | 
+| numericInput()| | 
+| paswordInput()| | 
+| colourInput() | library(colourpicker)| 
+| radioButtons() | |
+| selectInput() | |
+| sliderInput() | | 
+| textInput()| |
+| textAreaInput() | |
