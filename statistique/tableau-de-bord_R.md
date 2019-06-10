@@ -120,3 +120,14 @@ Les sorties doivent être stockées dans la variable
 
 
 | textAreaInput() | |
+
+### liste interactive utilisant une variable reactivie
+
+```
+    uiOutput
+
+  filterGenre = reactive(genre)
+  output$interaction_slider = renderUI({
+    selectInput("select", label = "Select box", 
+                choices = as.list(genre)$genre_label, selected = 1)
+```
