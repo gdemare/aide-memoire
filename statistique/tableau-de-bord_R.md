@@ -71,7 +71,26 @@ Arguments :
 * `footer = pied de la page`
 * `width = largeur`
 * `color = couleur`
- 
+
+### zone de saisie
+
+
+| R | bibliotheque | Type |
+|---|---|---|
+| actionButton() | | bouton | 
+| checknocInput() | | |
+| checkboxGoupInput() | | |
+| dateInput() | | |
+| dateRangeInput() | | |
+| fileInput() | | |
+| numericInput()| | | 
+| paswordInput()| | | 
+| colourInput() | library(colourpicker)| |
+| radioButtons() | | |
+| selectInput() | | liste a choix multiple |
+| sliderInput() | | |
+| textInput()| | |
+
 ## Server
 
 ```
@@ -100,19 +119,4 @@ Les sorties doivent être stockées dans la variable
 * `label = 'titre'` texte a afficher.
 
 
-| | |
-|---|---|
-| actionButton() | | 
-| checknocInput() | |
-| checkboxGoupInput() | |
-| dateInput() | |
-| dateRangeInput() | |
-| fileInput() | | 
-| numericInput()| | 
-| paswordInput()| | 
-| colourInput() | library(colourpicker)| 
-| radioButtons() | |
-| selectInput() | |
-| sliderInput() | | 
-| textInput()| |
 | textAreaInput() | |
