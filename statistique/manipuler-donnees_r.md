@@ -50,7 +50,7 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 * `sample_frac(iris,0.5,replace = TRUE)` Sélectionne aléatoirement une fraction d'observations
 * `sample_n( nligne,replace = TRUE)` Sélectionne aléatoirement n observations
 * `slice(10:15)` Sélectionne les lignes selon leur position
-* `top_n(2, date)` Sélectionne et ordonne les n premières observations (ou groupes si les données sont groupées).
+* `top_n(2, variable)` Sélectionne et ordonne les n premières observations (ou groupes si les données sont groupées).
 
 ## selectionner
 
