@@ -74,6 +74,8 @@ Arguments :
 
 ### zone de saisie
 
+type(inputId = id, ....) 
+input$id
 
 | R | bibliotheque | Type |
 |---|---|---|
@@ -109,6 +111,8 @@ Les sorties doivent être stockées dans la variable
 | `renderDataTable` | donnees | `dataTableOutput('variable')` |
 | `renderPlotly` | donnees | `plotlyOutput('variable')` |
 | `menu`
+
+renderPrint(variable)
 
 ### variable réactive
 
