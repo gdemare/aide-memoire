@@ -3,11 +3,9 @@
 ```
 if ( test_expression1) {
   instruction
-} 
-else if ( test_expression2) {
+} else if ( test_expression2) {
   instruction
-}
-else {
+} else {
   instruction
 }
 ```
