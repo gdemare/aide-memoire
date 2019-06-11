@@ -117,6 +117,7 @@ renderPrint(variable)
 ### variable réactive
 
 `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
+`variable()` utiliser une variable reactive.
 
 ### Methode de saisie 
 
