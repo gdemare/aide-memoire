@@ -90,7 +90,7 @@ input$id
 | colourInput() | library(colourpicker)| |
 | radioButtons() | | |
 | selectInput() | | liste a choix multiple |
-| sliderInput() | | |
+| sliderInput() | | barre de défilement |
 | textInput()| | |
 
 ## Server
