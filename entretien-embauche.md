@@ -58,3 +58,11 @@ Gestion de projet
 | flexible | pessimiste (juger contatement et mélioratifement) |
 | ambitieux | multitâche (faire plusieurs choses en même temps) |
 | mobile | passif |
+
+## Salaire
+
+| Salaire brut annuel | Salaire net mensuel -23%  | Salaire net mensuel | Annees d'experience |
+|---|---|
+| 23 616 | 19 200 | 1600 | 0 |
+| 26 568‬ | 21 600 | 1800 | 0 |
+| 29 520‬ | 2400 | 2000 | 0 |
