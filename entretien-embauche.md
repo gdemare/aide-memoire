@@ -58,6 +58,7 @@ Gestion de projet
 | flexible | pessimiste (juger contatement et mélioratifement) |
 | ambitieux | multitâche (faire plusieurs choses en même temps) |
 | mobile | passif |
+||rancunier|
 
 ## Salaire
 
