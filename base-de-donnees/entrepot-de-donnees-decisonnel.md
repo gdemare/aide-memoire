@@ -26,11 +26,11 @@ La base de données est opitmisée pour l'analyse (OLAP).
 
 ## Extract Transform Load (ETL)
 
-ELT : Les données chargaient puis transormaient pour utiliser la puissance de traitement de l'EDD.
+ELT : Les données chargees puis transormees pour utiliser la puissance de traitement de l'EDD.
 
 ## Data lake
 
-Stocke des données non structurées contrairement au base classique.
+Stocke des données non structurées contrairement aux bases classiques.
 
 ## Les types de données
 
