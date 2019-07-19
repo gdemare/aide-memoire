@@ -53,12 +53,13 @@ Gestion de projet
 | Qualités | Défauts | 
 |---|---|
 | impliqué (consacrer de l'énergie) | pressé (être dans la précipitation sans ) |
-| solidaire (se consacrer à l'autre) | entêté (exprimer mon idée avec celle de l'autre) |
+| solidaire (hedoniste) | entêté (exprimer mon idée avec celle de l'autre) |
 | curieux (rechercher de la connaissance) | perfectionniste (attacher de l'importance à des détails) |
 | flexible | pessimiste (juger contatement et mélioratifement) |
 | ambitieux | multitâche (faire plusieurs choses en même temps) |
 | mobile | passif |
 ||rancunier|
+||impatient|
 
 ## Salaire
 
