@@ -7,7 +7,7 @@
 ## Color
 
 * `rgba()` les trois couleurs primaires.
-*`linear-gradient(direction, couleur1, couleur2)` degrade
+* `linear-gradient(direction, couleur1, couleur2)` degrade
  * `to right` gauche a droite.
 
 ## Background
