@@ -38,3 +38,11 @@
  * `stretch` les éléments sont étirés sur tout l'axe (valeur par défaut)
  * `flex-start`, `flex-end` alignés au début/fin.
  * `center` alignés au centre
+
+## adapter les proprietes en fonction de la taille de l'ecran
+
+```
+@media only screen and (max-device-width:480px) {
+  nouvelles proprietes
+}
+```
