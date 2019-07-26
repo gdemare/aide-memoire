@@ -1,3 +1,4 @@
+.load("url");
 
 Pas sensible au espace.
 L'indentater structurer le code pour le rendre plus lisible.
