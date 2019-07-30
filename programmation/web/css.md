@@ -1,3 +1,11 @@
+### variable CSS
+
+```
+:root {
+  nomn-variable: valeur;
+}
+```
+
 ### News papers style
 
 * `column-count: nbre;` nombre de colonnes.
