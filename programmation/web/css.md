@@ -2,7 +2,7 @@
 
 ```
 :root {
-  nomn-variable: valeur;
+  --nom-variable: valeur;
 }
 ```
 `var(--main-bg-color)` appeler la variable dans le code.
