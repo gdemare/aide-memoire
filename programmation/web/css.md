@@ -33,18 +33,18 @@ direction :
   * `column-reverse`
 * `flex-wrap: comportement;` comportement des elements lorsqu'il n'y plus de place.
 Comportement :
- * `nowrap` pas de retour à la ligne (par défaut).
- * `wrap` les éléments vont à la ligne lorsqu'il n'y a plus la place.
- * `wrap-reverse` les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse.
+  * `nowrap` pas de retour à la ligne (par défaut).
+  * `wrap` les éléments vont à la ligne lorsqu'il n'y a plus la place.
+  * `wrap-reverse` les éléments vont à la ligne lorsqu'il n'y a plus la place en sens inverse.
 * `justify-content: ;` alignement sur le premier axe.
- * `flex-start`, `flex-end` lignés au début/fin.
- * `center` centre.
- * `space-between` espace entre les elements sans espace aux extremités.
- * `space-around` espace entre les elements avec de l'espace aux extremités.
+  * `flex-start`, `flex-end` lignés au début/fin.
+  * `center` centre.
+  * `space-between` espace entre les elements sans espace aux extremités.
+  * `space-around` espace entre les elements avec de l'espace aux extremités.
 * `align-items: alignement;` alignement sur le deuxième axe.
- * `stretch` les éléments sont étirés sur tout l'axe (valeur par défaut)
- * `flex-start`, `flex-end` alignés au début/fin.
- * `center` alignés au centre.
+  * `stretch` les éléments sont étirés sur tout l'axe (valeur par défaut)
+  * `flex-start`, `flex-end` alignés au début/fin.
+  * `center` alignés au centre.
 ### contenus
 
 * `flex: valeur;` mesure il peut grossir par rapport aux autres.
