@@ -5,6 +5,7 @@
   nomn-variable: valeur;
 }
 ```
+`var(--main-bg-color)` appeler la variable dans le code.
 
 ### News papers style
 
