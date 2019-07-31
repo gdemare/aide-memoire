@@ -121,6 +121,7 @@ Ajouter la librairie au code html [Google Api]('https://developers.google.com/sp
 | `.innerHTML = "nouveau contenu"` | ajouter du contenu Html.|
 | `write('text')` | ecrire du texte non interprété.|
 | `.addClass += "classe"`  | ajouter une nouvelle classe |
+| `append` | Ajouter du contenu a la fin d'une div |
 
 ### Creer une variable en CSS
 
