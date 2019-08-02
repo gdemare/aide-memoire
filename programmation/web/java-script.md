@@ -105,7 +105,7 @@ Conseil : utiliser une boucle for pour parcourrir les items.
 
 ###  et Ajax
 
-Ajouter la librairie au code html [Google Api]('https://developers.google.com/speed/libraries/').
+Ajouter la librairie au code html [Google Api](https://developers.google.com/speed/libraries/).
 
 `id.style.backgroundColor = "grey"`
 
