@@ -9,6 +9,14 @@ preparer avant un Styleguide UI
 ```
 `var(--main-bg-color)` appeler la variable dans le code.
 
+### selection un element en fonction de sa position
+
+`eleement:position` appliquer des proprietes a un element particulier.
+Position : 
+* `first-child` premier.
+* `last-child` dernier.
+* `nth-child(numero)` n-ieme.
+
 ### News papers style
 
 * `column-count: nbre;` nombre de colonnes.
@@ -68,3 +76,19 @@ Comportement :
   nouvelles proprietes
 }
 ```
+### Changer le curseur
+
+`cursor: type;`
+Type :
+* `pointer` selection.
+
+### Ajouter des espaces
+
+* `&nbsp;` un espace.
+* `&ensp;` pour afficher une espace double
+* `&emsp;` pour afficher une espace quadruple
+* `&nbsp;&nbsp;&nbsp;&nbsp;` pour afficher un caractère de tabulation
+
+### Propriete des tableaux
+
+`border-collapse: collapse/separate;` bord separes ou colles.
