@@ -127,3 +127,43 @@ Ajouter la librairie au code html [Google Api](https://developers.google.com/spe
 ### Creer une variable en CSS
 
 `element.style.setProperty("--ma-variable",valeur);`
+
+### Convertir un fichier markdown en html
+
+library marked
+```
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+```
+
+`marked(text)` convertir du markdown en html.
+
+### Flech charger un fichier
+
+Exemple
+```
+var aPromise = fetch(url);
+ 
+  // Work with Promise object:
+  aPromise
+    .then(function(response) {
+        console.log("OK! Server returns a response object:");
+        console.log(response);
+ 
+        if(!response.ok)  {
+            throw new Error("HTTP error, status = " + response.status);
+        }
+ 
+        response.text()
+          .then(function(myText) {
+               document.getElementById('contenu').innerHTML = marked(myText);
+          })
+          .catch(function(error) {
+             // Never happened.
+          });
+    })
+    .catch(function(error)  {
+        console.log("Noooooo! Something error:");
+        // Network Error!
+        console.log(error);
+    });
+```
