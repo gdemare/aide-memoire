@@ -33,6 +33,7 @@ instruction
 * `var myVariable = valeur;` déclarer et attribuer une valeur à une variale.
 * `typeof myVariable;` tester l'existence d'une variable
 * `\'` caractère d'échappement pour les apportphe.s
+* `var tableau = ['val1', 'val2']` creer un tableau.
 
 Boléen true/false;
 
