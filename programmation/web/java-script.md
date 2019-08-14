@@ -47,6 +47,7 @@ Boléen true/false;
 * `alert('message')` afficher une boîte de dialogue contenant un message.
 * `'chaine1' + 'chaine2'` concaténer des chaine de caractère.
 * `prompt('messsage')` boite d'interaction avec l'utilisateur. la réponse se stocke dna sune variable qu'il faut déclarer.
+* `console.log(texte a afficher)` afficher du texte dans la console.
 
 | Opérateur | Signification |
 |---|---|
