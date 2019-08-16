@@ -178,4 +178,6 @@ function focntion(parametre1) {
 
 ### Les tableaux
 
-`tableau.indexOf("Apple");` recherche d'une valeur.
+* `tableau.indexOf("Apple");` recherche d'une valeur.
+*`tableau.push(valeur);` ajouter une ligne a la fin.
+* `tableau = [ [1a,b1], [2a, 2b] ]` tableau multidimesionnel.
