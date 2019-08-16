@@ -168,3 +168,14 @@ var aPromise = fetch(url);
         console.log(error);
     });
 ```
+
+## Fonction
+```
+function focntion(parametre1) {
+  instruction
+}
+```
+
+### Les tableaux
+
+`tableau.indexOf("Apple");` recherche d'une valeur.
