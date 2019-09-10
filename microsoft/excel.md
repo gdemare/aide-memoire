@@ -1,3 +1,5 @@
+`Alt + Entré` retour a la ligne dans une cellule.
+
 ### Protéger les données
 
 * "Révision" > "Protéger la feuille" Une feuille.
