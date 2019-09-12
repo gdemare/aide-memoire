@@ -31,6 +31,9 @@ Package : lubridate.
 | Année | `%y` | 01 |
 | Mois | `%m` | 09 |
 | Jour | `%d` | 11 |
+| Heure | %H | 12 |
+| Minute | %M | 15 |
+| seconde | %S | 06 |
 
 * `time_length( interval(date1, date2), type )` calculer un âge.
 date + ajout calculer une date
@@ -38,6 +41,9 @@ date + ajout calculer une date
 * `months(nbre)` mois.
 * `days(3)` jour.
 * `weekdays(nbre)` jour de la semaine.
+
+format d'affichage d'une date et de l'heure
+`format( datetime, format = '')` 
 
 Extraire une information d'une date 
 year
