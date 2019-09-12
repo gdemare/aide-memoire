@@ -70,7 +70,7 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 | `contains(chaine)` | contenant la chaine. |
 
 ## Réorganiser les données
-
+package : tidyr
 * `gather(cases,"year","n", 2:4)` fusionner des colonnes en lignes.
 * `separate(storms,date, c("y","m","d"))` diviser une colonne en plusieurs.
 * `spread(pollution, size, amount)` distribuer les lignes dans des colonnes.
