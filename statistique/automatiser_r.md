@@ -1,3 +1,10 @@
+## Fonction
+```
+nomFonction <- function(x){
+  instruction
+}
+```
+
 ## Condition 
 
 ```
