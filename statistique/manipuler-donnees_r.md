@@ -90,6 +90,8 @@ package : tidyr
 
 | Fonction Window | Description |
 |---|---|
+| n | Nombre de lignes |
+| n_distinct | nombre de lignes distincts |
 | lead | Copier avec des valeurs décalées à gauche. |
 | lag | Copier avec des valeurs décalées à droite. |
 | dense_rank | Ordonne sans sauts de rangs. |
