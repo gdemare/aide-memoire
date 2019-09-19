@@ -70,3 +70,11 @@ p <- ggplot(data = data.frame(x = 0), mapping = aes(x = x))
 p + stat_function(fun = fonc) + xlim(-5,5)
 ```
 
+## Selection sur un tableau
+library(DT)
+```
+output$tableau <- DT::renderDataTable({ 
+ instruction
+})
+input$tableau_rows_selected # indice des lignes selectionnées
+```
