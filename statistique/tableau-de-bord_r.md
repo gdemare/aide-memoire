@@ -37,7 +37,11 @@ sidebarMenu(
 
 ### Corps de la page
 
-`dashboardBody(contenu)`
+```
+dashboardBody(
+    fluidRow(contenu)
+)
+```
 
 `tabItems(contenu)` page
 
