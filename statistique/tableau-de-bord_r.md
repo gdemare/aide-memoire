@@ -136,3 +136,15 @@ renderPrint(variable)
     selectInput("select", label = "Select box", 
                 choices = as.list(genre)$genre_label, selected = 1)
 ```
+
+## Selection sur un tableau
+library(DT)
+```
+output$tableau <- DT::renderDataTable({ 
+ instruction
+})
+input$tableau_rows_selected # indice des lignes selectionnées
+```
+
+`selection = valeur`
+    * `single` une seule ligne.
