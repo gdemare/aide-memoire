@@ -79,6 +79,14 @@ Arguments :
 * `width = largeur`
 * `color = couleur`
 
+Pour rendre une valeur dynamique avec valueBox
+
+``
+output$nom <- renderValueBox({  
+    valueBox(a completer)
+})
+```
+
 ### zone de saisie
 
 type(inputId = id, ....) 
