@@ -18,6 +18,9 @@ dashboardPage(
 )
 ```
 
+* `title = titre` titrer l'application
+* `skin = couleur` theme utilisé.
+
 ### Entête
 
 `dashboardHeader(title = "titre", titleWidth = largeur)`
@@ -34,7 +37,7 @@ sidebarMenu(
 
 ### Corps de la page
 
-`dashboardBody(title = titre, skin = couleur, contenu)`
+`dashboardBody(contenu)`
 
 `tabItems(contenu)` page
 
