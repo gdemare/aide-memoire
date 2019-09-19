@@ -61,9 +61,9 @@ Parametres :
 | Code | Type |
 |---|---|
 |`box()` | classique |
-|`infoBox()` | texte |
+|`infoBox()` | texte statique |
 |`tabBox()`| valeur |
-|`valueBox()`| valeur |
+|`valueBox()`| valeur dynamique |
 
 ```
 tabBox(
