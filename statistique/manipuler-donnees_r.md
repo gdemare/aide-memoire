@@ -43,6 +43,7 @@ date + ajout calculer une date
 * `months(nbre)` mois.
 * `days(3)` jour.
 * `weekdays(nbre)` jour de la semaine.
+* `hours(heure)` heure.
 
 format d'affichage d'une date et de l'heure
 `format( datetime, format = '')` 
