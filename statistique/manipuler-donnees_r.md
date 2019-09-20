@@ -177,3 +177,4 @@ Option : by = c("col1"="col2"): préciser la jointure.
 * `case_when(condition1 ~ val1, condition2 ~ val2,...)` fonction équivalente au CASE WHEN en sql.
 * `scale(fromage,center=T,scale=T)` centrer et réduire les données.
 * `Sys.sleep(seconde)` attendre un nombre de seconde avant la suite de l'exécution.
+* `grepl( symbole, variable)` test si le symbole est contenu dans la variable.
