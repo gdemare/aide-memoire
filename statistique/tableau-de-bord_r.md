@@ -81,7 +81,7 @@ Arguments :
 
 Pour rendre une valeur dynamique avec valueBox
 
-``
+```
 output$nom <- renderValueBox({  
     valueBox(a completer)
 })
