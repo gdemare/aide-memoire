@@ -129,6 +129,11 @@ Les sorties doivent être stockées dans la variable
 
 renderPrint(variable)
 
+```
+renderDataTable({ }, options = list(scrollX = TRUE))
+```
+si l'affichage depasse de l'écran.
+
 ### variable réactive
 
 `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
