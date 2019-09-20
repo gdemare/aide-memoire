@@ -78,7 +78,10 @@ Package : dplyr, tidyr. résultat1 %>% résultat2 : rediriger le résultat
 
 ## Réorganiser les données
 package : tidyr
-* `gather(cases,"year","n", 2:4)` fusionner des colonnes en lignes.
+* `gather( key = "year", value = "n", 2:4)` fusionner des colonnes en lignes .
+ * `key = libellé` libellé de la colonne avec le nom des variables. 
+ * `value = libellé` libellé de la colonne avec les valeurs des variables. 
+ * `...` liste des colonnes a transformer. 
 * `separate(storms,date, c("y","m","d"))` diviser une colonne en plusieurs.
 * `spread(pollution, size, amount)` distribuer les lignes dans des colonnes.
 * `unite(data,col,...,sep)` concaténer plusieurs colonnes en une seule.
