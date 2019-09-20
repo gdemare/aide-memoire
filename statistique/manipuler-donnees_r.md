@@ -24,7 +24,8 @@
 
 Package : lubridate.
 
-* `as.Date( '2017-10-12', format= )` convertir en date. 
+* `as.Date( '2017-10-12', format= )` convertir en date.
+* `as_datetime()` convertir en date time.
 
 | Définition | R | Exemple |
 |---|---|---|
