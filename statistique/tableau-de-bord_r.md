@@ -28,7 +28,8 @@ dashboardPage(
 ### Menu
 
 `dashboardSidebar(width = largeur, title = titre)`
-Ajouter un onglet : 
+Ajouter un onglet :
+
 ```
 sidebarMenu(
         menuItem(text = "onglet", tabName = "onglet")
@@ -56,7 +57,10 @@ Parametres :
 * `disable = TRUE` desactiver la barre.
 
 #### Contenu des onglets
+##### Panneau de saisie
 
+mainPanel() principale
+sidebarPanel() saisie
 
 | Code | Type |
 |---|---|
