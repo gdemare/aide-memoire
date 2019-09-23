@@ -86,7 +86,6 @@ output$nom <- renderValueBox({
     valueBox(a completer)
 })
 ```
-
 ### zone de saisie
 
 type(inputId = id, ....) 
@@ -99,7 +98,7 @@ input$id
 | checkboxGoupInput() | | |
 | dateInput() | | |
 | dateRangeInput() | | |
-| fileInput() | | |
+| fileInput(nomFicher, text, multiple = FALSE) | | importer un fichier |
 | numericInput()| | | 
 | paswordInput()| | | 
 | colourInput() | library(colourpicker)| |
