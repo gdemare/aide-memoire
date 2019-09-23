@@ -8,7 +8,7 @@
 
 * `read_sas(fichier)` lire des tables SAS (package : haven).
 * `read.csv()` lire une table CSV.
-* `read.xlsx(fichier, sheet = "Feuil1" )` importer un fichier xls (package : xlsx).
+* `read_excel(fichier, sheet = "Feuil1" )` importer un fichier xls (package : readxl).
 
 ## Exporter un data
  
