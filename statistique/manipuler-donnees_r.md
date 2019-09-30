@@ -9,6 +9,7 @@
 * `read_sas(fichier)` lire des tables SAS (package : haven).
 * `read.csv()` lire une table CSV.
 * `read_excel(fichier, sheet = "Feuil1" )` importer un fichier xls (package : readxl).
+* `write.table(tableau, file = "clipboard", sep = "\t")` copier dans le presse papier.
 
 ## Exporter un data
  
