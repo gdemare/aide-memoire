@@ -195,18 +195,18 @@ sed -n "$(6,$((nbre+delta))p" document.info
 				
 ## Les flux de redirection
 
-`>` rediriger vers un nouveau fichier (si celui-ci existe déjà, il sera écrasé). Exemple: cut -d , -f 1 notes.cvs > eleves.txt
-`> /dev/null` rediririger le résultat dans le "trou noir" de Linux.
-`>>` rediriger à la fin d'un fichier.
-`2>, 2>>, 2>1&` rediriger les erreurs.
-    (1) 2> : rediriger  les erreurs dans un fichier (s'il existe déjà il sera écraser ). exemple: cut -d , -f 1 fichier_inexistant.csv > eleves.txt 2> erreur.log .
-    (2) 2>> : redirgiger les erreurs à la fin d'un fichier( s'il n'existe pas, il sera créé).
-    (3) 2>1& : redirgier les erreurs au même endroit et de la même façon que la sorite standard.
+* `>` rediriger vers un nouveau fichier (si celui-ci existe déjà, il sera écrasé). Exemple: cut -d , -f 1 notes.cvs > eleves.txt
+* `> /dev/null` rediririger le résultat dans le "trou noir" de Linux.
+* `>>` rediriger à la fin d'un fichier.
+* `2>, 2>>, 2>1&` rediriger les erreurs.
+    * `2>` rediriger  les erreurs dans un fichier (s'il existe déjà il sera écraser ). exemple: cut -d , -f 1 fichier_inexistant.csv > eleves.txt 2> erreur.log .
+    * `2>>` redirgiger les erreurs à la fin d'un fichier( s'il n'existe pas, il sera créé).
+    * `2>1&` redirgier les erreurs au même endroit et de la même façon que la sorite standard.
     PS: 2>>&1 ne fonctionne pas, il faut >> sur le fichier ou le veut ecrire. Exemple: cut -d , -f 1 fichier_inexistant.csv >> eleves.txt 2>&1 .
-`<` lire depuis un fichier
-`<<` lire depuis le clavier progressivement.
-`|` chaîner les commandes, tout ce qui sort de la commande1 est immédiatement envoyé à la commande2.
-`du` permet d'obtenir la taille des sous-répertoires.
+* `<` lire depuis un fichier
+* `<<` lire depuis le clavier progressivement.
+* `|` chaîner les commandes, tout ce qui sort de la commande1 est immédiatement envoyé à la commande2.
+* `du` permet d'obtenir la taille des sous-répertoires.
 
 ## Surveiller l'activité du système
 
