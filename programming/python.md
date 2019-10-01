@@ -1,3 +1,11 @@
+## Environement de développement
+
+Jupyter
+
+## commenter le code
+
+`"""commentaire"""` ecrire un commentaire
+
 ### Condition 
 
 ```
@@ -25,18 +33,20 @@ for i in sequence:
 
 ### Les listes
 
-`liste = [ val1, val2]` déclarer une liste.
-`liste[]` afficher un élément.
-`del liste[numéro] supprimer une valeur.
-`liste.append(valeur)`ajouter une valeur.
+* `liste = [ val1, val2]` déclarer une liste.
+* `liste[]` afficher un élément.
+* `del liste[numéro]` supprimer une valeur.
+* `liste.append(valeur)`ajouter une valeur.
 
 ### Fonction 
 
 ```
-def fonction (param1, param2):
+def fonction (param1, param2=10):
 	instruction
 	return valeur
 ```
+
+`=10` valeur par défaut de la variable.
 
 | Symbole | Opération |
 |---|---|
@@ -45,15 +55,15 @@ def fonction (param1, param2):
 
 | Fonction | Définition | 
 |---|---|
-| len(varaiable) | nombre de caractères |
-| print(message) | afficher un message |
-| range(nbre1, nbre2 <,pas> ) | créer une liste de nombres. |
-| texte1 + texte2 | concaténer du texte. |
+| `len(varaiable)` | nombre de caractères |
+| `print(message)` | afficher un message |
+| `range(nbre1, nbre2 <,pas> )` | créer une liste de nombres. |
+| `texte1 + texte2` | concaténer du texte. |
 
 `texte[1:4]` extraire des caracètres d'une chaîne.
 
-### importer une fonction
+### Importer des fonctions
 
-```
-from fichier import objet/* 
-```
+`import module` charger un module.
+`module.fonction()` utiliser une fonction d'un module.
+`help(module)`afficher les informations sur un module.
