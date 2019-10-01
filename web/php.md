@@ -24,12 +24,12 @@
 
 | Comparateur | défintion |
 |---|---|
-| == |
-| < |
-| > |
-| <= |
-| >= |
-| != |
+| == | egualité |
+| < | inférieur |
+| > | supérieur |
+| <= | inférieur ou égal |
+| >= | supérieur ou egal |
+| != | différent |
 
 ```
 if («condition»)
@@ -41,20 +41,20 @@ else{}
 conditon SI
 
 Condtion multiple:
-| | | 
+
+| Opérateur logique | Défintion | 
 |---|---|
 | `AND` `&&` | et | 
 | `OR` `||` | ou |
 
 ```
-switch («variable»)
-{case «val» :
-«instruction1»
-break;
-«...»
-
-default:
-«instruction»;} 
+switch (variable){ 
+	case valeur :
+		instruction
+	break;
+	default:
+		instruction
+	;} 
 ```
 pour plusieurs teste ==.
 
@@ -69,29 +69,30 @@ while (condition)
 tant que la condition est vrai exécuter.
 
 ```
-for( INITIAL ; CONDITION ; INCREMENTATION)
-{INSTRUCTION}
+for( INITIAL ; CONDITION ; INCREMENTATION){
+	instruction
+}
 ```
 boucle Pour.
 
-### Les Fonctions
+### Traitement de chaines de caractères
 
-1/Traitement de cha^ines de caractères
-
+| fonction | definition |
+|---|---|
 | `strlen(VAR)` | longueur d'une chaîne de caractères. |
 | `str_replace(VAR1, VAR2, VAR)` | remplace tout les VAR1 par VAR2 dans la ch^aine VAR. |
-| `str_stuffle( VAR )` | méléanger une cha^ine de caractères. |
+| `str_stuffle( VAR )` | mélanger une chaine de caractères. |
 | `strtolower( VAR )` | écrire en minuscule. |
 
 Récupérer la date :
 
-date( PARA )
+* `date( PARA )`
 Paramètres :
-* H > heure
-* i > Minute
-* d > jour
-* m > mois
-* Y > année
+	* H > heure
+	* i > Minute
+	* d > jour
+	* m > mois
+	* Y > année
 
 ### Création d'un fonction
 ```
@@ -107,16 +108,17 @@ function NOM( PARAMETRE )
 * `$TAB = array ( VAL1, VAL2)` créer un tableau array (0,1,2,...)
 * `$TAB[ NUM ]` afficher ou 
 
-SUITE 
-2ème Partie
 
-isset(PARA) : teste la précence d'un paramètre.
+`isset(PARA)` teste la précence d'un paramètre.
 DEBUT
 
-Transmettre des données avec les formulaires
-1/
+### Transmettre des données avec les formulaires
+```
 <form method="METHO" action="CIBLE.php" >
-</form>: créer un formulaire METHO=(get ou post)
+</form>
+```
+créer un formulaire METHO=(get ou post)
+
 EXEMPLE:
 ```
 <form action="cible.php" method="post">
@@ -125,22 +127,30 @@ EXEMPLE:
 	<input type="submit" value="Valider" />
 </form>
 ```
-* `<texarea name="NOM" rows="NBRELIG" cols="NBRECOL" ></textarea>` créer une grande zone de texte.
+#### Zone de texte
+```
+<texarea name="NOM" rows="NBRELIG" cols="NBRECOL" ></textarea>
+```
+#### Liste déroulante
 ```
 <select name="">
 	<option value="choix1">choix1</option>
 </select>
 ```
-créer une liste déroulante (selected="DEFAUT" pour donner une valeur par défaut.
+Paramètre : 
+ * `selected="DEFAUT"` pour donner une valeur par défaut.
 
+##### Liste à cocher
 ```
 <input type="checkbox" name="NOM" id="case" />
 	<label for="case">case1</label>
 </input>
 
 ```
-créer une liste a cocher ( PS: pour qu'une case soit cohé par défaut : checked="checked")
+paramètre : 
+* `checked="checked"` case cochée par défaut.
 
+#### créer un champ caché.
 ```
 <input type="radio" name="NOM" value="VAL1" id="VAL1" />
 	<label for="VAL1">VAL1</label>
@@ -148,7 +158,8 @@ créer une liste a cocher ( PS: pour qu'une case soit cohé par défaut : checke
 	<label for="VAL2">VAL2</label>  : bouton d'option.
 type="hidden"
 ```
-créer un champ caché.
+
+### Transmission des données
 
 Envoyer des fichiers grâce au formulaire
  * `enctype="multipart/form-data"` rajouter dans la balise form
@@ -161,11 +172,11 @@ Envoyer des fichiers grâce au formulaire
 * `$_FILES['FICHIER']['tmp_name']` nom temporaire du fichier.
 * `$_FILES['FICHIER']['error']` renvoie 0 si il n'y a pas eu d'erreur dans l'envoi.
 
-`pathinfo(VAR)['extension']` renvoie l'extension du fichier.
-`move_uploaded_file(FICHIER, NOM)` FICHIER correspond au nom temporaire du fichier et NOM sous lequel le fichier sera stocké.
-`htmlspecialchars(VAR)` évtiter la faille XSS (tout le texte est renvoyer ).
+* `pathinfo(VAR)['extension']` renvoie l'extension du fichier.
+* `move_uploaded_file(FICHIER, NOM)` FICHIER correspond au nom temporaire du fichier et NOM sous lequel le fichier sera stocké.
+* `htmlspecialchars(VAR)` évtiter la faille XSS (tout le texte est renvoyer ).
 
-Variables superglobalees, sessions et cookies
+### Variables superglobalees, sessions et cookies
 
 * `print_r(VARGLOB)` ficher ce que contient une variables superglobale.
 * Liste des différentes vairables globales:
@@ -187,6 +198,3 @@ Attention: session_start() doit etre déclarer avant  <!DOCTYPE> et sur chaque p
 Pour sécrusier un cookie : setcookie('pseudo', 'Mateo21', time() + 365*24*3600, null, false, true )
 * `$_COOKIE['NOM']` appeler un cokkie.
 (3) Modifier le cookie, faire appel a set.
-
-### Lire et écrire un fichier
-
