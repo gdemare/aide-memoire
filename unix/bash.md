@@ -147,13 +147,13 @@ Paramètres :
 	* Que faire avec :
 Paramètres :	
 	* `name "fichier"` rechercher exactement le nom d'un fichier.	
-		-size «+/-/ »«tailleavecunité» : recherche a partir de la taille du fichier. Les unités sont : K ; M ; G ;... 
-		-atime «temps» : recherche à partir de la date de dernier accès.
-		-type «d/f» «nom» : rechercher uniquement des répertoires ou des fichiers ( "d"=directories / "f"=files ).
-		-print : afficher les résultats.
-		-delete :supprimer les fichier trouvés.
-		-exec «commande» {} \; : appeler un commande qui effectuera une action sur les fichiers trouvés.
-		-maxdepth «nbre» : effectuer une recherche en limitant le nombre de répertoire [1;oo].
+	* `size «+/-/ »«tailleavecunité»` recherche a partir de la taille du fichier. Les unités sont : K ; M ; G ;... 
+		* `atime «temps»` recherche à partir de la date de dernier accès.
+		* `type «d/f» «nom»` rechercher uniquement des répertoires ou des fichiers ( "d"=directories / "f"=files ).
+		* `print` afficher les résultats.
+		* `delete`supprimer les fichier trouvés.
+		* `exec «commande» {} \;` appeler un commande qui effectuera une action sur les fichiers trouvés.
+		* `maxdepth «nbre»` effectuer une recherche en limitant le nombre de répertoire [1;oo].
  
 ## Extraire, trier et filtrer des données
 
@@ -183,13 +183,14 @@ Paramétres:
 	* `c` compter le nombre d'occurences.
 	* `d` afficher uniquement les lignes en double.
 * `cut intervalle fichier` couper une partie d'un fichier. L'intervalle se note "5-18".
-Paramétres:	-c couper selon le nombre de caractéres de chaques lignes.
-		-d «délimiteur» indique quel le délimiteur dans le fichier.
-		-f «champs» : indique le numéro du ou des champs à garder.
+Paramétres:	-
+	* `c` couper selon le nombre de caractéres de chaques lignes.
+	* `d «délimiteur»` indique quel le délimiteur dans le fichier.
+	* `f «champs»` indique le numéro du ou des champs à garder.
 `awk`
 `sed fichier` éditeur de flux (Stream EDitor).
 Paramètre :	
-	-n '«nbre»p': affiche la ligne «nbre»p du fichier.
+	* `n '«nbre»p'` affiche la ligne «nbre»p du fichier.
 sed -n "$(6,$((nbre+delta))p" document.info 
 				
 ## Les flux de redirection
@@ -214,16 +215,17 @@ sed -n "$(6,$((nbre+delta))p" document.info
 * `uptime` durée de fonctionnement de l'ordinateur.
 * `tload` afficher la charge de l'ordinateur ie l'indice de l'activité de l'ordinateur. Pour quitter le graphe, faire Crlt + C.
 PS : liste statique des processus.
-	(1) PID : c'est le numéro d'identification du processus.Chaque processus a un numéro unique qui permet de l'identifier. Ce numéro nous sera utile plus tard lorsque nous voudrons arrêter le processus.
-	(2) TTY : c'est le nom de la console depuis laquelle a été lancé le processus.
-	(3)TIME : la durée d'exécution du processus. Plus exactement, cela correspond à la durée pendant laquelle le processus a occupé le processeur depuis son lancement.
-	(4)CMD : le programme qui a généré ce processus. Si vous voyez plusieurs fois le même programme, c'est que celui-ci s'est dupliqué en plusieurs processus.
-Paramétres:	-ef : lister tous les processus.
-		-ejh : afficher les processus en arbre.
-		-u [nomutilisateur] : lister les porcessus lancé par un utilisateur.
+	* PID : c'est le numéro d'identification du processus.Chaque processus a un numéro unique qui permet de l'identifier. Ce numéro nous sera utile plus tard lorsque nous voudrons arrêter le processus.
+	* TTY : c'est le nom de la console depuis laquelle a été lancé le processus.
+	* TIME : la durée d'exécution du processus. Plus exactement, cela correspond à la durée pendant laquelle le processus a occupé le processeur depuis son lancement.
+	* CMD : le programme qui a généré ce processus. Si vous voyez plusieurs fois le même programme, c'est que celui-ci s'est dupliqué en plusieurs processus.
+Paramétres:	-
+	* `ef` lister tous les processus.
+	* `ejh` afficher les processus en arbre.
+	* `u [nomutilisateur]` lister les porcessus lancé par un utilisateur.
 * `top` liste dynamique des processus.
-	  (1) q : ferme top.
-	  (2) h : affiche l'aide.
+	* `q` ferme top.
+	* `h` affiche l'aide.
 * `Crlt + C` arrêter un processus lancé en console.
 * `kill [PID]` tuer un processus.
 Paramétres:
@@ -260,29 +262,35 @@ Paramétres:
 	* `-e` modifier la crontab.
 	* `-l` afficher la crontab.
 	* `-r` supprimer la crontab.
-Utilisation générale (après crontab -e). Shéma GÉNÉRAL : [minute(/60)] [heure(/24)] [jour du mois(/31)] [mois(/12)] [jour de la semaine(/6- dimanche=0)] «commande»
+Utilisation générale (après crontab `e`). Shéma GÉNÉRAL : [minute(/60)] [heure(/24)] [jour du mois(/31)] [mois(/12)] [jour de la semaine(/6- dimanche=0)] «commande»
 Les différentes notations (exemples):
-  - nombre : exécuté lorsque le chanp vaut le nombre.
-  - * : exécuter tout le temps (toutes les valeurs bonnes).
-  - nombre1,nombre2,nombre3 : exécuter lorsque le champs prend la valeur nombre1, nomb...
-  - nombre1-nombre2 : exécuter pour les valeurs entre nombre1 à nombre2.
-  - */nombre : exécuté tous les multiples de nombre.
-Exemples:	(1) 47 * * * * commande : toutes les heures à 47 minutes exactement.			(2)0 0 * * 1 commande : tous les lundis à minuit.
+  * `nombre` exécuté lorsque le chanp vaut le nombre.
+  * `*` exécuter tout le temps (toutes les valeurs bonnes).
+  * `nombre1,nombre2,nombre3` exécuter lorsque le champs prend la valeur nombre1, nomb...
+  * `nombre1-nombre2` exécuter pour les valeurs entre nombre1 à nombre2.
+  * `*/nombre` exécuté tous les multiples de nombre.
+Exemples:	
+```
+47 * * * * commande : toutes les heures à 47 minutes exactement.			
+0 0 * * 1 commande : tous les lundis à minuit.
+```
 Les erreurs n'apparaissent pas, pour y remédier, il faut les rediriger vers un nouveau fichier.
 
 ## Archiver et compresser
 	  
 * `tar` assembler des fichiers dans une archive.
- Paramétres:	-cvf «nomarchive.tar» «fichiers»: créer une archive tar (-c créer une archive .tar; -v afficher le détail des opérations; -f assembler l'archive dans un fichier).
-		-tf «nomarchive.tar» «fichiers»: afficher le contenu de l'archive sans l'extraire. 
-		-xvf «nomarchive.tar» «fichiers»: extraire les fichiers de l'archive (-x pour eXtract).
-		-zcvf : archiver et compresser en gzip (-z compresser avec gzip).
-		-zxvf : désarchiver et décompresser en gzip.
-		-jcvf : archiver et compresser en bzip2.
-		-jxvf : désarchiver et décompresser en bzip2.
-		-ztf : afficher le contenu...
-		-jtf :...
-2/gzip «nomarchive» : compresser une archive (la plus courante).
+Paramétres:	
+ 	`cvf «nomarchive.tar» «fichiers»` créer une archive tar (`c` créer une archive .tar; `v` afficher le détail des opérations; `f` assembler l'archive dans un fichier).
+	* `tf «nomarchive.tar» «fichiers»` afficher le contenu de l'archive sans l'extraire. 
+	* `xvf «nomarchive.tar» «fichiers»` extraire les fichiers de l'archive (`x` pour eXtract).
+	* `zcvf` archiver et compresser en gzip (`z` compresser avec gzip).
+	* `zxvf` désarchiver et décompresser en gzip.
+	* `jcvf` archiver et compresser en bzip2.
+	* `jxvf` désarchiver et décompresser en bzip2.
+	* `ztf` afficher le contenu...
+	* `jtf`
+	
+* `gzip «nomarchive»` compresser une archive (la plus courante).
 Paramétres:	
 	* `-v` affiche les détails de l'opération.
 Commandes associées:	
@@ -318,34 +326,35 @@ Pour plus de renseignements, voir «puTTY».
 Paramétres:	
 	* `-c` reprendre un téléchargment arrêté.
 	* `--background` lancer un téléchargement en tâche de fond.
-2/ Crtl+c : arrêter le téléchargement en cours.
-3/ wget-log : indique l'avancement du téléchargement lancer en arrère plan.
-4/ scp «fichier-origine» «copie-destination»: copier des fichiers sur le réseau.
+* Crtl+c : arrêter le téléchargement en cours.
+* `wget-log` indique l'avancement du téléchargement lancer en arrère plan.
+* `scp fichier-origine copie-destination` copier des fichiers sur le réseau.
 PS : chacun des élément peut s'écrire : login@ip:nom_fichier.
 Voir cours.
 
 ## Analyser le réseau et filtrer le trafic avec un pare-feu
 
-1/ host «Ip/nom d'hôte»: convertir une IP en nom d'hôte et inversement. 
-2/ whois : tout savoir sur un nom de domaine ( il faut installer le paquet).
-3/ ifconfig : liste des interfaces réseau.
-4/ ifconfig «nom de l'interface» «up/down» : activer (up) et désactiver (down) des interfaces.
-5/ netstat : statistiques sur le réseau.
-Paramères :	-i : statistiques des interfaces réseau.
-		-uta : lister toutes les connexions ouvertes ou ( -u :afficher les connexions UDP ; -t : afficher ls connexions TCD ; -a afficher toutes les connexions quel que soit leur état ).	
-		-n : afficher le numéro des ports.
-		-lt : lister les connexions en état d'écoute.
-6/ iptables : consulter le iptables Rappel pour plus d'informations.
+* `host «Ip/nom d'hôte»` convertir une IP en nom d'hôte et inversement. 
+* `whois` tout savoir sur un nom de domaine ( il faut installer le paquet).
+* `ifconfig` liste des interfaces réseau.
+* `ifconfig «nom de l'interface» «up/down»` activer (up) et désactiver (down) des interfaces.
+* `netstat` statistiques sur le réseau.
+Paramères :
+	* `i` statistiques des interfaces réseau.
+	* `uta` lister toutes les connexions ouvertes ou ( `u` :afficher les connexions UDP ; `t` : afficher ls connexions TCD ; `a` afficher toutes les connexions quel que soit leur état ).	
+	* `n` afficher le numéro des ports.
+	* `lt` lister les connexions en état d'écoute.
+* `iptables` consulter le iptables Rappel pour plus d'informations.
 
 ## Compiler un programme
 
 1/ Recette de : Compilation d'un programme.
 Requis : avoir installer "build-essential"
-	(1) télécharger l'achive
-	(2) décompresser
-	(3) exécuter le fichier «./configure», il vérifie si tous les dépendances sont remplies. En cas d'erreurs, il faut faire une recherche sur internet et installer les paquets manquants.
-	(4) make install : compiler les fichiers. Le programme est maintenant installer.
-	(5) make uninstall : désinstaller le programme, à exécuter dans le dossier ou la compilation à eu lieu.
+	* (1) télécharger l'achive
+	* (2) décompresser
+	* (3) exécuter le fichier «./configure», il vérifie si tous les dépendances sont remplies. En cas d'erreurs, il faut faire une recherche sur internet et installer les paquets manquants.
+	* (4) make install : compiler les fichiers. Le programme est maintenant installer.
+	* (5) make uninstall : désinstaller le programme, à exécuter dans le dossier ou la compilation à eu lieu.
 ATTENTION : il ne faut pas supprimer le dossier de "compilation".
 
 ## ImageMagick ( manipuler des images)
