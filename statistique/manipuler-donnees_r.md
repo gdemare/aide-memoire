@@ -21,6 +21,7 @@
 * `gsub(schèma, remplacement, variable) ` remplacer un schèma par une nouvelle chaine de caractères.
 * `str_count(text, motif)` compter le nombre d'occurence. (stringr)
 * `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
+* `strsplit(variable, symbole)` séparer une variable en fonction d'un symbole.
 
 ## Manipuler les dates
 
