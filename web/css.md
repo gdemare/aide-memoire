@@ -1,6 +1,6 @@
 preparer avant un Styleguide UI :
   * Pattern Lab
-  * (Huge)[https://hugeinc.github.io/styleguide]
+  * [Huge](https://hugeinc.github.io/styleguide)
 
 ### variable CSS
 
