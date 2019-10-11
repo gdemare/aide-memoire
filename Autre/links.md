@@ -6,7 +6,7 @@
 ## Téléchargement
 
 * [zone téléchargement](https://www.zone-telechargement.net/) [Forum ZT](https://www.forumzt.com/)
-* [YGG Torrent](https://www2.yggtorrent.ch">
+* [YGG Torrent](https://www2.yggtorrent.ch)
 
 ## Application Android
 
