@@ -203,3 +203,11 @@ ligne = colonne.
 | `slice(start, end)` | extraire une chaine de caractère |
 | `substring(start, <end>)` | extraire une chaine de caractère jusqu'a la fin |
 | `substr(start, length)` | extraire une chaine de caractère jusqu'au début |
+
+## Récupérer les propriétés d'un objet.
+
+```
+var element = document.getElementById('image_1'),
+    style = window.getComputedStyle(element),
+    top = style.getPropertyValue('top');
+```
