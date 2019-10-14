@@ -70,3 +70,9 @@ fonc = function(x){test(x)/x}
 p <- ggplot(data = data.frame(x = 0), mapping = aes(x = x))
 p + stat_function(fun = fonc) + xlim(-5,5)
 ```
+
+## Les couleurs à ajouté 
+ 
+`cbbPalette <- c("#000000", "#E69F00")`
+* `scale_colour_manual(palette)` changer la couleur 
+* `scale_fill_manual(palette)` changer la couleur 
