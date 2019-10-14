@@ -178,6 +178,28 @@ function focntion(parametre1) {
 
 ### Les tableaux
 
+ligne = colonne.
 * `tableau.indexOf("Apple");` recherche d'une valeur.
-*`tableau.push(valeur);` ajouter une ligne a la fin.
+* `tableau.push(valeur);` ajouter une ligne a la fin.
 * `tableau = [ [1a,b1], [2a, 2b] ]` tableau multidimesionnel.
+
+## Opérateur logique
+| Opérateur | Définition |
+|---|---|
+| `&&` | et | 
+| `|` | ou |
+
+`null` en java script
+
+| Fonction | Definition|
+|---|---|
+| `length` | taille de la chaine de caractère |
+| `indexOf("texte")` | renvoie la position de la 1er chaine de caracère sinon -1 |
+| `search("texte")` | renvoie les positons de la chaine de caractère |
+
+## Extraire une chaine de caractère
+
+|---|---|
+| `slice(start, end)` | extraire une chaine de caractère |
+| `substring(start, <end>)` | extraire une chaine de caractère jusqu'a la fin |
+| `substr(start, length)` | extraire une chaine de caractère jusqu'au début |
