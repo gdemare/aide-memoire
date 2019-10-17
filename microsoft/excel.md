@@ -72,3 +72,9 @@ Type :
 | `NOMPROPRE(text)` | mettre une majuscule à la première lettre des mots |
 | `STEXT()` | |
 | `NBCAR(text)` | compter le nombre caractère |
+
+## Supprimer un tableau
+
+* 1/ onglet creation tableau
+* 2/ Creation
+* 3/ Convertir en plag
