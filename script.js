@@ -253,7 +253,6 @@ console.log(menu);
 for (var i = 0; i <= menu.length - 1; i++) {
   $("#" + menu[i]).click(function() {
     menu = $(this)[0].id;
-    console.log(menu);
     angle = $("#" + menu + " i");
     if (angle[0].className == 'fa fa-angle-down') {
       angle = $("#" + menu + " i");
@@ -294,19 +293,50 @@ for (var i = 0; i <= content[0].length - 1; i++) {
     for (var i = 0; i <= content[0].length - 1; i++) {
       if (content[2][i] == $(this)[0].id) {
         if (content[1][i] !== null) {
-            fichier = content[0][i] + '/' + content[1][i];
+          fichier = content[0][i] + '/' + content[1][i];
+        } else {
+          fichier = content[0][i]
+        };
+        var bouton = ['general', 'r', 'sas', 'python'];
+        for (var j = 0; j <= bouton.length - 1; j++) {
+          if (content[3+j][i] == 1) {
+            document.getElementById(bouton[j]).style.display = "flex";
+            
+            $( '#' + bouton[j] ).click( function() {
+              var selection = document.getElementsByClassName("selection")[0];
+              var bouton = ['general', 'r', 'sas', 'python'];
+              var extension = ['', '_r', '_sas', '_python']
+              var fichier;
+              for (var i = 0; i <= content[0].length - 1; i++) {
+                if (selection.id == content[2][i]) {
+                  for (var j = 0; j <= bouton.length - 1; j++) {
+                    if(bouton[j] == $(this)[0].id ) {
+                      if (content[1][i] !== null) {
+                        fichier = content[0][i] + '/' + content[1][i];
+                      } else {
+                        fichier = content[0][i]
+                      };
+                      url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + fichier + '/' + content[2][i] + extension[j] + '.md';
+                      loadContenu(url);
+                    };
+                  };
+                };
+              };
+            });
+
           } else {
-            fichier = content[0][i]
+            document.getElementById(bouton[j]).style.display = "none";
           };
-          if (content[3][i] == 1) {
-            fichier = fichier + '/' + content[2][i] + '.md';
-          } else if (content[4][i] == 1) {
-            fichier = fichier + '/' + content[2][i] + '_r.md';
-          } else if (content[5][i] == 1) {
-            fichier = fichier + '/' + content[2][i] + '_sas.md';
-          } else if (content[6][i] == 1) {
-            fichier = fichier + '/' + content[2][i] + '_sas.md';
-          }
+        };
+        if (content[3][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '.md';
+        } else if (content[4][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_r.md';
+        } else if (content[5][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_sas.md';
+        } else if (content[6][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_sas.md';
+        };
       }
     };
     url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + fichier;
@@ -319,28 +349,29 @@ for (var i = 0; i <= content[0].length - 1; i++) {
 $( '#modifier' ).click( function() {
   if (document.getElementsByClassName("selection")[0] != null) {
     var selection = document.getElementsByClassName("selection")[0].id;
-  var fichier;
-  for (var i = 0; i <= content[0].length - 1; i++) {
-    if (content[2][i] == selection) {
-      if (content[1][i] !== null) {
-        fichier = content[0][i] + '/' + content[1][i];
-      } else {
-        fichier = content[0][i]
-      };
-      if (content[3][i] == 1) {
-        fichier = fichier + '/' + content[2][i] + '.md';
-      } else if (content[4][i] == 1) {
-        fichier = fichier + '/' + content[2][i] + '_r.md';
-      } else if (content[5][i] == 1) {
-        fichier = fichier + '/' + content[2][i] + '_sas.md';
-      } else if (content[6][i] == 1) {
-        fichier = fichier + '/' + content[2][i] + '_sas.md';
+    var fichier;
+    for (var i = 0; i <= content[0].length - 1; i++) {
+      if (content[2][i] == selection) {
+        if (content[1][i] !== null) {
+          fichier = content[0][i] + '/' + content[1][i];
+        } else {
+          fichier = content[0][i]
+        };
+        if (content[3][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '.md';
+        } else if (content[4][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_r.md';
+        } else if (content[5][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_sas.md';
+        } else if (content[6][i] == 1) {
+          fichier = fichier + '/' + content[2][i] + '_sas.md';
+        }
       }
     }
-  }
-  url = 'https://github.com/gdemare/aide-memoire/edit/master/' + fichier ;
-  window.open(url);
+    url = 'https://github.com/gdemare/aide-memoire/edit/master/' + fichier ;
+    window.open(url);
   };
 });
+
 
 });
