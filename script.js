@@ -297,14 +297,14 @@ for (var i = 0; i <= content[0].length - 1; i++) {
         } else {
           fichier = content[0][i]
         };
-        var bouton = ['general', 'r', 'sas', 'python'];
+        var bouton = ['general', 'r', 'sas', 'python2'];
         for (var j = 0; j <= bouton.length - 1; j++) {
           if (content[3+j][i] == 1) {
             document.getElementById(bouton[j]).style.display = "flex";
             
             $( '#' + bouton[j] ).click( function() {
               var selection = document.getElementsByClassName("selection")[0];
-              var bouton = ['general', 'r', 'sas', 'python'];
+              var bouton = ['general', 'r', 'sas', 'python2'];
               var extension = ['', '_r', '_sas', '_python']
               var fichier;
               for (var i = 0; i <= content[0].length - 1; i++) {
