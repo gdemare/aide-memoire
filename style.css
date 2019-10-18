@@ -227,6 +227,10 @@ a {
   color: var(--color-blue);
 }
 
+a:link {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
 }
