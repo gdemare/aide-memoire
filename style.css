@@ -63,6 +63,9 @@ nav .navBox .navInterac {
   flex: 1;
   flex-direction: row;
   margin-bottom: 0.08cm;
+  background-color: var(--color-bouton);
+  border-radius: 0.1cm;
+  height: 2em;
 }
 
 nav .navBox .navBouton {
@@ -73,21 +76,14 @@ nav .navBox .navBouton {
   justify-content: center;
   align-items: center;
   min-width: 2em;
-  height: 2em;
   height: 100%;
+  border-left: solid 1px var(--color-nav);
 }
 
 .navBouton:first-child {
   border-left: none;
   border-top-left-radius: 0.1cm;
   border-bottom-left-radius: 0.1cm;
-}
-
-.navBouton {
-  padding-top: 0.05cm;
-  padding-bottom: 0.05cm; 
-  background-color: var(--color-bouton);
-  border-left: solid 1px var(--color-nav);
 }
 
 .navBouton:last-child {
@@ -97,6 +93,7 @@ nav .navBox .navBouton {
 
 .navBouton:hover {
   cursor: pointer;
+  border-radius: 0.1cm;
   background-color: var(--color-write);
   color: var(--color-blue);
 }
