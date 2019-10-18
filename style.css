@@ -140,15 +140,6 @@ nav .bouton .boutonSub:hover {
   padding-left: 0.5cm;
 }
 
-#onglet {
-  display: flex;
-  flex-direction: row;
-  border-radius: 0.1cm;
-  border: solid 1px var(--color-white);
-  padding: 0px;
-}
-
-
 /*************************
 Memento menu
 /*************************/
