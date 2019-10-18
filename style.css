@@ -225,6 +225,7 @@ pre, code {
 
 a {
   color: var(--color-blue);
+  text-decoration: none;
 }
 
 a:link {
