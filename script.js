@@ -75,21 +75,17 @@ for(var i=0; i<content[0].length; i++){
 content = contentTrans;
 
 // creation de l'url
-var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/',
- dossier;
+var dossier;
+content[content.length] = [];
 for (var i = 0; i <= content[0].length - 1; i++) {
-  content[content.length] = [];
   if (content[1][i] != null) {
     dossier = content[0][i] + '/' + content[1][i];
   } else {
     dossier = content[0][i]
   };
-  content[content.length-1][i] = url + dossier;
+  content[content.length-1][i] = dossier + '/' + content[2][i];
 };
-
-// creation des boutons langages
-
-
+console.log(content[7]);
 
 // menuLeft et contenu en dessous de la barre de nav
 var hauteur = document.getElementsByTagName("nav")[0].offsetHeight + 'px';
@@ -280,11 +276,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
     document.getElementById("titre").innerHTML=$(this)[0].id;
     for (var i = 0; i <= content[0].length - 1; i++) {
       if (content[2][i] == $(this)[0].id) {
-        if (content[1][i] !== null) {
-          fichier = content[0][i] + '/' + content[1][i];
-        } else {
-          fichier = content[0][i]
-        };
+        fichier = content[7][i];
         var bouton = ['general', 'r', 'sas', 'python2'];
         for (var j = 0; j <= bouton.length - 1; j++) {
           if (content[3+j][i] == 1) {
@@ -317,13 +309,13 @@ for (var i = 0; i <= content[0].length - 1; i++) {
           };
         };
         if (content[3][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '.md';
+          fichier = fichier + '.md';
         } else if (content[4][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_r.md';
+          fichier = fichier + '/' + '_r.md';
         } else if (content[5][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_sas.md';
+          fichier = fichier + '/' + '_sas.md';
         } else if (content[6][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_sas.md';
+          fichier = fichier + '/' + '_sas.md';
         };
       }
     };
