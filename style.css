@@ -70,14 +70,12 @@ nav .navBox .navInterac {
 
 nav .navBox .navBouton {
   display: flex;
-  flex: 1;
   padding-left: 0.2cm;
   padding-right: 0.2cm;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 2em;
-  height: 100%;
   border-left: solid 1px var(--color-nav);
 }
 
