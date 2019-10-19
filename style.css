@@ -139,10 +139,9 @@ nav .bouton .boutonSub:hover {
 /*************************
 Memento menu
 /*************************/
-#mementoMenu {
+#menuLeft {
   z-index : 1;
   position: fixed;
-  display: flex;
   flex-direction: column;
   bottom: 0px;
   flex-grow: 1;
@@ -155,14 +154,14 @@ Memento menu
   width: 100%;
 }
 
-#mementoMenu div {
+#menuLeft div {
   min-width: 8cm;
   padding-left: 0.2cm;
   padding-top: 0.2cm;
   padding-bottom: 0.1cm;
 }
 
-#mementoMenu div:hover {
+#menuLeft div:hover {
   background-color: var(--color-gray4);
   cursor: pointer;
 }
@@ -255,7 +254,7 @@ h2 {
 }
 
 h2:first-child {
-	border: none;
+  border: none;
 }
 
 h3 {
