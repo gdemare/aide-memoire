@@ -1,99 +1,5 @@
 $(document).ready(function() {
-    //----------------------------------------------
-
-    // mementoMenu en dessous de la barre de naviguation
-
-var hauteur = document.getElementsByTagName("nav")[0].offsetHeight + 'px';
-//mementoMenu
-console.log(hauteur);
-document.getElementById("mementoMenu").style.setProperty("top", hauteur);
-document.getElementById("contenu").style.setProperty("margin-top", hauteur);
-
-    // Print the memento menu
-    var varMemento = false;
-    $("#mementoMenu").hide();
-    $("#mementoButton").click(function() {
-        if (varMemento == false) {
-            $("#mementoMenu").show();
-            var largeur = document.getElementById("mementoMenu").offsetWidth + 'px';
-            varMemento = true;
-        } else {
-            $("#mementoMenu").hide();
-            var largeur = '0px';
-            varMemento = false;
-        };
-      document.getElementById("contenu").style.setProperty("margin-left", largeur);
-    });
-    //----------------------------------------------
-    // change the style sheet
-
-    function darkStyle(darkStyle) {
-        let root = document.documentElement;
-        if (darkStyle == true) {
-root.style.setProperty('--color-blue','rgb(64,156,255)');
-root.style.setProperty('--color-blue2','rgb(0,14,34)');
-root.style.setProperty('--color-green','rgb(48, 209, 88)');
-root.style.setProperty('--color-indigo','rgb(94,92,230)');
-root.style.setProperty('--color-orange','rgb(255,159,10)');
-root.style.setProperty('--color-pink','rgb(255,55,95)');
-root.style.setProperty('--color-purple','rgb(191,90,242)');
-root.style.setProperty('--color-red','rgb(255,69,58)');
-root.style.setProperty('--color-teal','rgb(100,210,255)');
-root.style.setProperty('--color-yellow','rgb(255,214,10)');
-root.style.setProperty('--color-gray','rgb(142,142,147)');
-root.style.setProperty('--color-gray2','rgb(99,99,102)');
-root.style.setProperty('--color-gray3','rgb(72,72,74)');
-root.style.setProperty('--color-gray4','rgb(58,58,60)');
-root.style.setProperty('--color-gray5','rgb(44,44,46)');
-root.style.setProperty('--color-gray6','rgb(28,28,30)');
-root.style.setProperty('--color-white','rgb(31,32,34)');
-root.style.setProperty('--color-bouton','rgb(105,106,108)');
-root.style.setProperty('--color-boutonSelect','rgb(199,200,202)');
-root.style.setProperty('--color-nav','rgb(60,61,64)');
-root.style.setProperty('--color-menu','rgb(49,56,67)');
-root.style.setProperty('--color-write','rgb(236,238,240)');
-            return false;
-        } else {
-root.style.setProperty('--color-blue','rgb(0,122,255)');
-root.style.setProperty('--color-blue2','rgb(217,235,255)');
-root.style.setProperty('--color-green','rgb(52,199,89)');
-root.style.setProperty('--color-indigo','rgb(88,86,214)');
-root.style.setProperty('--color-orange','rgb(255,149,0)');
-root.style.setProperty('--color-pink','rgb(255,45,85)');
-root.style.setProperty('--color-purple','rgb(175,82,222)');
-root.style.setProperty('--color-red','rgb(255,59,48)');
-root.style.setProperty('--color-teal','rgb(90,200,250)');
-root.style.setProperty('--color-yellow','rgb(255,204,0)');
-root.style.setProperty('--color-gray','rgb(142,142,147)');
-root.style.setProperty('--color-gray2','rgb(174,174,178)');
-root.style.setProperty('--color-gray3','rgb(199,199,204)');
-root.style.setProperty('--color-gray4','rgb(209,209,214)');
-root.style.setProperty('--color-gray5','rgb(229,229,234)');
-root.style.setProperty('--color-gray6','rgb(242,242,247)');
-root.style.setProperty('--color-white','rgb(255,255,255)');
-root.style.setProperty('--color-bouton','rgb(246,246,246)');
-root.style.setProperty('--color-boutonSelect','rgb(105,106,106)');
-root.style.setProperty('--color-nav','rgb(217,217,217)');
-root.style.setProperty('--color-menu','rgb(227,228,229)');
-root.style.setProperty('--color-write','rgb(36,40,45)');
-            return true;
-        };
-
-    };
-
-    var varStyle = false;
-    darkStyle(varStyle);
-
-    $("#styleCSS").click(function() {
-        if (varStyle == false) {
-            darkStyle(varStyle);
-            varStyle = true;
-        } else {
-            darkStyle(varStyle);
-            varStyle = false;
-        };
-    });
-
+//----------------------------------------------
 // dossier ; sous dossier; fichier; general; r; sas; python
 content = [
 ['company',null,'animateur','1','0','0','0'],
@@ -158,52 +64,143 @@ content = [
 ['web',null,'js','1','0','0','0'],
 ['web',null,'php','1','0','0','0']];
 
-function transTable(data) {
-  var colNb =  data[0].length;
-  var newData = new Array(colNb);
-  for(var j=0; j<colNb; j++){
-    newData[j] = [];
-    for(var i=0; i<data.length; i++){
-      newData[j][i] = data[i][j];
-    };
+// transposer le tableau
+var contentTrans = new Array(content[0].length);
+for(var i=0; i<content[0].length; i++){
+  contentTrans[i] = [];
+  for(var j=0; j<content.length; j++){
+    contentTrans[i][j] = content[j][i];
   };
-return newData;
+};
+content = contentTrans;
+
+// creation de l'url
+var url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/',
+ dossier;
+for (var i = 0; i <= content[0].length - 1; i++) {
+  content[content.length] = [];
+  if (content[1][i] != null) {
+    dossier = content[0][i] + '/' + content[1][i];
+  } else {
+    dossier = content[0][i]
+  };
+  content[content.length-1][i] = url + dossier;
 };
 
-content = transTable(content);
+// creation des boutons langages
 
+
+
+// menuLeft et contenu en dessous de la barre de nav
+var hauteur = document.getElementsByTagName("nav")[0].offsetHeight + 'px';
+document.getElementById("menuLeft").style.setProperty("top", hauteur);
+document.getElementById("contenu").style.setProperty("margin-top", hauteur);
+
+// Afficher le contenu du menuLeft
+$("#mementoButton").click(function() {
+  var display, largeur;
+  if ( $("#menuLeft")[0].style.display == "none") {
+    document.getElementById("menuLeft").style.setProperty("display", "flex");
+    var largeur = document.getElementById("menuLeft").offsetWidth + 'px';
+  } else {
+    document.getElementById("menuLeft").style.setProperty("display", "none");
+    largeur = '0px';
+  };
+  document.getElementById("contenu").style.setProperty("margin-left", largeur);
+});
+
+// changer les couleurs
+$("#styleCSS").click( function() {
+  console.log($(this)[0].className);
+  if ($(this)[0].className.indexOf("dark") == -1) {
+    $(this).addClass("dark");
+  } else {
+    $(this).removeClass("dark");
+  }
+  dark();
+});
+dark();
+function dark() {
+  if ( document.getElementById("styleCSS").className.indexOf("dark") != -1 ) {
+    document.documentElement.style.setProperty('--color-blue','rgb(64,156,255)');
+    document.documentElement.style.setProperty('--color-blue2','rgb(0,14,34)');
+    document.documentElement.style.setProperty('--color-green','rgb(48, 209, 88)');
+    document.documentElement.style.setProperty('--color-indigo','rgb(94,92,230)');
+    document.documentElement.style.setProperty('--color-orange','rgb(255,159,10)');
+    document.documentElement.style.setProperty('--color-pink','rgb(255,55,95)');
+    document.documentElement.style.setProperty('--color-purple','rgb(191,90,242)');
+    document.documentElement.style.setProperty('--color-red','rgb(255,69,58)');
+    document.documentElement.style.setProperty('--color-teal','rgb(100,210,255)');
+    document.documentElement.style.setProperty('--color-yellow','rgb(255,214,10)');
+    document.documentElement.style.setProperty('--color-gray','rgb(142,142,147)');
+    document.documentElement.style.setProperty('--color-gray2','rgb(99,99,102)');
+    document.documentElement.style.setProperty('--color-gray3','rgb(72,72,74)');
+    document.documentElement.style.setProperty('--color-gray4','rgb(58,58,60)');
+    document.documentElement.style.setProperty('--color-gray5','rgb(44,44,46)');
+    document.documentElement.style.setProperty('--color-gray6','rgb(28,28,30)');
+    document.documentElement.style.setProperty('--color-white','rgb(31,32,34)');
+    document.documentElement.style.setProperty('--color-bouton','rgb(105,106,108)');
+    document.documentElement.style.setProperty('--color-boutonSelect','rgb(199,200,202)');
+    document.documentElement.style.setProperty('--color-nav','rgb(60,61,64)');
+    document.documentElement.style.setProperty('--color-menu','rgb(49,56,67)');
+    document.documentElement.style.setProperty('--color-write','rgb(236,238,240)');
+  } else {
+    document.documentElement.style.setProperty('--color-blue','rgb(0,122,255)');
+    document.documentElement.style.setProperty('--color-blue2','rgb(217,235,255)');
+    document.documentElement.style.setProperty('--color-green','rgb(52,199,89)');
+    document.documentElement.style.setProperty('--color-indigo','rgb(88,86,214)');
+    document.documentElement.style.setProperty('--color-orange','rgb(255,149,0)');
+    document.documentElement.style.setProperty('--color-pink','rgb(255,45,85)');
+    document.documentElement.style.setProperty('--color-purple','rgb(175,82,222)');
+    document.documentElement.style.setProperty('--color-red','rgb(255,59,48)');
+    document.documentElement.style.setProperty('--color-teal','rgb(90,200,250)');
+    document.documentElement.style.setProperty('--color-yellow','rgb(255,204,0)');
+    document.documentElement.style.setProperty('--color-gray','rgb(142,142,147)');
+    document.documentElement.style.setProperty('--color-gray2','rgb(174,174,178)');
+    document.documentElement.style.setProperty('--color-gray3','rgb(199,199,204)');
+    document.documentElement.style.setProperty('--color-gray4','rgb(209,209,214)');
+    document.documentElement.style.setProperty('--color-gray5','rgb(229,229,234)');
+    document.documentElement.style.setProperty('--color-gray6','rgb(242,242,247)');
+    document.documentElement.style.setProperty('--color-white','rgb(255,255,255)');
+    document.documentElement.style.setProperty('--color-bouton','rgb(246,246,246)');
+    document.documentElement.style.setProperty('--color-boutonSelect','rgb(105,106,106)');
+    document.documentElement.style.setProperty('--color-nav','rgb(217,217,217)');
+    document.documentElement.style.setProperty('--color-menu','rgb(227,228,229)');
+    document.documentElement.style.setProperty('--color-write','rgb(36,40,45)');
+  };
+};
+
+// charger le contenu des pages
 function loadContenu(url) {
   var aPromise = fetch(url);
   // Work with Promise object:
   aPromise
   .then(function(response) {
-  console.log("OK! Server returns a response object:");
-  console.log(response);
-  
+    console.log("OK! Server returns a response object:");
+    console.log(response);
   if(!response.ok)  {
-  throw new Error("HTTP error, status = " + response.status);
+    throw new Error("HTTP error, status = " + response.status);
   }
   response.text()
   .then(function(myText) {
-  document.getElementById('contenu').innerHTML = marked(myText);
+    document.getElementById('contenu').innerHTML = marked(myText);
   })
   .catch(function(error) {
-  // Never happened.
-  });
+    // Never happened.
+    });
   })
   .catch(function(error)  {
-  console.log("Noooooo! Something error:");
-  // Network Error!
-  console.log(error);
+    console.log("Noooooo! Something error:");
+    // Network Error!
+    console.log(error);
   });
 };
 
-var mementoMenuHtml = "";
+// contenu du menu
+var menuLeftHtml = "";
 var classe = "";
-
 var menu = new Array();
 for (var i = 0; i <= content[0].length - 1; i++) {
-  
   if (i==0) { 
     condition = true;
     condition2 = content[1][i] != null;
@@ -211,34 +208,28 @@ for (var i = 0; i <= content[0].length - 1; i++) {
     condition = content[0][i]!=content[0][i-1];
     condition2 = content[1][i]!=content[1][i-1] && content[1][i]!=null
   };
-  
   classe = content[0][i];
-
   if (condition) {
-    mementoMenuHtml = mementoMenuHtml + "<div id="+content[0][i]+'><i class="fa fa-angle-right"></i>&ensp;'+content[0][i]+"</div>";
+    menuLeftHtml = menuLeftHtml + "<div id="+content[0][i]+'><i class="fa fa-angle-right"></i>&ensp;'+content[0][i]+"</div>";
   };
   if (condition2) {
-    mementoMenuHtml = mementoMenuHtml + '<div class="'+ classe +'" id="' + content[1][i] + '" style="display: none;">&ensp;<i class="fa fa-angle-right"></i>&ensp;'+content[1][i]+"</div>";
+    menuLeftHtml = menuLeftHtml + '<div class="'+ classe +'" id="' + content[1][i] + '" style="display: none;">&ensp;<i class="fa fa-angle-right"></i>&ensp;'+content[1][i]+"</div>";
   };
-
   if (content[1][i] !== null ) {
     classe = classe + ' ' + content[1][i];
     libelle = '&ensp;&ensp;&ensp;&ensp;'+content[2][i];
   } else {
     libelle = '&ensp;&ensp;&ensp;'+content[2][i];
   };
-
   var langage = "";
   if (content[4][i] == 1) {langage = langage + '<span class="r">R</span>';};
   if (content[5][i] == 1) {langage = langage + '<span class="sas">SAS</span>';};
   if (content[6][i] == 1) {langage = langage + '<span class="python">pyt</span>';};
-
-  mementoMenuHtml = mementoMenuHtml + '<div class="'+ classe +'" id=' + content[2][i]+ ' style="display: none;">'+ libelle + langage + "</div>";
+  menuLeftHtml = menuLeftHtml + '<div class="'+ classe +'" id=' + content[2][i]+ ' style="display: none;">'+ libelle + langage + "</div>";
 };
-document.getElementById('mementoMenu').innerHTML = mementoMenuHtml;
+document.getElementById('menuLeft').innerHTML = menuLeftHtml;
 
-// ouvrir et fermer le menu
-
+// animation menu déroulant
 function onlyUnique(value, index, self) { 
     return self.indexOf(value) === index;
 }
@@ -247,9 +238,6 @@ var menu = content[0].filter( onlyUnique );
 var menuSub = content[1].filter( onlyUnique );
 menuSub = menuSub.filter(x => !!x);
 menu = menu.concat(menuSub);
-
-console.log(menu);
-
 for (var i = 0; i <= menu.length - 1; i++) {
   $("#" + menu[i]).click(function() {
     menu = $(this)[0].id;
