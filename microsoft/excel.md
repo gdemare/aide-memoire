@@ -1,4 +1,5 @@
 `Alt + Entré` retour a la ligne dans une cellule.
+`"symbole`carcètre d'échappement.
 
 ### Protéger les données
 
