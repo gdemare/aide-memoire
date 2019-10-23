@@ -85,84 +85,73 @@ for (var i = 0; i <= content[0].length - 1; i++) {
   };
   content[content.length-1][i] = dossier + '/' + content[2][i];
 };
-console.log(content[7]);
 
-// menuLeft et contenu en dessous de la barre de nav
-var hauteur = document.getElementsByTagName("nav")[0].offsetHeight + 'px';
-document.getElementById("menuLeft").style.setProperty("top", hauteur);
-document.getElementById("contenu").style.setProperty("margin-top", hauteur);
-
-// Afficher le contenu du menuLeft
-$("#mementoButton").click(function() {
-  var display, largeur;
-  if ( $("#menuLeft")[0].style.display == "none") {
-    document.getElementById("menuLeft").style.setProperty("display", "flex");
-    var largeur = document.getElementById("menuLeft").offsetWidth + 'px';
-  } else {
-    document.getElementById("menuLeft").style.setProperty("display", "none");
-    largeur = '0px';
-  };
-  document.getElementById("contenu").style.setProperty("margin-left", largeur);
-});
+// calcul de la position des éléments 
+var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
+  largeurMenu = document.getElementById("menu").offsetWidth + 'px';
+document.getElementById("page").style.setProperty("padding-top", hauteurNav);
+document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
+document.getElementById("page").style.setProperty("left", largeurMenu);
 
 // changer les couleurs
 $("#styleCSS").click( function() {
   console.log($(this)[0].className);
   if ($(this)[0].className.indexOf("dark") == -1) {
     $(this).addClass("dark");
+    document.getElementById('page').style.boxShadow = "none";
   } else {
     $(this).removeClass("dark");
+    document.getElementById('page').style.boxShadow = "-5px 0px 10px rgb(243,243,243)";
   }
   dark();
 });
 dark();
 function dark() {
+  var root = document.documentElement;
   if ( document.getElementById("styleCSS").className.indexOf("dark") != -1 ) {
-    document.documentElement.style.setProperty('--color-blue','rgb(64,156,255)');
-    document.documentElement.style.setProperty('--color-blue2','rgb(0,14,34)');
-    document.documentElement.style.setProperty('--color-green','rgb(48, 209, 88)');
-    document.documentElement.style.setProperty('--color-indigo','rgb(94,92,230)');
-    document.documentElement.style.setProperty('--color-orange','rgb(255,159,10)');
-    document.documentElement.style.setProperty('--color-pink','rgb(255,55,95)');
-    document.documentElement.style.setProperty('--color-purple','rgb(191,90,242)');
-    document.documentElement.style.setProperty('--color-red','rgb(255,69,58)');
-    document.documentElement.style.setProperty('--color-teal','rgb(100,210,255)');
-    document.documentElement.style.setProperty('--color-yellow','rgb(255,214,10)');
-    document.documentElement.style.setProperty('--color-gray','rgb(142,142,147)');
-    document.documentElement.style.setProperty('--color-gray2','rgb(99,99,102)');
-    document.documentElement.style.setProperty('--color-gray3','rgb(72,72,74)');
-    document.documentElement.style.setProperty('--color-gray4','rgb(58,58,60)');
-    document.documentElement.style.setProperty('--color-gray5','rgb(44,44,46)');
-    document.documentElement.style.setProperty('--color-gray6','rgb(28,28,30)');
-    document.documentElement.style.setProperty('--color-white','rgb(31,32,34)');
-    document.documentElement.style.setProperty('--color-bouton','rgb(105,106,108)');
-    document.documentElement.style.setProperty('--color-boutonSelect','rgb(199,200,202)');
-    document.documentElement.style.setProperty('--color-nav','rgb(60,61,64)');
-    document.documentElement.style.setProperty('--color-menu','rgb(49,56,67)');
-    document.documentElement.style.setProperty('--color-write','rgb(236,238,240)');
+    root.style.setProperty('--color-blue','rgb(64,156,255)');
+    root.style.setProperty('--color-blue2','rgb(0,14,34)');
+    root.style.setProperty('--color-green','rgb(48, 209, 88)');
+    root.style.setProperty('--color-indigo','rgb(94,92,230)');
+    root.style.setProperty('--color-orange','rgb(255,159,10)');
+    root.style.setProperty('--color-pink','rgb(255,55,95)');
+    root.style.setProperty('--color-purple','rgb(191,90,242)');
+    root.style.setProperty('--color-red','rgb(255,69,58)');
+    root.style.setProperty('--color-teal','rgb(100,210,255)');
+    root.style.setProperty('--color-yellow','rgb(255,214,10)');
+    root.style.setProperty('--color-gray','rgb(142,142,147)');
+    root.style.setProperty('--color-boiteH2','rgb(209,209,214)');
+    root.style.setProperty('--color-writeBoite','rgb(236,238,240)');
+    root.style.setProperty('--color-bouton','rgb(44,44,46)');
+    root.style.setProperty('--color-boite','rgb(48,48,48)');
+    root.style.setProperty('--color-fond','rgb(33,32,42)');
+    root.style.setProperty('--color-titre','rgb(99,99,102)');
+    root.style.setProperty('--color-degrade1','rgb(0,122,255)');
+    root.style.setProperty('--color-degrade2','rgb(64,156,255)');
+    root.style.setProperty('--color-fondMenu','rgb(29,27,38)');
+    root.style.setProperty('--color-write','rgb(236,238,240)');
   } else {
-    document.documentElement.style.setProperty('--color-blue','rgb(0,122,255)');
-    document.documentElement.style.setProperty('--color-blue2','rgb(217,235,255)');
-    document.documentElement.style.setProperty('--color-green','rgb(52,199,89)');
-    document.documentElement.style.setProperty('--color-indigo','rgb(88,86,214)');
-    document.documentElement.style.setProperty('--color-orange','rgb(255,149,0)');
-    document.documentElement.style.setProperty('--color-pink','rgb(255,45,85)');
-    document.documentElement.style.setProperty('--color-purple','rgb(175,82,222)');
-    document.documentElement.style.setProperty('--color-red','rgb(255,59,48)');
-    document.documentElement.style.setProperty('--color-teal','rgb(90,200,250)');
-    document.documentElement.style.setProperty('--color-yellow','rgb(255,204,0)');
-    document.documentElement.style.setProperty('--color-gray','rgb(142,142,147)');
-    document.documentElement.style.setProperty('--color-gray2','rgb(174,174,178)');
-    document.documentElement.style.setProperty('--color-gray3','rgb(199,199,204)');
-    document.documentElement.style.setProperty('--color-gray4','rgb(209,209,214)');
-    document.documentElement.style.setProperty('--color-gray5','rgb(229,229,234)');
-    document.documentElement.style.setProperty('--color-gray6','rgb(242,242,247)');
-    document.documentElement.style.setProperty('--color-white','rgb(255,255,255)');
-    document.documentElement.style.setProperty('--color-bouton','rgb(246,246,246)');
-    document.documentElement.style.setProperty('--color-boutonSelect','rgb(105,106,106)');
-    document.documentElement.style.setProperty('--color-nav','rgb(217,217,217)');
-    document.documentElement.style.setProperty('--color-menu','rgb(227,228,229)');
-    document.documentElement.style.setProperty('--color-write','rgb(36,40,45)');
+    root.style.setProperty('--color-blue','rgb(0,122,255)');
+    root.style.setProperty('--color-blue2','rgb(217,235,255)');
+    root.style.setProperty('--color-green','rgb(52,199,89)');
+    root.style.setProperty('--color-indigo','rgb(88,86,214)');
+    root.style.setProperty('--color-orange','rgb(255,149,0)');
+    root.style.setProperty('--color-pink','rgb(255,45,85)');
+    root.style.setProperty('--color-purple','rgb(175,82,222)');
+    root.style.setProperty('--color-red','rgb(255,59,48)');
+    root.style.setProperty('--color-teal','rgb(90,200,250)');
+    root.style.setProperty('--color-yellow','rgb(255,204,0)');
+    root.style.setProperty('--color-gray','rgb(142,142,147)');
+    root.style.setProperty('--color-boiteH2','rgb(50,50,54)');
+    root.style.setProperty('--color-writeBoite','rgb(118,118,119)');
+    root.style.setProperty('--color-bouton','rgb(232,232,232)');
+    root.style.setProperty('--color-boite','rgb(255,255,255)');
+    root.style.setProperty('--color-fond','rgb(247,247,250)');
+    root.style.setProperty('--color-titre','rgb(180,185,190)');
+    root.style.setProperty('--color-degrade1','rgb(0,179,255)');
+    root.style.setProperty('--color-degrade2','rgb(76,216,254)');
+    root.style.setProperty('--color-fondMenu','rgb(247,247,250)');
+    root.style.setProperty('--color-write','rgb(74,74,80)');
   };
 };
 
@@ -193,7 +182,7 @@ function loadContenu(url) {
 };
 
 // contenu du menu
-var menuLeftHtml = "";
+var menuHtml = "";
 var classe = "";
 var menu = new Array();
 for (var i = 0; i <= content[0].length - 1; i++) {
@@ -206,40 +195,43 @@ for (var i = 0; i <= content[0].length - 1; i++) {
   };
   classe = content[0][i];
   if (condition) {
-    menuLeftHtml = menuLeftHtml + "<div id="+content[0][i]+'><i class="fa fa-angle-right"></i>&ensp;'+content[0][i]+"</div>";
+    menuHtml = menuHtml + '<h2>'+content[0][i].replace(/-/g,' ')+"</h2>";
   };
   if (condition2) {
-    menuLeftHtml = menuLeftHtml + '<div class="'+ classe +'" id="' + content[1][i] + '" style="display: none;">&ensp;<i class="fa fa-angle-right"></i>&ensp;'+content[1][i]+"</div>";
+    menuHtml = menuHtml + '<div id="'+ content[1][i] + '" ><i class="fas fa-angle-right"></i>'+content[1][i].replace(/-/g,' ')+"</div>";
   };
-  if (content[1][i] !== null ) {
-    classe = classe + ' ' + content[1][i];
-    libelle = '&ensp;&ensp;&ensp;&ensp;'+content[2][i];
-  } else {
-    libelle = '&ensp;&ensp;&ensp;'+content[2][i];
-  };
+
   var langage = "";
   if (content[4][i] == 1) {langage = langage + '<span class="r">R</span>';};
   if (content[5][i] == 1) {langage = langage + '<span class="sas">SAS</span>';};
   if (content[6][i] == 1) {langage = langage + '<span class="python">pyt</span>';};
-  menuLeftHtml = menuLeftHtml + '<div class="'+ classe +'" id=' + content[2][i]+ ' style="display: none;">'+ libelle + langage + "</div>";
+
+  if (content[1][i] !== null ) {
+    classe = content[1][i];
+    libelle = '&ensp;'+content[2][i].replace(/-/g,' ');
+    menuHtml = menuHtml + '<div class="'+ classe +'" id=' + content[2][i]+ ' style = "display:none;">'+ libelle + langage + "</div>";
+  } else {
+    libelle = content[2][i].replace(/-/g,' ');
+    menuHtml = menuHtml + '<div id=' + content[2][i]+ '>'+ libelle + langage + "</div>";
+  };
 };
-document.getElementById('menuLeft').innerHTML = menuLeftHtml;
+document.getElementById('menu').innerHTML = menuHtml;
 
 // animation menu déroulant
 function onlyUnique(value, index, self) { 
     return self.indexOf(value) === index;
 }
 
-var menu = content[0].filter( onlyUnique );
 var menuSub = content[1].filter( onlyUnique );
 menuSub = menuSub.filter(x => !!x);
-menu = menu.concat(menuSub);
-for (var i = 0; i <= menu.length - 1; i++) {
-  $("#" + menu[i]).click(function() {
-    menu = $(this)[0].id;
-    angle = $("#" + menu + " i");
-    if (angle[0].className == 'fa fa-angle-down') {
-      angle = $("#" + menu + " i");
+console.log(menuSub);
+for (var i = 0; i <= menuSub.length - 1; i++) {
+  $("#" + menuSub[i]).click(function() {
+    menuSub = $(this)[0].id;
+    angle = $("#" + menuSub + " i");
+    console.log(angle[0].className);
+    if (angle[0].className == 'fas fa-angle-down') {
+      console.log('oke'); 
       angle.removeClass('fa-angle-down');
       angle.addClass('fa-angle-right');
       valeur = 'none';
@@ -248,107 +240,80 @@ for (var i = 0; i <= menu.length - 1; i++) {
       angle.addClass('fa-angle-down');
       valeur = 'block';
     };
-    var elems = document.getElementsByClassName(menu);
+    var elems = document.getElementsByClassName(menuSub);
 
     for (var i=0;i<elems.length;i+=1){
-      if (document.getElementById(menu).className == "") {
-        if ( (elems[i].className == menu | elems[i].className.indexOf(menu)==-1 | elems[i].className == menu + ' selection') & valeur == 'block' ) {
-          elems[i].style.display = valeur;
-        } else if (elems[i].className.indexOf(menu)>-1 & valeur == 'none') {
-          elems[i].style.display = valeur;
-        }
-      } else {
-        elems[i].style.display = valeur;
-      }
+      elems[i].style.display = valeur;
     };
   });
 }
 
+var pageActuel = [];
+var bouton = [  ['general', 'r', 'sas', 'python2'],
+                ['', '_r', '_sas', '_python']];
+
+var chaine = content[0][10];
+console.log(content[0][10].replace('-', ' '));
 // charger les pages
 for (var i = 0; i <= content[0].length - 1; i++) {
   $( '#' + content[2][i] ).click( function() {
-    if (document.getElementsByClassName("selection")[0] != null) {
-      $('.selection').removeClass('selection');
+  if (document.getElementsByClassName("selection")[0] != null) {
+    $('.selection').removeClass('selection');
+  };
+  $(this)[0].className = $(this)[0].className + " selection";
+
+  for (var i = 0; i <= content[0].length - 1; i++) {
+    if (content[2][i] == $(this)[0].id) {
+      for (var j = 0; j <= content.length - 1; j++) {
+        pageActuel[j] = content[j][i];
+      };
     }
-    $(this)[0].className = $(this)[0].className + " selection";
+  };
 
-    var fichier;
-    document.getElementById("titre").innerHTML=$(this)[0].id;
-    for (var i = 0; i <= content[0].length - 1; i++) {
-      if (content[2][i] == $(this)[0].id) {
-        fichier = content[7][i];
-        var bouton = ['general', 'r', 'sas', 'python2'];
-        for (var j = 0; j <= bouton.length - 1; j++) {
-          if (content[3+j][i] == 1) {
-            document.getElementById(bouton[j]).style.display = "flex";
-            
-            $( '#' + bouton[j] ).click( function() {
-              var selection = document.getElementsByClassName("selection")[0];
-              var bouton = ['general', 'r', 'sas', 'python2'];
-              var extension = ['', '_r', '_sas', '_python']
-              var fichier;
-              for (var i = 0; i <= content[0].length - 1; i++) {
-                if (selection.id == content[2][i]) {
-                  for (var j = 0; j <= bouton.length - 1; j++) {
-                    if(bouton[j] == $(this)[0].id ) {
-                      if (content[1][i] !== null) {
-                        fichier = content[0][i] + '/' + content[1][i];
-                      } else {
-                        fichier = content[0][i]
-                      };
-                      url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + fichier + '/' + content[2][i] + extension[j] + '.md';
-                      loadContenu(url);
-                    };
-                  };
-                };
-              };
+  document.getElementById("section").innerHTML=pageActuel[0].replace(/-/g,' ');
+  document.getElementById("titre").innerHTML=pageActuel[2].replace(/-/g,' ');
+        console.log(pageActuel);
+        for (var j = 0; j <= bouton[0].length - 1; j++) {
+          if (pageActuel[3+j] == 1) {
+            document.getElementById(bouton[0][j]).style.display = "flex";
+            $( '#' + bouton[0][j] ).click( function() {
+              for (var j = 0; j <= bouton[0].length - 1; j++) {
+                if ($(this)[0].id == bouton[0][j]) {  
+                  var extension = bouton[1][j];
+                }; 
+              }
+              console.log(j + bouton[1][j]);
+                url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + pageActuel[7] + extension + '.md';
+              loadContenu(url);
             });
-
           } else {
-            document.getElementById(bouton[j]).style.display = "none";
+            document.getElementById(bouton[0][j]).style.display = "none";
           };
         };
-        if (content[3][i] == 1) {
-          fichier = fichier + '.md';
-        } else if (content[4][i] == 1) {
-          fichier = fichier + '/' + '_r.md';
-        } else if (content[5][i] == 1) {
-          fichier = fichier + '/' + '_sas.md';
-        } else if (content[6][i] == 1) {
-          fichier = fichier + '/' + '_sas.md';
+        var extension;
+        if (pageActuel[3] == 1) {
+          extension = '.md';
+        } else if (pageActuel[4] == 1) {
+          extension = '_r.md';
+        } else if (pageActuel[5] == 1) {
+          extension = '_sas.md';
+        } else if (pageActuel[6] == 1) {
+          extension = '_sas.md';
         };
-      }
-    };
-    url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + fichier;
+        pageActuel.extension = extension;
+    
+    url = 'https://raw.githubusercontent.com/gdemare/aide-memoire/master/' + pageActuel[7] + pageActuel.extension;
     loadContenu(url);
   });
-      
 };
+
+loadContenu("https://raw.githubusercontent.com/gdemare/aide-memoire/master/programming/python.md"); 
+
 
 // modifier
 $( '#modifier' ).click( function() {
   if (document.getElementsByClassName("selection")[0] != null) {
-    var selection = document.getElementsByClassName("selection")[0].id;
-    var fichier;
-    for (var i = 0; i <= content[0].length - 1; i++) {
-      if (content[2][i] == selection) {
-        if (content[1][i] !== null) {
-          fichier = content[0][i] + '/' + content[1][i];
-        } else {
-          fichier = content[0][i]
-        };
-        if (content[3][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '.md';
-        } else if (content[4][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_r.md';
-        } else if (content[5][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_sas.md';
-        } else if (content[6][i] == 1) {
-          fichier = fichier + '/' + content[2][i] + '_sas.md';
-        }
-      }
-    }
-    url = 'https://github.com/gdemare/aide-memoire/edit/master/' + fichier ;
+    url = 'https://github.com/gdemare/aide-memoire/edit/master/' + pageActuel[7] + pageActuel.extension ;
     window.open(url);
   };
 });
