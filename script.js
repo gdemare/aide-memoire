@@ -307,9 +307,6 @@ for (var i = 0; i <= content[0].length - 1; i++) {
   });
 };
 
-loadContenu("https://raw.githubusercontent.com/gdemare/aide-memoire/master/programming/python.md"); 
-
-
 // modifier
 $( '#modifier' ).click( function() {
   if (document.getElementsByClassName("selection")[0] != null) {
