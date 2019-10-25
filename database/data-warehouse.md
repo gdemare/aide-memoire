@@ -24,6 +24,10 @@ Les bases métiers sont optimisées pour de l'écriture et la modification des e
 
 La base de données est opitmisée pour l'analyse (OLAP).
 
+### Datamart
+
+Entrepôt de données décisionnel spécialisé dans un domaine.
+
 ## Extract Transform Load (ETL)
 
 ELT : Les données chargees puis transormees pour utiliser la puissance de traitement de l'EDD.
