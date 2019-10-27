@@ -88,7 +88,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
 
 // calcul de la position des éléments 
 var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
-  largeurMenu = document.getElementById("menu").offsetWidth + 'px';
+  largeurMenu = document.getElementById("menu").offsetWidth-1 + 'px';
 document.getElementById("page").style.setProperty("padding-top", hauteurNav);
 document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
 document.getElementById("page").style.setProperty("left", largeurMenu);
