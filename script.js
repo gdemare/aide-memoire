@@ -122,15 +122,14 @@ function dark() {
     root.style.setProperty('--color-yellow','rgb(255,214,10)');
     root.style.setProperty('--color-gray','rgb(142,142,147)');
     root.style.setProperty('--color-boiteH2','rgb(209,209,214)');
-    root.style.setProperty('--color-writeBoite','rgb(236,238,240)');
+    root.style.setProperty('--color-write','rgb(236,238,240)');
     root.style.setProperty('--color-bouton','rgb(44,44,46)');
-    root.style.setProperty('--color-boite','rgb(48,48,48)');
+    root.style.setProperty('--color-nav','rgb(55,54,63)');
     root.style.setProperty('--color-fond','rgb(33,32,42)');
     root.style.setProperty('--color-titre','rgb(99,99,102)');
     root.style.setProperty('--color-degrade1','rgb(0,122,255)');
     root.style.setProperty('--color-degrade2','rgb(64,156,255)');
     root.style.setProperty('--color-fondMenu','rgb(29,27,38)');
-    root.style.setProperty('--color-write','rgb(236,238,240)');
   } else {
     root.style.setProperty('--color-blue','rgb(0,122,255)');
     root.style.setProperty('--color-blue2','rgb(217,235,255)');
@@ -144,15 +143,14 @@ function dark() {
     root.style.setProperty('--color-yellow','rgb(255,204,0)');
     root.style.setProperty('--color-gray','rgb(142,142,147)');
     root.style.setProperty('--color-boiteH2','rgb(50,50,54)');
-    root.style.setProperty('--color-writeBoite','rgb(118,118,119)');
+    root.style.setProperty('--color-write','rgb(118,118,119)');
     root.style.setProperty('--color-bouton','rgb(232,232,232)');
-    root.style.setProperty('--color-boite','rgb(255,255,255)');
+    root.style.setProperty('--color-nav','rgb(255,255,255)');
     root.style.setProperty('--color-fond','rgb(247,247,250)');
     root.style.setProperty('--color-titre','rgb(180,185,190)');
     root.style.setProperty('--color-degrade1','rgb(0,179,255)');
     root.style.setProperty('--color-degrade2','rgb(76,216,254)');
     root.style.setProperty('--color-fondMenu','rgb(247,247,250)');
-    root.style.setProperty('--color-write','rgb(74,74,80)');
   };
 };
 
