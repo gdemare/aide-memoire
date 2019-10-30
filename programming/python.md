@@ -109,6 +109,14 @@ io.imshow(monImage)
 io.show 
 ```
 
-### Calculs numériques et gestion des tableaux de nombres.
+### Les tableaux
 
 library : `NumPy`
+
+### Nombre aléatoire
+library : random 
+
+| fonction | défintion |
+|---|---|
+| `randint(nb1,nb2)` | nbre au hasard entre nb1 et nb2 |
+| `random()` | nbre aleatoire entre [0;1] |
