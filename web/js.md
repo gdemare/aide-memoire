@@ -4,6 +4,9 @@ Boite a asutces
 * L'indentater structurer le code pour le rendre plus lisible.
 * conseil appeler le script à la avant la fermetur de body.
 
+## Exécuter un programme Node.js
+`node script.js` exécuter un programme node.js
+
 ## Inserer du code dans un fichier Html
 
 ```
@@ -211,3 +214,14 @@ var element = document.getElementById('image_1'),
     style = window.getComputedStyle(element),
     top = style.getPropertyValue('top');
 ```
+
+### Requête json
+
+#### Réquête synchrone
+
+```
+let fichier = fs.readFileSync('fichier.json'),
+    data = JSON.parse(fichier),
+```
+
+* `data.colonne[cellule]` selectionner une ligne. 
