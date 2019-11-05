@@ -164,3 +164,12 @@ WHERE condition
 | DATE | |
 | DATETIME | | 
 | TIME | |
+
+## Si Alors
+
+```
+CASE <champ>
+       WHEN condition THEN valeur 
+       ELSE valeur2
+END
+```
