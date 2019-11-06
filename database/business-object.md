@@ -5,6 +5,11 @@ Univers ---> Fournisseur ---> Mise en forme
 
 ## BO univers
 
+### Recapitulatif des objets de l'univers
+
+* 1/ Fichier
+* 2/ Paramètres...
+
 ## BO rapport
 
 ### Visualiser les requêtes
