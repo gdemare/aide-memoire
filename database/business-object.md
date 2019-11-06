@@ -12,6 +12,11 @@ Univers ---> Fournisseur ---> Mise en forme
 
 ## BO rapport
 
+ Les objets BO :
+* `dimensions` axes d'analyse.
+* `indicateurs` mesures.
+* `informations` information complémentaire ou il n'est pas pertinent de faire des calculs ou des regroupements.
+
 ### Visualiser les requêtes
 
 Visualiser le SQL, les champs utilisés.
