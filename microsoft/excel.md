@@ -33,6 +33,7 @@
 * `MOIS(date)` extraire le mois.
 * `ANNEE(date)` extraire l'année.
 * `JOURSEM(date;type) numéroter les jours de la semaine.
+
 Type :
   * `1` dimanche=1 samedi=7
   * `2` lundi=1 dimanche=y
@@ -63,6 +64,12 @@ Type :
 | `"ym"` | mois, une fois les années soustraite |
 | `"yd"` | jours, une fois les années soustraites |
 | `"md"` | jours, une fois les années et mois soustraits |
+
+### Ajouter une nombre d'années, mois, jours
+
+```
+DATE(ANNEE(A2)+B2;MOIS(A2);JOUR(A2))
+```
 
 ## Formater du texte
 
