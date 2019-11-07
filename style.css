@@ -113,13 +113,12 @@ header {
 
 /*menu*/
 
-#menu {
+#menuPanel {
   position: fixed;
   display: flex;
   flex-direction: column;
   left: 0cm;
   height: 100%;
-  width: 5cm;
   background-color: var(--color-fondMenu);
   padding-top: 2em;
   color: var(--color-boiteH2);
@@ -127,30 +126,35 @@ header {
   padding-right: 0.5cm;
   overflow-y: auto;
   font-size: 0.9em;
+  width: 6cm;
 }
 
-#menu h2 {
+ #menuPanel #legende div, #menuPanel #menu div {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  padding-left: 0.1cm;
+  padding-right: 0.1cm;
+  text-transform : capitalize;
+  margin-bottom: 0.2cm;
+  margin-top: 0.3cm;
+}
+
+#menuPanel h2 {
   display: flex;
   color: var(--color-titre);
   text-transform: uppercase;
   font-size: 0.8em;
   line-height: 1em;
   margin: 0px;
-  padding-top: 1em
+  padding-top: 1em;
 }
 
 #menu div i {
   font-size: 0.8em;
   margin: 0px;
   padding-right: 0.3em;
-}
-
-#menu div {
-  width: fit-content;
-  text-transform : capitalize;
-  padding: 0.2em;
-  margin-bottom: 0.2em;
-  margin-top: 0.3em;
 }
 
 #menu div:last-child {
@@ -165,23 +169,32 @@ header {
 }
 
 .r, .sas, .python {
-  margin-left: 0.05cm; 
+  display: block;
+  margin-left: 0.05cm;
   border-radius: 0.5cm;
-  font-size: 0.9em;
-  padding-left: 0.1cm;
-  padding-right: 0.125cm;
+  width: 0.7em;
+  height: 0.7em;
   color: var(--color-boite);
+  border: 2px solid;
 }
+
+#legende .r, #legende .sas, #legende .python {
+  margin-right: 0.2cm; 
+}
+
 .r { 
-  background-color: var(--color-orange);
+  background-color: rgb(255,159,10,0.6);
+  border-color: rgb(255,159,10);/*rgb(255,159,10,0.6)*/
 }
 
 .sas {
-  background-color: var(--color-purple);
+  background-color: rgb(191,90,242,0.6);
+  border-color: rgb(191,90,242);
 }
 
 .python { 
-  background-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
+  background-color: rgb(52,199,89,0.6);
+  border-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
 }
 
 ::-webkit-scrollbar { 
@@ -201,8 +214,8 @@ header {
   bottom: 0px;
   flex: 1;
   z-index: 1;
-  background-color: var(--color-fond);
-  box-shadow:-5px 0px 10px rgb(243,243,243);
+  background-color: var(--color-boite);
+  /*box-shadow:-5px 0px 10px rgb(243,243,243);*/
   padding-left: 4em;
   padding-right: 4em;
   display: flex;
