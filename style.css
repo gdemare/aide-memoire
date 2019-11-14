@@ -175,7 +175,6 @@ header {
   width: 0.7em;
   height: 0.7em;
   color: var(--color-boite);
-  border: 2px solid;
 }
 
 #legende .r, #legende .sas, #legende .python {
@@ -184,17 +183,14 @@ header {
 
 .r { 
   background-color: rgb(255,159,10,0.6);
-  border-color: rgb(255,159,10);/*rgb(255,159,10,0.6)*/
 }
 
 .sas {
   background-color: rgb(191,90,242,0.6);
-  border-color: rgb(191,90,242);
 }
 
 .python { 
   background-color: rgb(52,199,89,0.6);
-  border-color: rgb(52,199,89);/*rgb(8,209,88) dark*/
 }
 
 ::-webkit-scrollbar { 
