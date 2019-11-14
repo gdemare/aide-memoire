@@ -202,6 +202,7 @@ ligne = colonne.
 
 ## Extraire une chaine de caractère
 
+| fonction | définition |
 |---|---|
 | `slice(start, end)` | extraire une chaine de caractère |
 | `substring(start, <end>)` | extraire une chaine de caractère jusqu'a la fin |
