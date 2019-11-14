@@ -221,8 +221,9 @@ var element = document.getElementById('image_1'),
 #### Réquête synchrone
 
 ```
+const fs = require('fs');
 let fichier = fs.readFileSync('fichier.json'),
-    data = JSON.parse(fichier),
+    data = JSON.parse(fichier);
 ```
 
 * `data.colonne[cellule]` selectionner une ligne. 
