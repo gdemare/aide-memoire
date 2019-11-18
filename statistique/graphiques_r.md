@@ -75,4 +75,10 @@ p + stat_function(fun = fonc) + xlim(-5,5)
  
 `cbbPalette <- c("#000000", "#E69F00")`
 * `scale_colour_manual(palette)` changer la couleur 
-* `scale_fill_manual(palette)` changer la couleur 
+* `scale_fill_manual(palette)` changer la couleur
+
+### Palette prête 
+
+library : `RColorBrewer`
+
+ * `graph + scale_color_brewer(palette="Dark2")` 
