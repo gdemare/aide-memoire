@@ -81,4 +81,7 @@ p + stat_function(fun = fonc) + xlim(-5,5)
 
 library : `RColorBrewer`
 
- * `graph + scale_color_brewer(palette="Dark2")` 
+* `graph + scale_color_brewer(palette="Dark2")`
+* `scale_fill_brewer(palette)`
+
+Dégradé de bleu Blues
