@@ -21,7 +21,7 @@ Présentation :
 ### Deux variables
 
 ```
-g = ggplot() + theme_minimal() + aes(x,y)
+g = ggplot() + aes(x,y)
 ```
 
 Type de graphique :
@@ -46,6 +46,11 @@ Option :
 * `geom_hline( yintercept = valeur )` ligne hotizontale
 * `geom_vline( xintercept = valeur )` ligne veticale.
 
+## Thémes 
+
+* `theme_void()` théme sans axe et graduation.
+* `theme_minimal()` théme épuré.
+
 ## Présentation
 
 * `ggtitle("titre")` titre du graphique.
@@ -62,7 +67,7 @@ Option :
 
 ## ordonner la variable a afficher
 
-reorder(variable, )
+`reorder(variable, )`
 
 ## Exporter le graphique
 
