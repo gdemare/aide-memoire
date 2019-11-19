@@ -32,10 +32,19 @@ Type de graphique :
 
 Libellés :
 * `geom_text_repel( aes(x,y), label = var )` ajouter des étiquettes de données (library ggrepel).
+* `geom_label_repel( aes(x,y), label = var )` ajouter des étiquettes de données avec fond (library ggrepel).
 * `geom_line(<option>)`
   * `aes(group = var)` une courbe pour chaque modalité de var.
   * `stat='count'` avec une seul variable.
   * `geom_col()` diagramme en barre avec la valeur des y. Pour classer les labels, il faut `reorder(label, valeur)` dans le `aes()`.
+
+## Autre 
+
+* `geom_polygon( aes(x=long, y=lat, group = group)` tracer des polygones identifié par un groupe (notamment pour les cartes).
+Option : 
+	* `fill = var` remplir les zones
+* `geom_hline( yintercept = valeur )` ligne hotizontale
+* `geom_vline( xintercept = valeur )` ligne veticale.
 
 ## Présentation
 
