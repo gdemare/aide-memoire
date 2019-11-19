@@ -14,7 +14,7 @@ lattitude = as.numeric(xmlValue(root[['result']][['geometry']][['location']][['l
 longitude = as.numeric(xmlValue(root[['result']][['geometry']][['location']][['lng']]))
 ```
 
-### Graphique with ggplot2
+## Graphique with ggplot2
 
 ```
 library(ggplot2)
@@ -22,7 +22,7 @@ mapWorld = borders("world", regions = "Malta")
 ggplot() + mapWorld
 ```
 
-### Graphique avec un fond de carte Google Map
+## Graphique avec un fond de carte Google Map
 
 Attention activer 
 
@@ -42,4 +42,10 @@ googlegraph = ggmap(map) +
   geom_point(data = donnee, aes( x=long , y = latt, size=turnover, color=turnover)) + 
   geom_text_repel( data=donnee, aes(long,latt), label = donnee$name )
 googlegraph
+```
+## Carte avec des fichiers DBF, PRJ, SHP, SHX
+
+```
+occ = readOGR(dsn = dossier, layer = debut_fichier, stringsAsFactors = F, encoding = 'UTF-8')
+occ_dt = fortify(occ)
 ```
