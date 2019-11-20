@@ -9,6 +9,7 @@ content = [
 ['database',null,'business-object',1,0,0,0],
 ['database',null,'json',1,0,0,0],
 ['database',null,'sql',1,0,0,0],
+['database',null,'talend',1,0,0,0],
 ['english',null,'verbe',1,0,0,0],
 ['microsoft',null,'excel',1,0,0,0],
 ['microsoft',null,'outlook',1,0,0,0],
