@@ -1,5 +1,3 @@
-[R](https://github.com/gdemare/aide-memoire/blob/master/methodes/r/regression-logistique_r.md); [SAS](https://github.com/gdemare/aide-memoire/tree/master/methodes/sas/regression-logistique_sas.md).
-
 ## Concept
 
 Classificateur binaire
