@@ -1,5 +1,3 @@
-##
-
 Projet éducatif > Projet pédagogique > Projet d'animation
 
 Grands jeux
