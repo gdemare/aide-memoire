@@ -24,4 +24,4 @@ Une forêt aléatoire est un ensemble d'arbres de décision construit avec des v
 
 ## Issue
 
-* [Abre de décision](https://github.com/gdemare/aide-memoire/tree/master/methodes/arbre-de-decision.md)
+* Abre de décision
