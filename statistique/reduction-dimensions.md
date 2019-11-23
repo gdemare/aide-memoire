@@ -7,10 +7,10 @@ Les variables quantitatives et qualitatives peuvent être représentées dans un
   
 ## Méthodes
 
-* [Analyse des Correspondances Multiples (ACM)](https://github.com/gdemare/aide-memoire/tree/master/methodes/ACM.md)
-* [Analyse discrimante](https://github.com/gdemare/aide-memoire/tree/master/methodes/analyse-discriminante.md)
-* [Analyse en Composantes Principales (ACP)](https://github.com/gdemare/aide-memoire/tree/master/methodes/ACP.md)
-* [Analyse Factorielle des Correpondances (AFC)](https://github.com/gdemare/aide-memoire/tree/master/methodes/AFC.md)
+* Analyse des Correspondances Multiples (ACM)
+* Analyse discrimante
+* Analyse en Composantes Principales (ACP)
+* Analyse Factorielle des Correpondances (AFC)
 
 ## Inteprétation
 
