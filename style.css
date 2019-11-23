@@ -157,8 +157,8 @@ header {
   padding-right: 0.3em;
 }
 
-#menu div:last-child {
-  padding-bottom: 5em;
+#menu {
+  margin-bottom: 5em;
 }
 
 #menu div:hover {
