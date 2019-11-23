@@ -1,5 +1,3 @@
-[SAS](https://github.com/gdemare/aide-memoire/blob/master/methodes/sas/analyse-discriminante_sas.md).
-
 ## Concept
 
 Les individus sont projetés dans un nouveau repére qui différencier un maximum les classes. 
@@ -17,4 +15,3 @@ Les individus sont projetés dans un nouveau repére qui différencier un maximu
 ## Attribut
 
 ## Sélection des variables
-
