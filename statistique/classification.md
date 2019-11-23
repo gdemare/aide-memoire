@@ -5,19 +5,19 @@ Générer une probabilité d'appartenance à une classe.
 ## Méthodes
 
 * Classificateur binaire : 
-  * [Perceptron](https://github.com/gdemare/aide-memoire/tree/master/methodes/perceptron.md)
-  * [Régression logistique](https://github.com/gdemare/aide-memoire/tree/master/methodes/regression-logistique.md)
+  * Perceptron
+  * Régression logistique
   
 * Classificateur multi-classes :
-  * [Analyse discriminante](https://github.com/gdemare/aide-memoire/tree/master/methodes/analyse-discriminante.md)
-  * [Arbre de décision](https://github.com/gdemare/aide-memoire/tree/master/methodes/arbre-de-decision.md)
-  * [Boosting](https://github.com/gdemare/aide-memoire/tree/master/methodes/boosting.md)
-  * [Classificateur naïve bayésien](https://github.com/gdemare/aide-memoire/tree/master/methodes/classificateur-baysien.md)
-  * [Espérance-maximisation (EM)](https://github.com/gdemare/aide-memoire/tree/master/methodes/experance-maximisation.md)
-  * [Forêt aléatoire](https://github.com/gdemare/aide-memoire/tree/master/methodes/foret-aleatoire.md)
-  * [k-plus proches voisins](https://github.com/gdemare/aide-memoire/tree/master/methodes/knn.md)
-  * [Support Vector Machine (SVM)](https://github.com/gdemare/aide-memoire/tree/master/methodes/SVM.md)
-  * [Réseau de neurones](https://github.com/gdemare/aide-memoire/tree/master/methodes/reseaux-neurones.md)
+  * Analyse discriminante
+  * Arbre de décision
+  * Boosting
+  * Classificateur naïve bayésien
+  * Espérance-maximisation (EM)
+  * Forêt aléatoire
+  * k-plus proches voisins
+  * Support Vector Machine (SVM)
+  * Réseau de neurones
 
 
 ### Pouvoir explicatif de variables qualitative sur une qualitative
