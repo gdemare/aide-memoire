@@ -29,4 +29,4 @@ Ensemble de règles simples et ordonnées pour séparer les individus.
 
 ## Issue
 
-* [Forêt aléaloire](https://github.com/gdemare/aide-memoire/tree/master/methodes/foret-aleatoire.md)
+* Forêt aléaloire
