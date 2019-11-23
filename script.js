@@ -54,7 +54,7 @@ content = [
 ['statistique',null,'manipuler-donnees',0,1,1,0],
 ['statistique',null,'reduction-dimensions',1,0,0,0],
 ['statistique',null,'statistique',1,0,0,0],
-['statistique',null,'statistique-descriptive',0,1,1,0],
+['statistique',null,'statistique-descriptive',0,0,1,0],
 ['statistique',null,'tableau-de-bord',1,0,0,0],
 ['statistique',null,'tests',0,1,1,0],
 ['unix',null,'bash',1,0,0,0],
