@@ -28,7 +28,7 @@ content = [
 ['statistique','data-mining','arbre-de-decision',1,1,1,0],
 ['statistique','data-mining','boosting',1,0,0,0],
 ['statistique','data-mining','carte-auto-adaptative',1,0,0,0],
-['statistique','data-mining','centre-mobiles',1,0,1,0],
+['statistique','data-mining','centres-mobiles',1,0,1,0],
 ['statistique','data-mining','centroide',1,0,1,0],
 ['statistique','data-mining','classificateur-baysien',1,1,0,0],
 ['statistique','data-mining','cluestering-variables',1,0,1,0],
