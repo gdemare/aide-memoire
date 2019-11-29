@@ -26,3 +26,5 @@ Projet data mining
 
 Expression besoin
 Cahier des charges
+
+[info gestion de projet](https://methodo-projet.fr/modeles-de-documents-de-gestion-de-projet/)
