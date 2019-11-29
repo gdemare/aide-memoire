@@ -16,6 +16,11 @@ Données
 
 ```
 
+## Outils libre pour documenter le schéma relationnel
+
+[Schema Spy](http://schemaspy.org/)
+
+
 ## Bases métiers 
 
 Les bases métiers sont optimisées pour de l'écriture et la modification des enregistrements (OLTP). 
