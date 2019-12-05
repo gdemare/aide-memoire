@@ -45,6 +45,8 @@ googlegraph
 ```
 ## Carte avec des fichiers DBF, PRJ, SHP, SHX
 
+library : `rgdal`
+
 ```
 occ = readOGR(dsn = dossier, layer = debut_fichier, stringsAsFactors = F, encoding = 'UTF-8')
 occ_dt = fortify(occ)
