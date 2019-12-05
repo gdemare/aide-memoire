@@ -52,7 +52,7 @@ content = [
 ['statistique',null,'formater-donnees',0,1,1,0],
 ['statistique',null,'graphiques',0,1,1,0],
 ['statistique',null,'manipuler-donnees',0,1,1,0],
-['statistique',null,'programme-indépendant_r.md',0,1,0,0],
+['statistique',null,'programme-indépendant',0,1,0,0],
 ['statistique',null,'reduction-dimensions',1,0,0,0],
 ['statistique',null,'statistique',1,0,0,0],
 ['statistique',null,'statistique-descriptive',0,0,1,0],
