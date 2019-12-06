@@ -29,6 +29,11 @@ Installer Talend sur un poste :
 | `StringHandling.LEN()` | taille d'une chaine de caractère |
 | `lenght(varaible)` | nombre de caractère de la chaîne. |
 
+
+| format | defintion |
+|---|---|
+Integer.parseInt(texte) | integer vers string |
+
 #### La condition SI
 
 CONDITION?VRAI:FAUX
