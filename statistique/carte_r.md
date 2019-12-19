@@ -51,3 +51,10 @@ library : `rgdal`
 occ = readOGR(dsn = dossier, layer = debut_fichier, stringsAsFactors = F, encoding = 'UTF-8')
 occ_dt = fortify(occ)
 ```
+
+## Tracer une carte 
+
+```
+ggplot(data = test1, aes(x=long, y=latt)) + theme_minimal() + 
+  geom_polygon(aes(group = `code.commune.INSEE`)) 
+```
