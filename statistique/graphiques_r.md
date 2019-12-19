@@ -27,8 +27,13 @@ g = ggplot() + aes(x,y)
 Type de graphique :
 * `geom_boxplot()` boxplots.
 * `geom_point(<option>)` nuage de points. Option :
-* `aes(colour = var)` colorier les points en fonction de var.
-* `aes(size = var)` dimensionner les points en fonction de var.
+	* `aes(colour = var)` colorier les points en fonction de var.
+	* `aes(size = var)` dimensionner les points en fonction de var.
+	* `shape = ` forme du point.
+
+| id | forme |
+|---|---| 
+| 15 | carré plein |
 
 Libellés :
 * `geom_text_repel( aes(x,y), label = var )` ajouter des étiquettes de données (library ggrepel).
