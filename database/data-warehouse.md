@@ -16,6 +16,14 @@ Données
 
 ```
 
+Objectifs d'un DWH : Bénéficier d’une source d’information commune, homogène, normalisée et fiable​
+
+Les quatres fonctions d'un SID :
+* Collecter
+* Intégrer
+* Diffuser
+* Présenter
+
 ## Outils libre pour documenter le schéma relationnel
 
 [Schema Spy](http://schemaspy.org/)
