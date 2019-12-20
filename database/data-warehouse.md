@@ -125,3 +125,8 @@ Map Reduce
 
 ## Réglémentation Générale pour la Protection des Données (RGPD)   
 
+## Méthodologie d'un projet d'intégration des données
+
+### 
+ * 1/ table de dimensions
+ * 2/ table de fait
