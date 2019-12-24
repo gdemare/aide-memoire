@@ -19,6 +19,10 @@ Installer Talend sur un poste :
 * `tLogRow` afficher les données dans la console.
 * `tFileInputDelimited` charger un fichier délimiteur.
 
+### Fitre
+
+* `tFilterRow`
+
 ### Transformation
 
 * `tMap` manipuler les données.
@@ -34,6 +38,28 @@ Installer Talend sur un poste :
 |---|---|
 Integer.parseInt(texte) | integer vers string |
 
-#### La condition SI
+## Les fonctions
 
-CONDITION?VRAI:FAUX
+### La condition SI
+
+* `CONDITION ? VRAI : FAUX`
+
+## Les formats
+
+### Le texte
+
+"texte" en java
+
+### Les dates
+
+| Code | Définition |
+|---|---|
+| `yyyy` | année |
+| `MM` | mois
+| `dd` | jour
+| `HH` | heure
+| `mm` | minute |
+
+`colonne!=null && !"".equalsIgnoreCase(colonne)? TalendDate.parseDate("dd/MM/yyyy HH:mm", colonne) : null` instruction pour convertir un string en date avec des dates null.
+
+
