@@ -43,7 +43,7 @@ googlegraph = ggmap(map) +
   geom_text_repel( data=donnee, aes(long,latt), label = donnee$name )
 googlegraph
 ```
-## Carte avec des fichiers DBF, PRJ, SHP, SHX
+## Carte avec des fichiers shapefile : DBF, PRJ, SHP, SHX
 
 library : `rgdal` et `ggplot2`
 
