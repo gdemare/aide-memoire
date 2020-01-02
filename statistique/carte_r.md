@@ -65,5 +65,6 @@ Format de données class : SpatialPolygonsDataFrame.
 * `tm_shape(donnee)` données à représenter.
 * `tm_borders()` ajouter des frontières.
 * `tm_fill()` remplir la carte.
-* ``
+* `tm_text("variable")` afficher du texte.
+* `tm_dots()` afficher sous forme de points.
 
