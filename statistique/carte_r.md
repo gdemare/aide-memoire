@@ -58,3 +58,12 @@ occ_dt = fortify(occ)
 ggplot(data = test1, aes(x=long, y=latt)) + theme_minimal() + 
   geom_polygon(aes(group = `code.commune.INSEE`)) 
 ```
+## Réaliser une carte avec tmap
+
+Format de données class : SpatialPolygonsDataFrame.
+
+* `tm_shape(donnee)` données à représenter.
+* `tm_borders()` ajouter des frontières.
+* `tm_fill()` remplir la carte.
+* ``
+
