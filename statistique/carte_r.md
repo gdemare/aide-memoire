@@ -2,7 +2,7 @@
  
  Nécessite un compte [Google developper](https://console.developers.google.com).
  
-### Obtenir la position géographique d'une adresse (lattitude et longitude)
+### Obtenir la position géographique d'une adresse (lattitude et longitude) en requêtant Google Map
  
 Soumettre la requête : `https://maps.googleapis.com/maps/api/geocode/xml?address=`ADRESSE`&key=`CLE
 
@@ -45,24 +45,27 @@ googlegraph
 ```
 ## Carte avec des fichiers shapefile : DBF, PRJ, SHP, SHX
 
-library : `rgdal` et `ggplot2`
+Package : `rgdal`
 
-```
-occ = readOGR(dsn = dossier, layer = debut_fichier, stringsAsFactors = F, encoding = 'UTF-8')
-occ_dt = fortify(occ) 
-```
+* `readOGR(dsn = dossier, layer = debut_fichier, stringsAsFactors = F, encoding = 'UTF-8')`
 
-## Tracer une carte 
+## Spatial Polygon et Point DataFrame
 
-```
-ggplot(data = test1, aes(x=long, y=latt)) + theme_minimal() + 
-  geom_polygon(aes(group = `code.commune.INSEE`)) 
-```
-## Réaliser une carte avec tmap
+### Importer un fichier GeoJson 
 
-Format de données class : SpatialPolygonsDataFrame.
+`readOGR("fichier.geojson")`
 
-* `tm_shape(donnee)` données à représenter.
+### Manipuler les données SpatialPolygonsDataFrame
+
+Package : `spdplyr `.
+
+* Il s'utilise comme dplyr.
+
+### Réaliser une carte avec tmap
+
+Package : `tmap`.
+
+* `tm_shape(SpatialPolygonsDataFrame)` données à représenter.
 * `tm_borders()` ajouter des frontières.
 * `tm_fill()` remplir la carte.
 * `tm_text("variable")` afficher du texte.
