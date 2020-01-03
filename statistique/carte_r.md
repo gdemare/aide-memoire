@@ -51,9 +51,11 @@ Package : `rgdal`
 
 ## Spatial Polygon et Point DataFrame
 
-### Importer un fichier GeoJson 
+### Importer un fichier GeoJson
 
-`readOGR("fichier.geojson")`
+Package : `rgdal`
+
+* `readOGR("fichier.geojson")`
 
 ### Manipuler les données SpatialPolygonsDataFrame
 
