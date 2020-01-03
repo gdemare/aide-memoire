@@ -55,7 +55,7 @@ Package : `rgdal`
 
 Package : `rgdal`
 
-* `readOGR("fichier.geojson")`
+* `readOGR("fichier.geojson", stringsAsFactors = F,encoding = 'UTF-8')`
 
 ### Manipuler les données SpatialPolygonsDataFrame
 
