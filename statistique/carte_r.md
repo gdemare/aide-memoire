@@ -77,6 +77,21 @@ Paramètre :
 * `col = "couleur"` changer la couleur.
 * `palette = "couleur"` changer la palette.
 
+### Personnaliser les couleurs
+
+library `RColorBrewer`
+
+`brewer.pal(nbNiveau, palette) )` créer une palettes 
+
+| code | couleur 1 | couleur 2 | couleur 3 |
+|---|---|---|---|
+| `YlOrRd` | jaune | orange | rouge |
+| `YlOrBr` | jaune | orange | marron |
+| `YlGnBu` | jaune | vert | bleu |
+| `RdYlGn` | rouge | jaune | vert |
+| `` |  |  |  |
+
+
 ## Créer un fichier GeoJson
 
 library `rgdal`
