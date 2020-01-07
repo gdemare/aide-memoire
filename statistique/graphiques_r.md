@@ -100,6 +100,8 @@ p + stat_function(fun = fonc) + xlim(-5,5)
 
 library : `RColorBrewer`
 
+* `display.brewer.all()` afficher les palettes disponibles.
+
 * `graph + scale_color_brewer(palette="Dark2")`
 * `scale_fill_brewer(palette)`
 
