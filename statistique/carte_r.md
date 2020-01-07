@@ -73,3 +73,12 @@ Package : `tmap`.
 * `tm_text("variable")` afficher du texte.
 * `tm_dots()` afficher sous forme de points.
 
+## Créer un fichier GeoJson
+
+library `rgdal`
+
+```
+SpatialPointsDataFrame(longitute lattitude,autres variables)
+### export au format GeoJson
+writeOGR(data, 'fichier.geojson','nom couche', driver='GeoJSON')
+```
