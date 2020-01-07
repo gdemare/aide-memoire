@@ -71,6 +71,7 @@ Package : `tmap`.
 * `tm_borders()` ajouter des frontières.
 * `tm_fill()` remplir la carte.
 * `tm_text("variable")` afficher du texte.
+ * `just="top/bottom/left/right"` position du texte. 
 * `tm_dots()` afficher sous forme de points.
 
 Paramètre :
@@ -89,7 +90,7 @@ library `RColorBrewer`
 | `YlOrBr` | jaune | orange | marron |
 | `YlGnBu` | jaune | vert | bleu |
 | `RdYlGn` | rouge | jaune | vert |
-| `` |  |  |  |
+| ` ` |  |  |  |
 
 
 ## Créer un fichier GeoJson
