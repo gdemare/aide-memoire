@@ -73,6 +73,10 @@ Package : `tmap`.
 * `tm_text("variable")` afficher du texte.
 * `tm_dots()` afficher sous forme de points.
 
+Paramètre :
+* `col = "couleur"` changer la couleur.
+* `palette = "couleur"` changer la palette.
+
 ## Créer un fichier GeoJson
 
 library `rgdal`
