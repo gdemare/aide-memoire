@@ -109,3 +109,12 @@ SpatialPointsDataFrame(longitute lattitude,autres variables)
 ### export au format GeoJson
 writeOGR(data, 'fichier.geojson','nom couche', driver='GeoJSON')
 ```
+
+## Changer le repère de projection
+
+`spTransform(x = spatialPointsDataFrame, CRSobj = CRS )` changer de repère.
+
+| CRS | résultat |
+|---|---|
+| `"+init=epsg:4326"` | en degré |
+
