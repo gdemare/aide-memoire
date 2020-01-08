@@ -71,12 +71,19 @@ Package : `tmap`.
 * `tm_borders()` ajouter des frontières.
 * `tm_fill()` remplir la carte.
 * `tm_text("variable")` afficher du texte.
+ * `ymod = absisse` décaler l'etiquette sur l'axe des abscisses.
  * `just="top/bottom/left/right"` position du texte. 
 * `tm_dots()` afficher sous forme de points.
+ * `size=taille` taille des points.
 
 Paramètre :
-* `col = "couleur"` changer la couleur.
+* `alpha = 0.8` transparence.
+* `col = couleur/variable` changer la couleur.
 * `palette = "couleur"` changer la palette.
+
+## Exporter le graphique
+
+* `tmap_save(data, filename = "fichier.png")` exporter le graphique png, html.
 
 ### Personnaliser les couleurs
 
