@@ -104,5 +104,3 @@ library : `RColorBrewer`
 
 * `graph + scale_color_brewer(palette="Dark2")`
 * `scale_fill_brewer(palette)`
-
-Dégradé de bleu Blues
