@@ -118,3 +118,14 @@ writeOGR(data, 'fichier.geojson','nom couche', driver='GeoJSON')
 |---|---|
 | `"+init=epsg:4326"` | en degré |
 
+## Transformer un SpatialPolygonsDataFrame en DataFrame pour ggplot2
+
+```
+polyToGgplot2 = function(SpatialPoly){
+  repere = spTransform(x = SpatialPoly, CRSobj = "+init=epsg:4326")
+  fortifier = fortify(repere)
+  repere@data$id = unique(as.numeric(fortifier$id))
+  polyToGgplot2 = join(fortifier, repere@data, by="id")
+  polyToGgplot2
+}
+```
