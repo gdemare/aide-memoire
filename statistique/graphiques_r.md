@@ -64,6 +64,7 @@ Option :
 * `ylab("titre")` titre de l’ordonnée.
 * `xlim(min, max)` taille de l'abscisse.
 * `ylim(min, max)` taille de l'ordonnée.
+* `coord_equal(ratio=1)` garder un ratio abscisse/ordonnées.
 
 ## Créer des graphiques en fonction d’une variable
 
