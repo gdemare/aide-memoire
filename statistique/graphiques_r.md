@@ -34,6 +34,7 @@ Type de graphique :
 | id | forme |
 |---|---| 
 | 15 | carré plein |
+| 21 | cercle entrouré |
 
 Libellés :
 * `geom_text_repel( aes(x,y), label = var )` ajouter des étiquettes de données (library ggrepel).
