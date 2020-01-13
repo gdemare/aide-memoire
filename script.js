@@ -11,6 +11,7 @@ content = [
 ['database',null,'sql',1,0,0,0],
 ['database',null,'talend',1,0,0,0],
 ['english',null,'verbe',1,0,0,0],
+['environnement', null, 'erosion-biodiversite',1,0,0];
 ['microsoft',null,'excel',1,0,0,0],
 ['microsoft',null,'outlook',1,0,0,0],
 ['microsoft',null,'word',1,0,0,0],
