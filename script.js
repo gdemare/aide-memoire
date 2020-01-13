@@ -45,7 +45,7 @@ content = [
 ['statistique','data-mining','serie-temporelle',1,0,0,0],
 ['statistique','methode','cluestering-sans-cible',1,0,0,0],
 ['statistique',null,'automatiser',0,1,1,0],
-['statistique',null,'carte',0,1,0,0],
+['statistique',null,'carte',1,1,0,0],
 ['statistique',null,'classification',1,0,0,0],
 ['statistique',null,'deploy-Rshinny-shinyapps',1,0,0,0],
 ['statistique',null,'dictionnaire-statistique',1,0,0,0],
