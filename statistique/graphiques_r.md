@@ -94,11 +94,10 @@ p + stat_function(fun = fonc) + xlim(-5,5)
 
 ## Les couleurs à ajouté 
 
-* `scale_colour_manual()` changer la couleur 
-* `scale_fill_manual()` changer la couleur
-Paramètre :
-	* `values = couleurs` vecteur avec les couleurs.
-	* `palette = palette` palette.
+### Couleurs personnalisées
+
+* `scale_colour_manual(couleurs)` changer la couleur 
+* `scale_fill_manual(couleurs)` changer la couleur
 
 ### Palette prête 
 
