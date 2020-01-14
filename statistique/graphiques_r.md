@@ -93,10 +93,12 @@ p + stat_function(fun = fonc) + xlim(-5,5)
 ```
 
 ## Les couleurs à ajouté 
- 
-`cbbPalette <- c("#000000", "#E69F00")`
-* `scale_colour_manual(palette)` changer la couleur 
-* `scale_fill_manual(palette)` changer la couleur
+
+* `scale_colour_manual()` changer la couleur 
+* `scale_fill_manual()` changer la couleur
+Paramètre :
+	* `values = couleurs` vecteur avec les couleurs.
+	* `palette = palette` palette.
 
 ### Palette prête 
 
