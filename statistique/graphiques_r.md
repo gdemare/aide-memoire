@@ -65,6 +65,7 @@ Option :
 * `xlim(min, max)` taille de l'abscisse.
 * `ylim(min, max)` taille de l'ordonnée.
 * `coord_equal(ratio=1)` garder un ratio abscisse/ordonnées.
+* `labs(color = titre, fille = titre )` changer le titre de la légende.
 
 ## Créer des graphiques en fonction d’une variable
 
