@@ -89,7 +89,7 @@ Paramètre :
 
 library `RColorBrewer`
 
-`brewer.pal(nbNiveau, palette) )` créer une palettes 
+`brewer.pal(nbNiveau, palette )` créer une palettes 
 
 | code | couleur 1 | couleur 2 | couleur 3 |
 |---|---|---|---|
