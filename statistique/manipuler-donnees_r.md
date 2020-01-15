@@ -17,7 +17,7 @@
  * `sep = separateur` séparateur., 
  * `row.names = T` nom des lignes.
  * `col.names = T` nom des colonnes.
-* `write.xlsl(donnee, file = fichier, sheetName = feuille)` enregistrer au format excel (package `xlsx`).
+* `write.xlsl(donnee, file = "fichier.xlsx", sheetName = "feuille")` enregistrer au format excel (package `xlsx`).
 
 ## Manipuler le texte
 
