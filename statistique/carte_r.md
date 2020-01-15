@@ -22,6 +22,8 @@ mapWorld = borders("world", regions = "Malta")
 ggplot() + mapWorld
 ```
 
+* `coord_map()` garder un ratio entre longitude et lattitude (package `mapproj`).
+
 ## Graphique avec un fond de carte Google Map
 
 Attention activer 
