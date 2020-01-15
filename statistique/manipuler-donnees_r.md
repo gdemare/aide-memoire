@@ -135,13 +135,13 @@ package : tidyr
 
 ## Grouper des données
 
-* `group by(var)` grouper les observations par la var.
+* `group_by(var)` grouper les observations par la var.
 * `ungroup(iris)` dégrouper le jeu de données.
 
 ## Résumer des données
 
 * `summarise( nom = formule)` appliquer une fonction.
-* `summarise each(funs(fonction))` appliquer une fonction à chaque variable.
+* `summarise_each(funs(fonction))` appliquer une fonction à chaque variable.
 * `count( variable, wt = valeur)` Dénombre le nombre d'observations de chaque valeur d'une variable.
 
 | Fonction résumé | Défintion |
