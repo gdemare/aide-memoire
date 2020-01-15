@@ -123,6 +123,12 @@ package : tidyr
 | pmax | Maximum par élément |
 | pmin | Minimum par élément |
 
+### Faire une opération sur toutes les variables
+
+| Fonction | Defintion |
+|---|---|
+| `rowSums()` | somme |
+
 ## Grouper des données
 
 * `group by(var)` grouper les observations par la var.
