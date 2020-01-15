@@ -112,7 +112,7 @@ writeOGR(data, 'fichier.geojson','nom couche', driver='GeoJSON')
 
 ## Changer le repère de projection
 
-`spTransform(x = spatialPointsDataFrame, CRSobj = CRS )` changer de repère.
+`spTransform(x = spatialPointsDataFrame, CRSobj = CRS )` changer de repère (package `sp`).
 
 | CRS | résultat |
 |---|---|
