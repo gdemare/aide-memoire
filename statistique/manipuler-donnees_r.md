@@ -24,6 +24,7 @@
 * `gsub( pattern ="[.]", "_", "texte à change" )` remplacer un caractère.
 * `strsplit(variable, symbole)` séparer une variable en fonction d'un symbole.
 * `trim(texte)` Supprimer les espaces (package : `gdata`).
+* `str_to_title(texte)` Mettre les premiers caractères en majuscule (package : `stringr`).
 
 ## Manipuler les dates
 
