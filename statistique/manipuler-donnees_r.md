@@ -13,7 +13,11 @@
 
 ## Exporter un data
  
-* `write.csv()` .
+* `write.csv(donnée, file = "fichier.csv" )` enregistrer au format csv.
+ * `sep = separateur` séparateur., 
+ * `row.names = T` nom des lignes.
+ * `col.names = T` nom des colonnes.
+* `write.xlsl(donnee, file = fichier, sheetName = feuille)` enregistrer au format excel (package `xlsx`).
 
 ## Manipuler le texte
 
