@@ -126,8 +126,8 @@ Les sorties doivent être stockées dans la variable
 |`renderText({texte})`| texte | `textOutput('variable')` |
 | `renderPlot({graphique})`| graphique | `plotOutput('variable')` |
 | `renderTable({tableau})`| tableau | `tableOutput('variable')` |
-| `renderDataTable` | donnees | `dataTableOutput('variable')` |
-| `renderPlotly` | donnees | `plotlyOutput('variable')` |
+| `renderDataTable({dataFrame})` | donnees | `dataTableOutput('variable')` |
+| `renderPlotly({graphique})` | donnees | `plotlyOutput('variable')` |
 | `menu`
 
 renderPrint(variable)
