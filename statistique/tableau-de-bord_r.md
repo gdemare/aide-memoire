@@ -146,7 +146,8 @@ si l'affichage depasse de l'écran.
 
 * `label = 'titre'` texte a afficher.
 
-
+| code | définition | 
+|---|---|
 | textAreaInput() | |
 
 ## liste interactive utilisant une variable reactivie
