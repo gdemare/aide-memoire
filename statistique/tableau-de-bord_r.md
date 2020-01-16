@@ -10,7 +10,7 @@ server = function(input, output) {
 shinyApp(ui = ui, server = server) #executer l'application
 ```
 
-## Interface utilisateur
+# Interface utilisateur
 
 ```
 dashboardPage(
@@ -36,7 +36,7 @@ sidebarMenu(
       )
 ```
 
-### Corps de la page
+## Corps de la page
 
 ```
 dashboardBody(
@@ -56,8 +56,8 @@ Parametres :
 * `badgeLabel = nom, badgeColor = couleur` Ajouter un badge
 * `disable = TRUE` desactiver la barre.
 
-#### Contenu des onglets
-##### Panneau de saisie
+### Contenu des onglets
+#### Panneau de saisie
 
 mainPanel() principale
 sidebarPanel() saisie
@@ -90,7 +90,7 @@ output$nom <- renderValueBox({
     valueBox(a completer)
 })
 ```
-### zone de saisie
+## zone de saisie
 
 type(inputId = id, ....) 
 input$id
@@ -111,7 +111,7 @@ input$id
 | sliderInput() | | barre de défilement |
 | textInput()| | |
 
-## Server
+# Server
 
 ```
 server = function(input, output) {
@@ -137,19 +137,19 @@ renderDataTable({ }, options = list(scrollX = TRUE))
 ```
 si l'affichage depasse de l'écran.
 
-### variable réactive
+## variable réactive
 
 `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
 `variable()` utiliser une variable reactive.
 
-### Methode de saisie 
+## Methode de saisie 
 
 * `label = 'titre'` texte a afficher.
 
 
 | textAreaInput() | |
 
-### liste interactive utilisant une variable reactivie
+## liste interactive utilisant une variable reactivie
 
 ```
     uiOutput
@@ -160,7 +160,7 @@ si l'affichage depasse de l'écran.
                 choices = as.list(genre)$genre_label, selected = 1)
 ```
 
-## Selection sur un tableau
+# Selection sur un tableau
 library(DT)
 ```
 output$tableau <- DT::renderDataTable({ 
