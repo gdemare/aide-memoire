@@ -9,7 +9,7 @@ Liste rouge des espèces éteintes
                         _ Eteinte------|_ extinction
                        |
 5% des 1,8M     -------|_Menacé                                                 | 2006  | 25%      | 13%     | 33%       |
-d'espèces connus       |                                                        | 2012  | 25%      | 13%     | 41%       |
+d'espèces connues      |                                                        | 2012  | 25%      | 13%     | 41%       |
                        |_Sans préocupation------>
                             particulière
 ```
