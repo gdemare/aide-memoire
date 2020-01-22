@@ -97,19 +97,19 @@ input$id
 
 | R | bibliotheque | Type |
 |---|---|---|
-| actionButton() | | bouton | 
-| checknocInput() | | |
-| checkboxGoupInput() | | |
-| dateInput() | | |
-| dateRangeInput() | | |
-| fileInput(nomFicher, text, multiple = FALSE) | | importer un fichier |
-| numericInput()| | | 
-| paswordInput()| | | 
-| colourInput() | library(colourpicker)| |
-| radioButtons() | | |
-| selectInput() | | liste a choix multiple |
-| sliderInput() | | barre de défilement |
-| textInput()| | |
+| `actionButton()` | | bouton | 
+| `checknocInput()` | | |
+| `checkboxGoupInput()` | | |
+| `dateInput()` | | |
+| `dateRangeInput()` | | |
+| `fileInput(nomFicher, text, multiple = FALSE)` | | importer un fichier |
+| `numericInput()` | | | 
+| `paswordInput()` | | | 
+| `colourInput()` | `colourpicker` | |
+| `radioButtons()` | | |
+| `selectInput()` | | liste a choix multiple |
+| `sliderInput()` | | barre de défilement |
+| `textInput()` | | |
 
 # Server
 
@@ -128,9 +128,8 @@ Les sorties doivent être stockées dans la variable
 | `renderTable({tableau})`| tableau | `tableOutput('variable')` |
 | `renderDataTable({dataFrame})` | donnees (package `DT`) | `dataTableOutput('variable')` |
 | `renderPlotly({graphique})` | donnees | `plotlyOutput('variable')` |
-| `menu`
 
-renderPrint(variable)
+`renderPrint(variable)`
 
 ```
 renderDataTable({ }, options = list(scrollX = TRUE))
@@ -172,3 +171,15 @@ input$tableau_rows_selected # indice des lignes selectionnées
 
 `selection = valeur`
     * `single` une seule ligne.
+
+# Récupérer des données depuis une page Html vers R
+
+session$clientData$url_protocol
+
+# Inserer des sorties R dans une page HTML
+
+`ui = htmlTemplate(filename = "page.html", sortie1, entree1)`
+
+NB : ajouter `server <- function(input, output, session) {`
+
+`{{ sortie }}` dans le fichier HTML.
