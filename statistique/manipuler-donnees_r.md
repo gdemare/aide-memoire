@@ -196,3 +196,32 @@ Option : by = c("col1"="col2"): préciser la jointure.
 * `scale(fromage,center=T,scale=T)` centrer et réduire les données.
 * `Sys.sleep(seconde)` attendre un nombre de seconde avant la suite de l'exécution.
 * `grepl( symbole, variable)` test si le symbole est contenu dans la variable.
+
+## Connecter R à une bdd
+
+`library(DBI)`
+
+* `dbListTables(connection)` Liste des tables.
+
+### Connecteur
+
+| Connecteur | Library | |
+|---|---|---|
+| MySQL | `RMySQL`| `MySQL()` |
+
+### Créer une connexion.
+
+```
+dbConnect(MySQL(), paramètre)
+on.exit(dbDisconnect(con))
+```
+Paramètre : 
+	* `dbname = "smur"`
+	* `host = "10.60.11.4"`
+	* `port = 3306`
+	* `user = "statistique"`
+	* `password = "statistique"`
+
+* `requete = sqlInterpolate(connection, "SELECT * FROM acte WHERE acte_code = ?id", id = acteId)` créer et controler les variables utilisées dans la requete.
+* `dbGetQuery(connection, requete)` exécuter la requete.
+
