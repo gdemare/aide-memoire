@@ -46,12 +46,3 @@ Especes
 Ecosystèmes.
 
 1/4 de la biodiversité se trouve dans le sol.
-
-Dictionnaire
-`Biomasse` masse des êtres vivants par air geographique ou espèces.
-`Erosition de biodiversité` crise diparition
-`Taxon` occurence conceptuelle regroupant les organismes vivants.
-`Empreinte écologique` indicateur mesure notre consommation de ressouces natuelles.
-`Toile du vivant` intéraction et relation entre les êtres vivants.
-`Service écosystèmique` les bénéfices que les humains retirerent des écoystèmes.
-`aménité environement` les aspectis de l'environnnement agréable à l'Homme.
