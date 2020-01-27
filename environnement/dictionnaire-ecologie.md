@@ -1,9 +1,10 @@
 ## A
 
-* `Aménité environement` les aspectis de l'environnnement agréable à l'Homme.
+* `Aménité environementale` les aspectis de l'environnnement agréable à l'Homme.
 
 ## B
 
+* `Biodiversité` diversité des écosystèmes, des espèces et des gènes dans l'espace et dans le temps, ainsi que les interactions au sein de ces niveaux d'organisation et entre eux.
 * `Biomasse` masse des êtres vivants par air geographique ou espèces.
 
 ## E
