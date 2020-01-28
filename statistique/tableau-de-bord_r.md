@@ -1,3 +1,4 @@
+# Shiny
 ```
 library(shiny)
 library(shinydashboard)
@@ -183,3 +184,9 @@ session$clientData$url_protocol
 NB : ajouter `server <- function(input, output, session) {`
 
 `{{ sortie }}` dans le fichier HTML.
+
+# Flexdashboard (Rmarkdown)
+
+`library(flexdashboard)`
+
+[Flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/)
