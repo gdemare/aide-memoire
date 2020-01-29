@@ -60,6 +60,7 @@ Paramétre (par défaut ASC) :
 | `=>` ou `<=` | inférieur/supérieur ou égale |
 | `IN ('var1', 'var2' )` | dans la liste |
 | `<>` | différent |
+| `is not null` | |
 
 ## Les fonctions d’agregation
 
