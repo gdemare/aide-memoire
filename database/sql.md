@@ -157,13 +157,13 @@ WHERE condition
 
 ## Les formats
 
-| Format | SQL |
+| SQL | Format |
 |---|---|
-| BINARY | |
-| CHAR | |
-| DATE | |
-| DATETIME | | 
-| TIME | |
+| `BINARY` | booléen |
+| `CHAR` | caractère |
+| `DATE` | date |
+| `DATETIME` | date heure | 
+| `TIME` | heure |
 
 ## Si Alors
 
@@ -172,4 +172,11 @@ CASE <champ>
        WHEN condition THEN valeur 
        ELSE valeur2
 END
+```
+
+## supprimer des lignes de données
+
+```
+DELETE FROM table
+WHERE condition
 ```
