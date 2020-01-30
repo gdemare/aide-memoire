@@ -190,3 +190,24 @@ NB : ajouter `server <- function(input, output, session) {`
 `library(flexdashboard)`
 
 [Flexdashboard](https://rmarkdown.rstudio.com/flexdashboard/)
+
+```
+output: 
+    theme: theme
+```
+
+| Theme | Couleur | Commentaire |
+|---|---|---|
+| default | bleu |
+| bootstrap | gris blanc |
+| cerulean | bleu relief |
+| journal | saumon | New time roman |
+| flatly | vert turquoise | 
+| readable | blanc |
+| spacelab | bleu blanc relief |
+| united | bordeau |
+| lumen | blanc |
+| paper | bleu | ++
+| sandstone | vert moche | |
+| simplex | rouge | |
+| yeti | bleu | |
