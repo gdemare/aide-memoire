@@ -43,6 +43,7 @@ Libellés :
   * `aes(group = var)` une courbe pour chaque modalité de var.
   * `stat='count'` avec une seul variable.
   * `geom_col()` diagramme en barre avec la valeur des y. Pour classer les labels, il faut `reorder(label, valeur)` dans le `aes()`.
+* `geom_area()` coubre pleine.
 
 ## Autre 
 
