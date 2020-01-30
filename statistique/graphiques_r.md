@@ -124,7 +124,7 @@ layout(title = 'Répartition des espèces évaluées',
 	 
 ### Donuts
 ```
-plot_ly(data, labels = ~organisms, values = ~evaluated, type = 'pie') %>% 
+plot_ly(data, labels = ~organisms, values = ~evaluated) %>% 
 add_pie(hole = 0.6)
 ```
 
