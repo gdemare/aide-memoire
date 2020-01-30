@@ -109,3 +109,12 @@ library : `RColorBrewer`
 
 * `graph + scale_color_brewer(palette="Dark2")`
 * `scale_fill_brewer(palette)`
+
+### Camenbert
+
+```
+plot_ly(data, labels = ~organisms, values = ~evaluated, type = 'pie') %>% 
+  layout(title = 'Répartition des espèces évaluées',
+         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+```
