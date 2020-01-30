@@ -118,10 +118,13 @@ package : plotly
 * `plot_ly(data, labels = ~categorie, values = ~valeur, type = 'pie')`
 
 ### Supprimer la légende
+
+```
 layout(title = 'Répartition des espèces évaluées',
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
-	 
+```
+
 ### Donuts
 ```
 plot_ly(data, labels = ~organisms, values = ~evaluated) %>% 
