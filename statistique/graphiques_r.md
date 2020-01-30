@@ -110,12 +110,12 @@ library : `RColorBrewer`
 * `graph + scale_color_brewer(palette="Dark2")`
 * `scale_fill_brewer(palette)`
 
-## Camenbert
+## Graphique avec plotly
 package : plotly
 
 %>% pour ajouter des options.
 
-* `plot_ly(data, labels = ~categorie, values = ~valeur, type = 'pie')`
+* `plot_ly(data, labels = ~categorie, values = ~valeur)`
 
 ### Supprimer la légende
 
@@ -125,9 +125,9 @@ layout(title = 'Répartition des espèces évaluées',
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 
-### Donuts
+### Donuts et cambenbert
+
 ```
-plot_ly(data, labels = ~organisms, values = ~evaluated) %>% 
 add_pie(hole = 0.6)
 ```
 
