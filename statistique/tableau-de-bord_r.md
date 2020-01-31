@@ -99,7 +99,7 @@ input$id
 | R | bibliotheque | Type |
 |---|---|---|
 | `actionButton()` | | bouton | 
-| `checknocInput()` | | |
+| `checkboxInput()` | | |
 | `checkboxGoupInput()` | | |
 | `dateInput()` | | |
 | `dateRangeInput()` | | |
