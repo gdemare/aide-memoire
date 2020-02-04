@@ -32,7 +32,7 @@
 * `JOUR(date)` extraire le jour.
 * `MOIS(date)` extraire le mois.
 * `ANNEE(date)` extraire l'année.
-* `JOURSEM(date;type) numéroter les jours de la semaine.
+* `JOURSEM(date;type)` numéroter les jours de la semaine.
 
 Type :
   * `1` dimanche=1 samedi=7
