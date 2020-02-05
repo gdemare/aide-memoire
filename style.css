@@ -23,8 +23,8 @@ nav {
   padding-top: 0.2cm;
   padding-bottom: 0.2cm;
   color: var(--color-write);
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--color-nav);
   border-bottom: 1px solid var(--color-bouton);
 }
