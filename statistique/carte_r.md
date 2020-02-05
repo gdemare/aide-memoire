@@ -69,6 +69,8 @@ Package : `spdplyr `.
 
 Package : `tmap`.
 
+Mode de carte `view` ou `plot` : `tmap_mode(mode)`
+
 * `tm_shape(SpatialPolygonsDataFrame)` données à représenter.
 * `tm_borders()` ajouter des frontières.
 * `tm_fill()` remplir la carte.
