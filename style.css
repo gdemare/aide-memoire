@@ -193,8 +193,19 @@ header {
   background-color: rgb(52,199,89,0.6);
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5em;
+  background: var(--color-nav);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #409cff;
+  cursor: pointer; 
 }
 
 .selection {
