@@ -96,7 +96,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
 var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 'px',
   largeurMenu = document.getElementById("menu").offsetWidth - 1 + 'px';
 console.log(largeurMenu);
-document.getElementById("page").style.setProperty("padding-top", hauteurNav);
+document.getElementById("page").style.setProperty("margin-top", hauteurNav);
 document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
 document.getElementById("page").style.setProperty("left", largeurMenu);
 
