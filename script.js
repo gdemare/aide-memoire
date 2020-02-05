@@ -93,8 +93,8 @@ for (var i = 0; i <= content[0].length - 1; i++) {
 };
 
 // calcul de la position des éléments 
-var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight + 15*2 +'px',
-  largeurMenu = document.getElementById("menu").offsetWidth - 1 + 'px';
+var hauteurNav = document.getElementsByTagName("nav")[0].offsetHeight +'px',
+  largeurMenu = document.getElementById("menu").offsetWidth - 1 + 15*2 + 'px';
 console.log(largeurMenu);
 document.getElementById("page").style.setProperty("margin-top", hauteurNav);
 document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
