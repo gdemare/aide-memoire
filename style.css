@@ -200,7 +200,7 @@ header {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 0.5em;
-  background: var(--color-nav);
+  background: var(--color-gray);
 }
 
 ::-webkit-scrollbar-thumb:hover {
