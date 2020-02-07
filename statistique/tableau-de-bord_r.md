@@ -111,6 +111,10 @@ input$id
 | `selectInput()` | | liste a choix multiple |
 | `sliderInput()` | | barre de défilement |
 | `textInput()` | | |
+| `textAreaInput()` | | zone de saisie de texte.
+
+Option :
+    * `label = 'titre'` texte a afficher.
 
 # Server
 
@@ -141,20 +145,17 @@ si l'affichage depasse de l'écran.
 
 `variable = reactive(valeur de la variable)` actualiser la rapport en fonction de la variable.
 `variable()` utiliser une variable reactive.
-
-## Methode de saisie 
-
-* `label = 'titre'` texte a afficher.
-
-| code | définition | 
-|---|---|
-| textAreaInput() | |
+`eventReactive(input$action, {variable})` réactive variable à la suite d'un evenement.
 
 ## liste interactive utilisant une variable reactivie
 
 ```
-    uiOutput
+ui :
+  uiOutput$interaction
+```
 
+server :
+```
   filterGenre = reactive(genre)
   output$interaction_slider = renderUI({
     selectInput("select", label = "Select box", 
@@ -175,7 +176,7 @@ input$tableau_rows_selected # indice des lignes selectionnées
 
 # Récupérer des données depuis une page Html vers R
 
-session$clientData$url_protocol
+`session$clientData$url_protocol`
 
 # Inserer des sorties R dans une page HTML
 
@@ -211,3 +212,5 @@ output:
 | sandstone | vert moche | |
 | simplex | rouge | |
 | yeti | bleu | |
+
+intégrer du code shiny.
