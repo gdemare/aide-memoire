@@ -100,6 +100,16 @@ document.getElementById("page").style.setProperty("margin-top", hauteurNav);
 document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
 document.getElementById("page").style.setProperty("left", largeurMenu);
 
+$("#fermer").click( function() {
+	if(largeurMenu <> "0px"){
+		document.getElementsByTagName("nav")[0].style.setProperty("left", "0px");
+		document.getElementById("page").style.setProperty("left", "0px");
+	} else {
+		document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
+		document.getElementById("page").style.setProperty("left", largeurMenu);
+	};
+});  
+  
 // changer les couleurs
 $("#styleCSS").click( function() {
   console.log($(this)[0].className);
