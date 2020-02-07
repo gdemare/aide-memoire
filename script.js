@@ -101,7 +101,7 @@ document.getElementsByTagName("nav")[0].style.setProperty("left", largeurMenu);
 document.getElementById("page").style.setProperty("left", largeurMenu);
 
 $("#fermer").click( function() {
-	if(largeurMenu != "0px"){
+	if(document.getElementById("menu").offsetWidth != "0px"){
 		document.getElementsByTagName("nav")[0].style.setProperty("left", "0px");
 		document.getElementById("page").style.setProperty("left", "0px");
 	} else {
