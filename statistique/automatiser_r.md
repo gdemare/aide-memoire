@@ -17,6 +17,5 @@ if ( test_expression1) {
 }
 ```
 
-## Créer des variables avec une boucle
-
-* `assign(nom, valeur)`
+* `assign(nom, valeur)` Créer des variables avec une boucle
+* `get(nom)` appeler une variable
