@@ -16,3 +16,7 @@ if ( test_expression1) {
   instruction
 }
 ```
+
+## Créer des variables avec une boucle
+
+* `assign(nom, valeur)`
