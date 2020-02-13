@@ -133,3 +133,43 @@ polyToGgplot2 = function(SpatialPoly){
   polyToGgplot2
 }
 ```
+
+## Leaflet
+
+Ajouter des labels
+
+`addLayersControl(group = groupe)` Ajouter une interface de choix de couche
+Option :
+ * `Options = layersControlOptions(collapsed = FALSE)` afficher les couches.
+`addPolygons()` ajouter des polygones.
+Option : 
+ * `highlight = highlightOptions()` action lors du passage de la souris.
+ * `labelOptions =
+
+
+* ` addLegend(position, colors = , labels = , group = "mammals")` ajouter une légende. Pensez à la fonction `levels()` pour `colors` et `labels`.
+Positions : 
+* `"bottomleft"`
+
+`addPolygons(fillColor = ~couleurs)`
+ Option : 
+  * `weight = nb` largeure des bordures.
+  * `fillColor = couleurs` couleurs de remplissage.
+  * `color = couleur` couleur des bordures.
+  * `highlight = highlightOptions(options)` action en passant la souris.  
+  * `label = etiquette`
+   Paramètre : `labelOptions = labelOptions(options)`
+   Options :
+    * `style = list("font-weight" = "normal", padding = "3px 8px")`
+    * `textsize = "15px"` taille du texte.
+    * `direction = "auto"` direction du texte.
+  * `fillOpacity = 0.2` pensez mettre la valeur à 0.6 
+  Options :
+   * `weight = largeur`
+   * `bringToFront = TRUE`
+
+### Simplifier les polygons
+
+Package : `MazamaSpatialUtils`
+
+* `simplify(SpatialPolygonsDataFrame)`
