@@ -213,4 +213,25 @@ output:
 | simplex | rouge | |
 | yeti | bleu | |
 
-intégrer du code shiny.
+`runtime: shiny` intégrer du code shiny (nécessite un server shiny).
+
+### Ajouter une box et des onglets
+
+```
+Column {data-width=600}` préciser la largeur de la colonne.
+-------------------------------------
+``` 
+séparateur de colonnes/lignes. Lorsque l'on spécifie une largeur il faut 
+
+```
+Page 4 {data-navmenu="Menu B"}
+=====================================
+```
+ Ajouter des pages de naviguations.
+
+* `.tabset .tabset-fade` ajouter des onglets à une box.
+
+### Afficher tableau et valeur box
+
+`knitr::kable(data)` Afficher une table
+`valueBox(comments, icon = "fa-comments")` ajouter une valeur box.
