@@ -131,4 +131,8 @@ layout(title = 'Répartition des espèces évaluées',
 add_pie(hole = 0.6)
 ```
 
+### Séries temporelles
+
+`library(dygraphs)` pour des graphiques temporels
+
 
