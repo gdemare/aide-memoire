@@ -35,14 +35,11 @@ Diminuer de 60% (67%-50%).
 
 Estime les ressources produites par la nature à 125 000 milliards de dollars.
 
-Les menaces
-Pertes et dégradation de l'habitat
-Surexploitation
-Changement climatique
-Pollution
-Espèce envahissante
-
-Especes
-Ecosystèmes.
+Les menaces qui pesent sur les especes et les ecosystemes : 
+* Pertes et dégradation de l'habitat
+* Surexploitation
+* Changement climatique
+* Pollution
+* Espèce envahissante
 
 1/4 de la biodiversité se trouve dans le sol.
