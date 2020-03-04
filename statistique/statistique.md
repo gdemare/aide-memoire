@@ -1,4 +1,8 @@
-### Cluestering Grouper les individus ou les variables avec des caractéristiques proches. <mark>Attention aux variables fortement corrélées !
+# Classification non supervisee (Cluestering) 
+
+Obj : Grouper les individus ou les variables avec des caractéristiques proches. 
+
+<mark>Attention aux variables fortement corrélées !</mark>
 
 * Individus 
 	* Cartes auto adaptatives
@@ -7,8 +11,9 @@
 * Variables 
 	* Clustering des variables
 
-### Décrire les individus 
-Indicateurs 
+# Décrire les individus
+
+Indicateurs :
 	* Tendance 
 	* Moyenne 
 	* Médiane 
@@ -20,19 +25,24 @@ Indicateurs
 	* Coefficent de correlation de Pearson 
 	* Coefficient de correlation de Spearman
 
-### Discrétiser des variables
+# Discrétiser des variables
 
-### Détecter les valeurs abérrantes et atypiques
+# Détecter les valeurs abérrantes et atypiques
 
-### Imputer les valeurs manquantes 
+# Imputer les valeurs manquantes 
 
 * Espérance-maximisation (EM) 
 * K-voisin le plus proche (KNN) 
 * Moyenne, médiane
 
-### Modèliser <mark>Attention aux variables fortement corrélées !
+# classification supervisee ou modèliser
 
-Classification : générer une probabilité d'appartenance à une classe. 
+<mark>Attention aux variables fortement corrélées !</mark>
+
+## Classification 
+
+Obj : générer une probabilité d'appartenance à une classe. 
+
 * Classificateur binaire 
 * Perceptron
 * Régression logistique
@@ -47,7 +57,10 @@ Classification : générer une probabilité d'appartenance à une classe.
 * Support Vector Machine (SVM)
 * Réseau de neurones
 
-Régression : modéliser une variable quantitative continue. 
+## Régression
+
+Obj : modéliser une variable quantitative continue. 
+
 * Régression linéaire
 * Arbre de régression
 * ANalysis Of VAriance (ANOVA)ANOVA_sas.md) 
@@ -57,9 +70,11 @@ Régression : modéliser une variable quantitative continue.
 * Lissage exponentionel
 * Série temporelle simple
 
-### Réduire le nombre de dimensions Les variables quantitatives et qualitatives peuvent être représentées dans un espace mathématique. Les méthodes de réductions de dimensions créent un nouveau repére qui maximise l'information sur les premiers axes. Elles sont utilisées pour : 
+# Réduire le nombre de dimensions : Projections et simplification de l information  
+
+Les variables quantitatives et qualitatives peuvent être représentées dans un espace mathématique. Les méthodes de réductions de dimensions créent un nouveau repére qui maximise l'information sur les premiers axes. Elles sont utilisées pour : 
 	
-	* Explorer un jeu de données (analyse discrimante, ACM, ACP, ACF). 
+* Explorer un jeu de données (analyse discrimante, ACM, ACP, ACF). 
 * Créer de nouvelles variables non correlés (ACP). 
 * Regrouper des modalités (AFC, ACM). Méthodes : 
 * Analyse des Correspondances Multiples (ACM)
@@ -67,9 +82,9 @@ Régression : modéliser une variable quantitative continue.
 * Analyse en Composantes Principales (ACP)
 * Analyse Factorielle des Correpondances (AFC)
 
-### Autres 
+# Autres 
 	* Centroïde
 * Espérance-maximisation
 
-### Méthodes 
+# Méthodes 
 * Construire des groupes d'individus similaire en fonction d'une variable d'intérêt non triviale
