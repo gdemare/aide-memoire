@@ -6,7 +6,7 @@
 
 ## Présentez-vous
 
-* Thématique : expliquer ses compétences.
+### Thématique : expliquer ses compétences.
 * Objectif (Projet professionel personnel) : idem.
 * Plan d'action : quels éléments peut-on apportés à l'entreprise ?
 
@@ -31,6 +31,14 @@ Informatique décisionnelle & base de données
 Gestion de projet
 * identifier et comprendre les besoins
 * choisir les outils en fonction des contraintes
+
+
+### Presentation par chronologique
+
+* 1 - Qui je suis presentation.
+* 2 - D'ou je viens : presenter son parcours.
+* 3 - Ou j'en suis : la situation actuelle.
+* 4 - Ou je souhaite aller : son projet d'avenir.
 
 ## Exemples de situtations à préparer
 
@@ -68,3 +76,12 @@ Gestion de projet
 | 23 616 | 19 200 | 1600 | 0 |
 | 26 568‬ | 21 600 | 1800 | 0 |
 | 29 520‬ | 2400 | 2000 | 0 |
+
+
+# Le langage
+
+Le langage corporelle (visage, posture) doit faire passer l'emotion JOIE ($ possibles + peur, colere tristesse).
+
+# La lettre de motivation 
+
+L'objectif de la lettre de motiviation est de faire le lien entre les competences et le poste candidate.
