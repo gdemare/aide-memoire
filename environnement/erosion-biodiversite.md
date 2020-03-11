@@ -43,3 +43,9 @@ Les menaces qui pesent sur les especes et les ecosystemes :
 * Espèce envahissante
 
 1/4 de la biodiversité se trouve dans le sol.
+
+## Indicateurs
+
+* `Jour du depassement` jour ou l'humanite a consommer toutes les ressources produites par la Terre en une annee.
+* `Jour de dereglement` instant a partir duquel le bilan carbone du pays est superieur a sa capacite d'absorbtion.
+
