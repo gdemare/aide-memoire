@@ -9,8 +9,9 @@
 
 ## E
 
-* `Erosition de biodiversité` crise diparition
+* `Ecologie` science consacrer a l'etude des relations entre les etres vivants a differente echelle et. entre les etres vivants et leur environnement.
 * `Empreinte écologique` indicateur mesure notre consommation de ressouces natuelles.
+* `Erosition de biodiversité`
 
 ## S 
 
