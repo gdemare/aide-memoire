@@ -393,3 +393,29 @@ Paramères :
 * `cal` affiche le calendrier.
 * `file commande` connaître le statut d'une commande ( interne/ externe).
 * `invoke-rc.d kdm restart` redémarrer l'interface graphique (kubuntu).
+
+# Android sur linux 
+
+## Installer Anbox
+
+```
+sudo add-apt-get-repository ppa:morphis/andox-support
+sudo apt-get update
+sudo apt-get install anbox-modules-dkms
+sudo mobprobe ashmen_linux
+sudo mobprobe binder_linux
+sudo apt-get install android-tools-adb android-tools-fastboot
+```
+
+### Installer une application
+
+`adb isntall application.apk`
+
+### Installer le Play Store
+
+requis : `wget lzip unizip squahfs-tools`
+url github : `https://github.com/geeks-r-us/anbox-playstore-installer/`
+
+* `wget https://raw.githubusercontent.com/geeks-r-us/anbox-playstore-installer/master/install-playstore.sh`
+* Autoriser les droits des settings > Apps > Google services
+
