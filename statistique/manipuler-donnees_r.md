@@ -107,26 +107,26 @@ package : tidyr
 
 | Fonction Window | Description |
 |---|---|
-| n | Nombre de lignes |
-| n_distinct | nombre de lignes distincts |
-| lead | Copier avec des valeurs décalées à gauche. |
-| lag | Copier avec des valeurs décalées à droite. |
-| dense_rank | Ordonne sans sauts de rangs. |
-| min_rank | Ordonne avec sauts de rangs. |
-| percent_rank | Rangs de (min rank) entre [0, 1], |
-| row_number | Ordonne en affectant aux liens la première position. |
-| ntile | Divise en n groupes. |
-| between | Les valeurs sont-elles entre a et b? |
-| cum_dist | Distribution cumulée |
-| cumall | Cumul tant que vrai |
-| cumany | Cumul dès que vrai |
-| cummean | Moyenne glissante |
-| cumsum | Somme cumulée |
-| cummax | Maximum cumulé |
-| cummin | Minimum cumulé |
-| cumprod | Produit cumulé |
-| pmax | Maximum par élément |
-| pmin | Minimum par élément |
+| `n` | Nombre de lignes |
+| `n_distinct` | nombre de lignes distincts |
+| `lead` | Copier avec des valeurs décalées à gauche. |
+| `lag` | Copier avec des valeurs décalées à droite. |
+| `dense_rank` | Ordonne sans sauts de rangs. |
+| `min_rank` | Ordonne avec sauts de rangs. |
+| `percent_rank` | Rangs de (min rank) entre [0, 1], |
+| `row_number` | Ordonne en affectant aux liens la première position. |
+| `ntile` | Divise en n groupes. |
+| `between` | Les valeurs sont-elles entre a et b? |
+| `cum_dist` | Distribution cumulée |
+| `cumall` | Cumul tant que vrai |
+| `cumany` | Cumul dès que vrai |
+| `cummean` | Moyenne glissante |
+| `cumsum` | Somme cumulée |
+| `cummax` | Maximum cumulé |
+| `cummin` | Minimum cumulé |
+| `cumprod` | Produit cumulé |
+| `pmax` | Maximum par élément |
+| `pmin` | Minimum par élément |
 
 ### Faire une opération sur toutes les variables
 
@@ -147,16 +147,16 @@ package : tidyr
 
 | Fonction résumé | Défintion |
 |---|---|
-| first | Première valeur d'un vecteur |
-| last | Dernière valeur d'un vecteur |
-| inth | Nième valeur d'un vecteur |
-| n | Nb de valeurs |
-| n_distinct | Nb de valeurs distinctes |
-| min | minimum |
-| max | maximum |
-| mean | Moyenne |
-| median | Médiane |
-| sd | Ecart-type |
+| `first` | Première valeur d'un vecteur |
+| `last` | Dernière valeur d'un vecteur |
+| `inth` | Nième valeur d'un vecteur |
+| `n` | Nb de valeurs |
+| `n_distinct` | Nb de valeurs distinctes |
+| `min` | minimum |
+| `max` | maximum |
+| `mean` | Moyenne |
+| `median` | Médiane |
+| `sd` | Ecart-type |
 
 ## Les jointures
 
@@ -167,7 +167,8 @@ A %>% jointure(B, <by=c( "var1" = "var2")> )
 * `semi_join(data)` A et pas B.
 * `anti_join(data)` B et pas A.
 * `full_jon(data)` A ou B.
-Option : by = c("col1"="col2"): préciser la jointure.
+Option :
+* `by = c("col1"="col2")` préciser la jointure.
 
 ## Fusions lignes et colonnes
 
@@ -225,4 +226,3 @@ Paramètre :
 
 * `requete = sqlInterpolate(connection, "SELECT * FROM acte WHERE acte_code = ?id", id = acteId)` créer et controler les variables utilisées dans la requete.
 * `dbGetQuery(connection, requete)` exécuter la requete.
-
