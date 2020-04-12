@@ -88,11 +88,10 @@ python -m pip install package
 
 ### Importer des fonctions
 
-`import module` charger un module.
-`module.fonction()` utiliser une fonction d'un module.
-`help(module)`afficher les informations sur un module.
-`from module import partieModule` importer uniquement un sous module.
-
+* `import module` charger un module.
+* `module.fonction()` utiliser une fonction d'un module.
+* `help(module)`afficher les informations sur un module.
+* `from module import partieModule` importer uniquement un sous module.
 
 ## Manipuler les images
 
