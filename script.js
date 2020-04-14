@@ -60,7 +60,7 @@ content = [
 ['statistique',null,'statistique-descriptive',0,0,1,0],
 ['statistique',null,'tableau-de-bord',0,1,0,0],
 ['statistique',null,'tests',0,1,1,0],
-['statistique',null,'web-scraping.md',0,0,0,1],
+['statistique',null,'web-scraping',0,0,0,1],
 ['unix',null,'bash',1,0,0,0],
 ['unix',null,'folders-linux',1,0,0,0],
 ['unix',null,'shell',1,0,0,0],
