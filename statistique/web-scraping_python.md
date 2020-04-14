@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 ## Recuperer la page
 
 ```
-page = requests.get("https://www.lemonde.fr/" + categorie +'/')
+page = requests.get("https://www.")
 soup = BeautifulSoup(page, 'html.parser')
 ```
 Obtenir le code html d'une page web. Dans le cas ou l'url ne se termine pas pas .html ajouter `page.text`.
