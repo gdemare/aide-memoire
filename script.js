@@ -56,6 +56,7 @@ content = [
 ['statistique',null,'manipuler-donnees',0,1,1,0],
 ['statistique',null,'programme-indépendant',0,1,0,0],
 ['statistique',null,'reduction-dimensions',1,0,0,0],
+['statistique',null,'web-scraping.md',0,0,0,1],
 ['statistique',null,'statistique',1,0,0,0],
 ['statistique',null,'statistique-descriptive',0,0,1,0],
 ['statistique',null,'tableau-de-bord',0,1,0,0],
