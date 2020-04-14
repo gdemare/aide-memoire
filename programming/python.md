@@ -22,7 +22,8 @@ répéter l'opération pour le sous dossier library/bin et scripts
 
 ## commenter le code
 
-`"""commentaire"""` ecrire un commentaire
+`# commentaire` commentaire sur une seule ligne.
+`"""commentaire"""` commentaire sur plusieurs lignes.
 
 ### Condition 
 
@@ -34,6 +35,14 @@ elif condition:
 else:
 	instruction
 ```
+
+### Les operateurs conditionnels
+
+| Symbole | Opération |
+|---|---|
+| `not condition` | negation |
+| `a % b` | modulo |
+| `is None` | null |
 
 ### Boucle tant que
 
@@ -48,6 +57,8 @@ while Condition:
 for i in sequence:
 	instruction
 ```
+
+Sequence peut etre une liste ou un `range(a:b)`.
 
 ### Les listes
 
@@ -68,8 +79,8 @@ def fonction (param1, param2=10):
 
 | Symbole | Opération |
 |---|---|
-| a ** b | puisance |
-| a % b | modulo |
+| `a ** b` | puisance |
+| `a % b` | modulo |
 
 | Fonction | Définition | 
 |---|---|
@@ -77,14 +88,14 @@ def fonction (param1, param2=10):
 | `print(message)` | afficher un message |
 | `range(nbre1, nbre2 <,pas> )` | créer une liste de nombres. |
 | `texte1 + texte2` | concaténer du texte. |
+| `round(numeric,nbre de decimal)` | arrondir un nombre |
 
 `texte[1:4]` extraire des caracètres d'une chaîne.
 
 ### installer un module
 
-```
-python -m pip install package
-``` 
+* `python -m pip install package` windows
+* `pip install package` ubuntu.
 
 ### Importer des fonctions
 
@@ -113,9 +124,39 @@ io.show
 library : `NumPy`
 
 ### Nombre aléatoire
-library : random 
+
+library : `random`
 
 | fonction | défintion |
 |---|---|
 | `randint(nb1,nb2)` | nbre au hasard entre nb1 et nb2 |
 | `random()` | nbre aleatoire entre [0;1] |
+
+# Les dates 
+
+package `from datetime import date`
+
+* `date.today().strftime("%Y/%m/%d")`
+
+## Sqlite 3
+
+package : `sqlite3`
+
+### connection a la database
+
+```
+conn = sqlite3.connect('base de donnees.db')
+c = conn.cursor()
+```
+
+`conn.close()` deconnection de la dbb.
+
+### Soumettre une requete
+
+* `c.execute('''requete''')`
+* `c.executemany('''requete''', liste)`
+
+Les variables a utiliser dans la requetes doivent etre declarees par un `?`.
+Si il y en a plusieurs, il faut les organiser sous une liste.
+
+* `conn.commit()` ecrire ou modifier la bdd en executant la requete.
