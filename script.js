@@ -318,7 +318,7 @@ for (var i = 0; i <= content[0].length - 1; i++) {
         } else if (pageActuel[5] == 1) {
           extension = '_sas.md';
         } else if (pageActuel[6] == 1) {
-          extension = '_sas.md';
+          extension = '_python.md';
         };
         pageActuel.extension = extension;
     
