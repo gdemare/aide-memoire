@@ -135,9 +135,9 @@ N'oubliez pas que sous Linux, tout est considéré comme un fichier, même un r�
 
 ¡ Attention, les espaces dans les crochets sont importants !
 ```
-if [ condition1 ] then
+if [ condition1 ]; then
 	instructions
-elif [ condition2 ] then
+elif [ condition2 ]; then
 	instructions
 else
 	instruction
