@@ -127,7 +127,6 @@ Ajouter la librairie au code html [Google Api](https://developers.google.com/spe
 | `write('text')` | ecrire du texte non interprété.|
 | `.addClass += "classe"`  | ajouter une nouvelle classe |
 | `.append("ajout")` | Ajouter du contenu a la fin d'une div |
-| `.attr('attribut')` | Recuperer l'attribut d'une balise |
 
 ### Creer une variable en CSS
 
@@ -228,3 +227,13 @@ let fichier = fs.readFileSync('fichier.json'),
 ```
 
 * `data.colonne[cellule]` selectionner une ligne. 
+
+# Click action 
+
+```
+$("#fermer").click( function() {
+  action
+})
+```
+
+* `$(this).` acceder directement a l'element.
