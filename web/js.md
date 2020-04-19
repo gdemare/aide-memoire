@@ -237,3 +237,7 @@ $("#fermer").click( function() {
 ```
 
 * `$(this).` acceder directement a l'element.
+
+# modifier la propriete d'une classe,...
+
+`changeRule('balise', 'css;')`
