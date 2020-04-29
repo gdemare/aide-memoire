@@ -99,7 +99,8 @@ def fonction (param1, param2=10):
 
 ### Importer des fonctions
 
-* `import module` charger un module.
+* `import package` charger un package complet.
+* `from package import module` charger un module.
 * `module.fonction()` utiliser une fonction d'un module.
 * `help(module)`afficher les informations sur un module.
 * `from module import partieModule` importer uniquement un sous module.
