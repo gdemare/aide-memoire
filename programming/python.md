@@ -89,6 +89,9 @@ def fonction (param1, param2=10):
 | `range(nbre1, nbre2 <,pas> )` | créer une liste de nombres. |
 | `texte1 + texte2` | concaténer du texte. |
 | `round(numeric,nbre de decimal)` | arrondir un nombre |
+| `list(variable)` | convertir en liste |
+| `texte.strip()` | supprimer les espaces. |
+
 
 `texte[1:4]` extraire des caracètres d'une chaîne.
 
@@ -153,6 +156,8 @@ c = conn.cursor()
 
 Les variables a utiliser dans la requetes doivent etre declarees par un `?`.
 Si il y en a plusieurs, il faut les organiser sous une liste.
+
+NB : Pensez a convertir le resultat en liste.
 
 * `conn.commit()` ecrire ou modifier la bdd en executant la requete.
 
