@@ -133,12 +133,6 @@ library : `random`
 | `randint(nb1,nb2)` | nbre au hasard entre nb1 et nb2 |
 | `random()` | nbre aleatoire entre [0;1] |
 
-# Les dates 
-
-package `from datetime import date`
-
-* `date.today().strftime("%Y/%m/%d")`
-
 ## Sqlite 3
 
 package : `sqlite3`
@@ -161,3 +155,44 @@ Les variables a utiliser dans la requetes doivent etre declarees par un `?`.
 Si il y en a plusieurs, il faut les organiser sous une liste.
 
 * `conn.commit()` ecrire ou modifier la bdd en executant la requete.
+
+## Modifier et supprimer des fichiers
+
+Package `os` 
+
+* `remove(fichier)` supprimer un fichier.
+
+Package `glob`
+
+* `glob('*.extension')` lister les fichiers.
+
+### enregistrer le fichier
+
+```
+open('national geographic/index.html', 'w').close()
+fichier = open('journal Le Monde/index.html', "a")
+fichier.write(index)
+fichier.close()
+```
+
+## Ecrire une page html
+
+`from yattag import Doc`
+```
+doc, tag, text = Doc().tagtext()
+
+doc.asis('<!DOCTYPE html>')
+	with tag('head'):
+		doc.stag('link', id="pagestyle", href="css/style.css", rel="stylesheet")
+	with tag('body'):
+		text('afficher')
+index = doc.getvalue()
+```
+
+`with tag('baliseHTML'):` balise qui se ferme.
+`oc.stag('baliseHTML')` balise sans fermeture.
+ajouter des options :
+	* `id=identifiant` ajouter un identifiant.
+	* `klass=classe` ajouter une classe.
+
+NB : Possibilite d'inclure des boucles et des conditions a l'interieur du doc.asis
