@@ -3,6 +3,7 @@
 * Quelles sont les difficultés du poste ?
 * Quels sont les grands projets pour l'année à venir ?
 * Qu'est-ce qui va faire la différence dans le choix du candidat ?
+* Quelle part est associe a chaque type de mission ?
 
 ## Présentez-vous
 
