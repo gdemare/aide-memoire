@@ -162,7 +162,7 @@ header {
 
 #menu div:hover {
   cursor: pointer;
-  background: linear-gradient(to right, var(--color-degrade1), var(--color-degrade2));
+  background-color: var(--color-degrade1);
   color: white;
   border-radius: 0.1cm;
 }
