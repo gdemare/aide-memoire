@@ -134,8 +134,8 @@ header {
   padding-left: 0.6cm;
   padding-right: 0.3cm;
   text-transform: capitalize;
-  margin-bottom: 0.1cm;
-  margin-top: 0.1cm;
+  padding-bottom: 0.1cm;
+  padding-top: 0.1cm;
 }
 
 #menuPanel h2 {
@@ -164,7 +164,6 @@ header {
   cursor: pointer;
   background-color: var(--color-degrade1);
   color: white;
-  border-radius: 0.1cm;
 }
 
 .r, .sas, .python {
