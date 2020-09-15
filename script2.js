@@ -15,6 +15,7 @@ content = [
 ['environnement', null,'dictionnaire-ecologie',1,0,0,0],
 ['microsoft',null,'excel',1,0,0,0],
 ['microsoft',null,'outlook',1,0,0,0],
+['microsoft',null,'windows',1,0,0,0],
 ['microsoft',null,'word',1,0,0,0],
 ['programming',null,'java',1,0,0,0],
 ['programming',null,'python',1,0,0,0],
