@@ -49,3 +49,9 @@ Les menaces qui pesent sur les especes et les ecosystemes :
 * `Jour du depassement` jour ou l'humanite a consommer toutes les ressources produites par la Terre en une annee.
 * `Jour de dereglement` instant a partir duquel le bilan carbone du pays est superieur a sa capacite d'absorbtion.
 
+## les menaces qui pesent sur l'humanite
+
+* rechauffement climatique
+* pollution
+* rarefaction des ressources
+* effondrement de la biodiversite
