@@ -10,3 +10,8 @@
 
 * Onglet Références du ruban, cliquez sur Table des matières > Table des matières personnalisée.
 * Dans la boîte de dialogue Modifier.
+
+### Accentuation des majuscules
+
+* `Fichier > options > vérification`
+* cocher `majuscules accentuée en francais`
