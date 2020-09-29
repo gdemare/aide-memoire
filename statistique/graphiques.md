@@ -1,6 +1,7 @@
 Les types de variables :
 
-¦ qualitative ¦ quantitative ¦ 
+¦qualitative ¦ quantitative ¦
+¦---¦---¦
 ¦ non ordonnee ¦ discrete ¦
 ¦ ordonnnee ¦ continue ¦
 
