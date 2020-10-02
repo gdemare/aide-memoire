@@ -26,7 +26,7 @@ histogramme
 deux variantes effectifs et frequence normalisé
 
 | absisse/ordonné | nominale | ordinale | discrete | continue |
-|---|---|---|---|
+|---|---|---|---|---|
 | nominale | histrogramme* | | | |
 | ordinale | histogramme* | | | |
 | discrete | courbes empilées |  |  | nuage de points; boxplot |
