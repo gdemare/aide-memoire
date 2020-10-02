@@ -27,7 +27,7 @@ deux variantes effectifs et frequence normalisé
 
 | absisse/ordonné | nominale | ordinale | discrete | continue |
 |---|---|---|---|---|
-| nominale | histrogramme* | | | |
+| nominale | histrogramme* | | Diagramme de Kiviat | Diagramme de Kiviat |
 | ordinale | histogramme* | | | |
 | discrete | courbes empilées |  |  | nuage de points; boxplot |
-| continue | box plot | | | nuage de points |
+| continue | box plot | box plot | | nuage de points |
