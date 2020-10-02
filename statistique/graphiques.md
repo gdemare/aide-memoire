@@ -2,8 +2,8 @@ Les types de variables :
 
 |qualitative | quantitative |
 |---|---|
-| non ordonnee | discrete |
-| ordonnnee | continue |
+| nominale | discrete |
+| ordinale | continue |
 
 ## 1 variable
 
@@ -11,11 +11,23 @@ Ordonnee : Effectif/frequence
 
 | Variable | graphique | 
 |---|---|
-| non ordonnee | histogramme | descroissant ordonnee par eff/freq
-| ordonnee | histogramme | classee par la var
-| discrete | diagramme en barre
-| continu | courbe, densite cumulee
-
+| nominale | diagramme en barre, diagramme circulaire | descroissant ordonnee par eff/freq
+| ordinale | diagramme en barre | classee par la var|
+| discrete | diagramme en baton | 
+| continu | histogramme, courbe, densite cumulee, box plot |
+ 
 ## Croisement a 2 variables
 
 quantitative/qualitative
+
+quantitative
+histrogramme empilé
+histogramme
+deux variantes effectifs et frequence normalisé
+
+| absisse/ordonné | nominale | ordinale | discrete | continue |
+|---|---|---|---|
+| nominale | histrogramme* | | | |
+| ordinale | histogramme* | | | |
+| discrete | courbes empilées |  |  | nuage de points; boxplot |
+| continue | box plot | | | nuage de points |
