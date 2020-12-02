@@ -1,7 +1,7 @@
 ## Les temps passé, présent, futur
 
 * Prétérite : `verbe + ed`
-* Participe : passé `verbe + ed`
+* Participe passé `verbe + ed`
 
 | Temps | Emploi | Construction |
 |---|---|---|
