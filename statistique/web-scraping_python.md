@@ -3,7 +3,7 @@ Package `bs4` et `requests`
 ## Charger les library
 
 ```
-from requests
+import requests
 from bs4 import BeautifulSoup
 ```
 
