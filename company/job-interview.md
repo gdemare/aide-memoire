@@ -86,3 +86,9 @@ Le langage corporelle (visage, posture) doit faire passer l'emotion JOIE ($ poss
 # La lettre de motivation 
 
 L'objectif de la lettre de motiviation est de faire le lien entre les competences et le poste candidate.
+
+## Compétences
+Une compétence est l'association de trois choses : 
+- savoir faire : application de la théorie à la pratique (correspond aux moyens). 
+- savoir être : attitudes a adopter pour obtenir un rendu de qualité. 
+- savoir : connaissance théorique du sujet.
