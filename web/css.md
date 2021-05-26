@@ -45,6 +45,7 @@ Direction :
 ## Texte
 
 * `text-decoration: underline;` souligner du texte.
+* `font-weight: normal/bold;` police en gras.
 
 ## Flexbox
 
