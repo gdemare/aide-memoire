@@ -42,6 +42,10 @@ Direction :
 * `transition-duration: 4s;` duree de la transition.
 * `transition-delay: 2s;` temps avant le declenchement de la transition.
 
+## Texte
+
+* `text-decoration: underline;` souligner du texte.
+
 ## Flexbox
 
 ### Contenaire
