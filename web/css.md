@@ -66,10 +66,15 @@ Comportement :
   * `stretch` les éléments sont étirés sur tout l'axe (valeur par défaut)
   * `flex-start`, `flex-end` alignés au début/fin.
   * `center` alignés au centre.
+
 ### contenus
 
 * `flex: valeur;` mesure il peut grossir par rapport aux autres.
 * `order: numero` position de l'element.
+
+## Bord
+
+*`border-top-right-radius: radius;` changer l'angle des bordures.
 
 ## adapter les proprietes en fonction de la taille de l'ecran
 
