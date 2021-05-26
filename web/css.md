@@ -46,6 +46,7 @@ Direction :
 
 * `text-decoration: underline;` souligner du texte.
 * `font-weight: normal/bold;` police en gras.
+* ` text-transform: uppercase;` mettre en capitale.
 
 ## Flexbox
 
