@@ -13,6 +13,7 @@ content = [
 ['english',null,'verbe',1,0,0,0],
 ['environnement', null,'erosion-biodiversite',1,0,0,0],
 ['environnement', null,'dictionnaire-ecologie',1,0,0,0],
+['microsoft',null,'batch',1,0,0,0],
 ['microsoft',null,'excel',1,0,0,0],
 ['microsoft',null,'outlook',1,0,0,0],
 ['microsoft',null,'windows',1,0,0,0],
