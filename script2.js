@@ -166,7 +166,7 @@ function dark() {
     root.style.setProperty('--color-gray','rgb(142,142,147)');
     root.style.setProperty('--color-boiteH2','rgb(50,50,54)');
     root.style.setProperty('--color-write','rgb(118,118,119)');
-    root.style.setProperty('--color-bouton','rgb(247,247,250)');
+    root.style.setProperty('--color-bouton','rgb(217,235,255)');
     root.style.setProperty('--color-nav','rgb(217,225,225)');
     root.style.setProperty('--color-boite','rgb(255,255,255)');
     root.style.setProperty('--color-fond','rgb(247,247,250)');
