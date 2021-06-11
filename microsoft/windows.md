@@ -9,3 +9,8 @@ Copier le raccourci dans le dossier `C:\Users\Guigui\AppData\Roaming\Microsoft\W
 ### bloquer la mise en veille lorsque le capot est fermé
 
 `Panneau de configuration\Matériel et audio\Options d’alimentation\Paramètres système`
+
+### Réinstaller Onedrive
+
+* Aller dans `C:/Windows/WinSxS` et rechercher "onedrive"
+* Exécuter le programme .exe
