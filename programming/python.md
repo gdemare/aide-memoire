@@ -58,7 +58,7 @@ for i in sequence:
 	instruction
 ```
 
-Sequence peut etre une liste ou un `range(a:b)`.
+Sequence peut etre une liste, `range(a:b)` ou une chaîne de caractères.
 
 ### Les listes
 
