@@ -101,8 +101,6 @@ library `RColorBrewer`
 | `YlOrBr` | jaune | orange | marron |
 | `YlGnBu` | jaune | vert | bleu |
 | `RdYlGn` | rouge | jaune | vert |
-| ` ` |  |  |  |
-
 
 ## Créer un fichier GeoJson
 
@@ -146,7 +144,6 @@ Option :
  * `highlight = highlightOptions()` action lors du passage de la souris.
  * `labelOptions =
 
-
 * ` addLegend(position, colors = , labels = , group = "mammals")` ajouter une légende. Pensez à la fonction `levels()` pour `colors` et `labels`.
 Positions : 
 * `"bottomleft"`
@@ -172,4 +169,4 @@ Positions :
 
 Package : `MazamaSpatialUtils`
 
-* `simplify(SpatialPolygonsDataFrame)`
+* `simplify(SpatialPolygonsDataFrame)` simplifier les polygones (les contours des zones géographiques).
