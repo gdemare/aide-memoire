@@ -41,8 +41,8 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 
 ### commenter le code
 
-`# commentaire` commentaire sur une seule ligne.
-`"""commentaire"""` commentaire sur plusieurs lignes.
+* `# commentaire` commentaire sur une seule ligne.
+* `"""commentaire"""` commentaire sur plusieurs lignes.
 
 ### Les variables 
 
@@ -58,7 +58,7 @@ Les instuctions peuvent être séparées par `;` ou par un saut de ligne.
 | `int()` | convertir en entier |
 | `float()` | convertir en float | 
 
-* `texte.split('séparateur') transformer un caractère en liste en fonction d'un séparateur.
+* `texte.split('séparateur')` transformer un caractère en liste en fonction d'un séparateur.
 
 #### Vecteurs et listes
 [] = vecteur et () = liste. Les listes ne sont pas modifiables.
